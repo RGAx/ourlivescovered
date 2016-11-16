@@ -1,0 +1,6 @@
+*.codekit
+*.codekit3
+*.scssc
+*.DS_Store
+deploy.php
+.htaccess

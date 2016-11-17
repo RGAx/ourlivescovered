@@ -68,21 +68,11 @@
     <div class="container quiz">
    	    <div class="row quiz-header">
             <div id ="quiz quiz-header" class="col-md-12">
-              <div class="row">
-                <div class="col-md-12">
-                  <h1 class="text-center"><span>Do I Need Insurance?</span></h1>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="text-center">Take the quiz.</h2>
+                    </div>
                 </div>
-              </div>
-              <div class="row">
-                <div class="col-md-12">
-                  <h2 class="text-center">Take the quiz.</h2>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-12">
-                  <h3 class="text-center">These three questions can help you decide.</h3>
-                </div>
-              </div>
             </div>
         </div>
         <div id="quiz-inner">
@@ -101,7 +91,7 @@
             <div class="row quiz-content text-center hide-item" id="quiz-content-3">
             	<div class="col-xs-8 col-xs-offset-2">
                     <h4 class="answer">Congrats, you love birds! Let’s talk...</h4>
-                    <p class="answer">Here’s a hard truth: a lasagna fundraiser after the funeral is probably not going to be enough to pay the bills if something were to happen to you or your spouse. Protecting the person you’ve shared your life with is a great reason to consider life insurance.</p>
+                    <p class="answer">Here’s a hard truth: a lasagna fundraiser after the funeral is probably not going to be enough to pay the bills if something were to happen to you or your spouse. Protecting the person you share your life with is a great reason to consider life insurance.</p>
                     <a class="btn quiz-cta" href="quote-form.php">Lock in Your Rate</a>
                     <div class="row quiz-btn-row"></div>
         		<div class="btn goback"><span>Previous</span></div>
@@ -139,7 +129,7 @@
             <div class="row quiz-content text-center hide-item" id="quiz-content-6">
             	<div class="col-xs-8 col-xs-offset-2">
                     <h4 class="answer">It doesn’t take kids to be a family.</h4>
-                    <p class="answer">You may not have little ones, but there are probably others in your life that you want to care for after you’re gone. Most policies allow you to select other family members as beneficiaries.</p>
+                    <p class="answer">You may not have little ones, but there are probably others in your life that you want to care for after you’re gone. Most policies allow you to select whomever you want as beneficiaries.</p>
                     <a class="btn quiz-cta" href="quote-form.php">Compare Rates</a>
                     <div class="row quiz-btn-row"></div>
         		<div class="btn goback"><span>Previous</span></div>

@@ -292,46 +292,48 @@ body {
         width: 100%;
         border-radius: 0;
         background: transparent; } }
-    @media (max-width: 1320px) {
-      body div.container-fluid div#hero div.cta-container div.row div.col-sm-12 h3 {
-        font-size: 23px; } }
-    @media (max-width: 970px) {
-      body div.container-fluid div#hero div.cta-container div.row div.col-sm-12 h3 {
-        text-align: center; } }
-    body div.container-fluid div#hero div.cta-container div.row form {
-      overflow: auto;
-      margin-bottom: 0; }
-      @media (max-width: 970px) {
-        body div.container-fluid div#hero div.cta-container div.row form div.col-sm-8 {
-          float: none;
-          width: 100%;
-          max-width: 400px;
-          margin: 0 auto;
-          margin-bottom: 10px;
-          padding: 0; } }
+    body div.container-fluid div#hero div.cta-container div.row {
+      margin: 0; }
       @media (max-width: 1320px) {
-        body div.container-fluid div#hero div.cta-container div.row form div.col-sm-8 select.form-control {
-          font-size: 13px;
-          height: 43px; } }
+        body div.container-fluid div#hero div.cta-container div.row div.col-sm-12 h3 {
+          font-size: 23px; } }
       @media (max-width: 970px) {
-        body div.container-fluid div#hero div.cta-container div.row form div.col-sm-8 select.form-control {
-          box-shadow: none; } }
-      body div.container-fluid div#hero div.cta-container div.row form div.col-sm-4 {
-        padding-left: 0; }
+        body div.container-fluid div#hero div.cta-container div.row div.col-sm-12 h3 {
+          text-align: center; } }
+      body div.container-fluid div#hero div.cta-container div.row form {
+        overflow: auto;
+        margin-bottom: 0; }
         @media (max-width: 970px) {
-          body div.container-fluid div#hero div.cta-container div.row form div.col-sm-4 {
+          body div.container-fluid div#hero div.cta-container div.row form div.col-sm-8 {
             float: none;
             width: 100%;
             max-width: 400px;
             margin: 0 auto;
+            margin-bottom: 10px;
             padding: 0; } }
         @media (max-width: 1320px) {
-          body div.container-fluid div#hero div.cta-container div.row form div.col-sm-4 input.btn {
-            font-size: 19px;
+          body div.container-fluid div#hero div.cta-container div.row form div.col-sm-8 select.form-control {
+            font-size: 13px;
             height: 43px; } }
         @media (max-width: 970px) {
-          body div.container-fluid div#hero div.cta-container div.row form div.col-sm-4 input.btn {
+          body div.container-fluid div#hero div.cta-container div.row form div.col-sm-8 select.form-control {
             box-shadow: none; } }
+        body div.container-fluid div#hero div.cta-container div.row form div.col-sm-4 {
+          padding-left: 0; }
+          @media (max-width: 970px) {
+            body div.container-fluid div#hero div.cta-container div.row form div.col-sm-4 {
+              float: none;
+              width: 100%;
+              max-width: 400px;
+              margin: 0 auto;
+              padding: 0; } }
+          @media (max-width: 1320px) {
+            body div.container-fluid div#hero div.cta-container div.row form div.col-sm-4 input.btn {
+              font-size: 19px;
+              height: 43px; } }
+          @media (max-width: 970px) {
+            body div.container-fluid div#hero div.cta-container div.row form div.col-sm-4 input.btn {
+              box-shadow: none; } }
     @media (max-width: 1320px) {
       body div.container-fluid div#hero div.scrollprompt {
         top: 500px;
@@ -361,6 +363,32 @@ body {
       @media (max-width: 1320px) {
         body div.container-fluid div#hero div.scrollprompt div.row div.col-sm-12 button.btn {
           font-size: 14px; } }
+  body div.container-fluid div.quiz div#quiz-inner div.quiz-content {
+    margin: 0; }
+    body div.container-fluid div.quiz div#quiz-inner div.quiz-content div.col-xs-8 {
+      width: 100%;
+      margin: 0 auto;
+      padding: 0; }
+      body div.container-fluid div.quiz div#quiz-inner div.quiz-content div.col-xs-8 div.quiz-btn-row {
+        margin: 0; }
+        body div.container-fluid div.quiz div#quiz-inner div.quiz-content div.col-xs-8 div.quiz-btn-row div.col-xs-4 {
+          width: calc(100% / 3);
+          padding: 0; }
+          @media (max-width: 600px) {
+            body div.container-fluid div.quiz div#quiz-inner div.quiz-content div.col-xs-8 div.quiz-btn-row div.col-xs-4 button {
+              width: 100px;
+              height: 100px; } }
+          @media (max-width: 400px) {
+            body div.container-fluid div.quiz div#quiz-inner div.quiz-content div.col-xs-8 div.quiz-btn-row div.col-xs-4 button {
+              width: 80px;
+              height: 80px; } }
+          @media (max-width: 460px) {
+            body div.container-fluid div.quiz div#quiz-inner div.quiz-content div.col-xs-8 div.quiz-btn-row div.col-xs-4 button span {
+              font-size: 12px;
+              bottom: -27px;
+              left: 50%;
+              width: 120%;
+              transform: translateX(-50%); } }
   body section.main-section {
     min-height: calc(100vh - 217px);
     padding: 100px 0; }

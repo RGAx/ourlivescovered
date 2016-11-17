@@ -33,6 +33,10 @@
                                 <label class=" " for="calc-first-name">First Name</label>
                             </div>
                             <div class="inline-text required">
+                                <input required="" class=" " type="text" id="calc-last-name" name="last-name" maxlength="25">
+                                <label class=" " for="calc-last-name">Last Name</label>
+                            </div>
+                            <div class="inline-text required">
                                 <input required="" class=" " type="text" pattern="[0-9]*" id="calc-date-of-birth" name="date-of-birth">
                                 <label class=" " for="calc-date-of-birth">Date of Birth</label>
                             </div>

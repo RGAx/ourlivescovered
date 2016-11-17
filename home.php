@@ -36,7 +36,7 @@
                 <h3>Find the right life insurance policy, fast.</h3>
                 </div>
             </div>
-            <div class="row"><form action="quote-form.html" method="get">
+            <div class="row"><form action="quote-form.php" method="get">
                 <div class="col-sm-8">
                     <select class="form-control" name="preference">
                         <option>
@@ -102,7 +102,7 @@
             	<div class="col-xs-8 col-xs-offset-2">
                     <h4 class="answer">Congrats, you love birds! Let’s talk...</h4>
                     <p class="answer">Here’s a hard truth: a lasagna fundraiser after the funeral is probably not going to be enough to pay the bills if something were to happen to you or your spouse. Protecting the person you’ve shared your life with is a great reason to consider life insurance.</p>
-                    <a class="btn quiz-cta" href="quote-form.html">Lock in Your Rate</a>
+                    <a class="btn quiz-cta" href="quote-form.php">Lock in Your Rate</a>
                     <div class="row quiz-btn-row"></div>
         		<div class="btn goback"><span>Previous</span></div>
                 <div class="btn goforward"><span>Next</span></div></div>
@@ -111,7 +111,7 @@
             	<div class="col-xs-8 col-xs-offset-2">
                     <h4 class="answer">Protect your future self...</h4>
                     <p class="answer">Even if you’re still single, getting coverage now could be a good idea. Typically, younger people in good health can qualify for the best prices on life insurance and lock in their rate for up to 20 years.</p>
-                    <a class="btn quiz-cta" href="quote-form.html">Lock in Your Rate</a>
+                    <a class="btn quiz-cta" href="quote-form.php">Lock in Your Rate</a>
                     <div class="row quiz-btn-row"></div>
         		<div class="btn goback"><span>Previous</span></div>
                 <div class="btn goforward"><span>Next</span></div></div>
@@ -131,7 +131,7 @@
             	<div class="col-xs-8 col-xs-offset-2">
                     <h4 class="answer">Leave them with more than just memories and old holiday decorations...</h4>
                     <p class="answer">For many parents, having life insurance is an important way to make sure their children can afford the best education possible, or a solid inheritance with which to start their own life.</p>
-                    <a class="btn quiz-cta" href="quote-form.html">Compare Rates</a>
+                    <a class="btn quiz-cta" href="quote-form.php">Compare Rates</a>
                     <div class="row quiz-btn-row"></div>
         		<div class="btn goback"><span>Previous</span></div>
                 <div class="btn goforward"><span>Next</span></div></div>
@@ -140,7 +140,7 @@
             	<div class="col-xs-8 col-xs-offset-2">
                     <h4 class="answer">It doesn’t take kids to be a family.</h4>
                     <p class="answer">You may not have little ones, but there are probably others in your life that you want to care for after you’re gone. Most policies allow you to select other family members as beneficiaries.</p>
-                    <a class="btn quiz-cta" href="quote-form.html">Compare Rates</a>
+                    <a class="btn quiz-cta" href="quote-form.php">Compare Rates</a>
                     <div class="row quiz-btn-row"></div>
         		<div class="btn goback"><span>Previous</span></div>
                 <div class="btn goforward"><span>Next</span></div></div>
@@ -160,7 +160,7 @@
             	<div class="col-xs-8 col-xs-offset-2">
                     <h4 class="answer">Home is even sweeter when it’s paid off.</h4>
                     <p class="answer">One of the most common reasons people buy life insurance is to make sure that their loved ones are able to keep up with mortgage payments and keep a roof over their heads.</p>
-                    <a class="btn quiz-cta" href="quote-form.html">Calculate What You Need</a>
+                    <a class="btn quiz-cta" href="quote-form.php">Calculate What You Need</a>
                     <div class="row quiz-btn-row"></div>
         		<div class="btn goback"><span>Previous</span></div>
                 <div class="btn goforward"><span>Next</span></div></div>
@@ -169,7 +169,7 @@
             	<div class="col-xs-8 col-xs-offset-2">
                     <h4 class="answer">Hey, someone has to pay the rent.</h4>
                     <p class="answer">Did you know that in some states, renting a home can cost over 50% more per month than owning. Regardless of whether you own or rent, your family will likely need help keeping up with payments.</p>
-                    <a class="btn quiz-cta" href="quote-form.html">Calculate What You Need</a>
+                    <a class="btn quiz-cta" href="quote-form.php">Calculate What You Need</a>
                     <div class="row quiz-btn-row"></div>
         		<div class="btn goback"><span>Previous</span></div>
                 <div class="btn goforward"><span>Next</span></div></div>
@@ -179,7 +179,7 @@
                     <h4 class="answer" >So what’s the verdict?</h4>
                     <h5>Are you ready to create a safety net for your loved ones?</h5>
                     <div class="row quiz-btn-row">
-                    	<div class="col-xs-8 col-xs-offset-2"> <a class="btn quiz-cta" href="quote-form.html">Get a Quote</a><br><a href="olc.html">Restart Quiz</a></div>
+                    	<div class="col-xs-8 col-xs-offset-2"> <a class="btn quiz-cta" href="quote-form.php">Get a Quote</a><br><a href="home.php">Restart Quiz</a></div>
                     </div>
                 </div>
             </div>

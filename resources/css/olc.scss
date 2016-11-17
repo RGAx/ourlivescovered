@@ -278,6 +278,207 @@ body {
             }
         }
     }
+    div.container-fluid {
+        div#hero {
+            background: $pink;
+            div.carousel {
+                ol.carousel-indicators {
+                    bottom: 0;
+                }
+                div.carousel-inner {
+                    @media (max-width:667px) {
+                        height: 113.9430284857571vw;
+                    }
+                    @media (max-width:460px) {
+                        height: auto;
+                    }
+                    div.item {
+                        @media (max-width:667px) {
+                            height: 100%;
+                        }
+                        @media (max-width:460px) {
+                            height: auto;
+                        }
+                        img {
+                            width: 100%;
+                            @media (max-width:667px) {
+                                width: 209.8950524737631vw;
+                                max-width: initial;
+                            }
+                        }
+                        div.carousel-caption {
+                            @media (max-width: 1320px) {
+                                right: 20px;
+                                width: 51%;
+                            }
+                            @media (max-width: 970px) {
+                                top: 50%;
+                                padding: 0;
+                                transform: translateY(-50%);
+                            }
+                            @media (max-width: 768px) {
+                                top: 10px;
+                                transform: none;
+                            }
+                            @media (max-width:667px) {
+                                top: auto;
+                                right: auto;
+                                bottom: 0;
+                                width: 100%;
+                                padding: 10px 20px 35px;
+                                background: rgba(black, .7);
+                            }
+                            @media (max-width:460px) {
+                                position: relative;
+                                bottom: auto;
+                                height: 62.5vw;
+                            }
+                            h4.hero-caption {
+                                @media (max-width: 1320px) {
+                                    font-size: 28px;
+                                }
+                                @media (max-width:667px) {
+                                    font-size: 21px;
+                                }
+                                @media (max-width:460px) {
+                                    font-size: 5.25vw;
+                                }
+                            }
+                            h4.hero-caption-bold {
+                                @media (max-width: 1320px) {
+                                    font-size: 36px;
+                                }
+                                @media (max-width:667px) {
+                                    font-size: 27px;
+                                }
+                                @media (max-width:460px) {
+                                    font-size: 6.75vw;
+                                }
+                            }
+                            p {
+                                @media (max-width: 1320px) {
+                                    font-size: 18px;
+                                }
+                                @media (max-width:667px) {
+                                    font-size: 14px;
+                                }
+                                @media (max-width:460px) {
+                                    font-size: 3.5vw;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            div.cta-container {
+                @media (max-width: 1320px) {
+                    top: 340px;
+                    right: 20px;
+                    width: 51%;
+                }
+                @media (max-width: 970px) {
+                    position: relative;
+                    top: auto;
+                    right: auto;
+                    width: 100%;
+                    border-radius: 0;
+                    background: transparent;
+                }
+                div.row {
+                    div.col-sm-12 {
+                        h3 {
+                            @media (max-width: 1320px) {
+                                font-size: 23px;
+                            }
+                            @media (max-width: 970px) {
+                                text-align: center;
+                            }
+                        }
+                    }
+                    form {
+                        overflow: auto;
+                        margin-bottom: 0;
+                        div.col-sm-8 {
+                            @media (max-width: 970px) {
+                                float: none;
+                                width: 100%;
+                                max-width: 400px;
+                                margin: 0 auto;
+                                margin-bottom: 10px;
+                                padding: 0;
+                            }
+                            select.form-control {
+                                @media (max-width: 1320px) {
+                                    font-size: 13px;
+                                    height: 43px;
+                                }
+                                @media (max-width: 970px) {
+                                    box-shadow: none;
+                                }
+                            }
+                        }
+                        div.col-sm-4 {
+                            padding-left: 0;
+                            @media (max-width: 970px) {
+                                float: none;
+                                width: 100%;
+                                max-width: 400px;
+                                margin: 0 auto;
+                                padding: 0;
+                            }
+                            input.btn {
+                                @media (max-width: 1320px) {
+                                    font-size: 19px;
+                                    height: 43px;
+                                }
+                                @media (max-width: 970px) {
+                                    box-shadow: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            div.scrollprompt {
+                @media (max-width: 1320px) {
+                    top: 500px;
+                    right: 20px;
+                    width: 51%;
+                }
+                @media (max-width: 970px) {
+                    position: relative;
+                    top: auto;
+                    right: auto;
+                    width: 100%;
+                    padding: 0 15px 30px;
+                    text-align: center;
+                }
+                div.row {
+                    div.col-sm-12 {
+                        @media (max-width: 1320px) {
+                            font-size: 14px;
+                        }
+                        @media (max-width: 970px) {
+                            text-shadow: none;
+                        }
+                        button.btn {
+                            cursor: default;
+                            color: white !important;
+                            outline: none;
+                            &:hover,
+                            &:active {
+                                background-color: rgba(0, 0, 0, .1);
+                                box-shadow: none;
+                            }
+                            @media (max-width: 1320px) {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
     section.main-section {
         min-height: calc(100vh - 217px);
         padding: 100px 0;

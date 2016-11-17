@@ -534,6 +534,9 @@ body {
                                     height: 80px;
                                     background-size: 200%;
                                 }
+                                &:active {
+                                    box-shadow: none;
+                                }
                                 span {
                                     @media (max-width: 768px) {
                                         font-size: 12px;

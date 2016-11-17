@@ -445,6 +445,8 @@ body {
               width: 80px;
               height: 80px;
               background-size: 200%; } }
+          body div.container-fluid div.quiz div#quiz-inner div.quiz-content.hide-item div.col-xs-8 div.btn:active {
+            box-shadow: none; }
           @media (max-width: 768px) {
             body div.container-fluid div.quiz div#quiz-inner div.quiz-content.hide-item div.col-xs-8 div.btn span {
               font-size: 12px;

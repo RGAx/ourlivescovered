@@ -1,3 +1,8 @@
+::-moz-selection {
+  color: inherit;
+  background: rgba(0, 0, 0, 0.1);
+  text-shadow: none; }
+
 ::selection {
   color: inherit;
   background: rgba(0, 0, 0, 0.1);
@@ -85,10 +90,16 @@ body {
         margin: 0;
         padding: 0; } }
     body header div.container div.row div.col-md-12 {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
       overflow: auto;
-      justify-content: space-between;
-      align-items: center; }
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
       @media (max-width: 768px) {
         body header div.container div.row div.col-md-12 {
           margin: 0;
@@ -115,14 +126,20 @@ body {
           margin-left: 2px;
           color: white; }
       body header div.container div.row div.col-md-12 ul#top_nav_menu {
+        display: -webkit-box !important;
+        display: -ms-flexbox !important;
         display: flex !important;
         float: right;
         width: auto !important;
         margin: 0;
         list-style-type: none;
         text-align: center !important;
-        align-items: center;
-        justify-content: flex-end; }
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end; }
         @media (max-width: 1200px) {
           body header div.container div.row div.col-md-12 ul#top_nav_menu {
             position: fixed;
@@ -131,18 +148,28 @@ body {
             right: 0;
             bottom: 0;
             left: 0;
-            flex-direction: column;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
             width: 100%;
             height: 100vh;
             padding: 25px;
+            -webkit-transition: all .5s ease;
             transition: all .5s ease;
-            transform: translateY(-100vh);
+            -webkit-transform: translateY(-100vh);
+                    transform: translateY(-100vh);
             pointer-events: none;
             background: rgba(244, 152, 194, 0.97);
-            align-items: center;
-            justify-content: center; }
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center; }
             body header div.container div.row div.col-md-12 ul#top_nav_menu.open {
-              transform: translateY(0%);
+              -webkit-transform: translateY(0%);
+                      transform: translateY(0%);
               pointer-events: auto;
               opacity: 1; } }
         @media (max-width: 1200px) {
@@ -154,6 +181,7 @@ body {
           display: block;
           margin: 0 20px;
           padding: 0 2px;
+          -webkit-transition: all .3s ease;
           transition: all .3s ease;
           letter-spacing: .02px;
           text-transform: uppercase;
@@ -191,12 +219,15 @@ body {
         top: 17px;
         right: 0;
         padding: 15px;
+        -webkit-transition: all .5s ease;
         transition: all .5s ease;
-        transform: translateY(-100vh);
+        -webkit-transform: translateY(-100vh);
+                transform: translateY(-100vh);
         pointer-events: none;
         color: white; }
         body header div.container div.row div.col-md-12 a#close_menu.open {
-          transform: translateY(0%);
+          -webkit-transform: translateY(0%);
+                  transform: translateY(0%);
           pointer-events: auto;
           opacity: 1; }
         body header div.container div.row div.col-md-12 a#close_menu:hover {
@@ -234,11 +265,13 @@ body {
       body div.container-fluid div#hero div.carousel div.carousel-inner div.item div.carousel-caption {
         top: 50%;
         padding: 0;
-        transform: translateY(-50%); } }
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%); } }
     @media (max-width: 768px) {
       body div.container-fluid div#hero div.carousel div.carousel-inner div.item div.carousel-caption {
         top: 10px;
-        transform: none; } }
+        -webkit-transform: none;
+                transform: none; } }
     @media (max-width: 667px) {
       body div.container-fluid div#hero div.carousel div.carousel-inner div.item div.carousel-caption {
         top: auto;
@@ -363,32 +396,79 @@ body {
       @media (max-width: 1320px) {
         body div.container-fluid div#hero div.scrollprompt div.row div.col-sm-12 button.btn {
           font-size: 14px; } }
-  body div.container-fluid div.quiz div#quiz-inner div.quiz-content {
-    margin: 0; }
-    body div.container-fluid div.quiz div#quiz-inner div.quiz-content div.col-xs-8 {
-      width: 100%;
-      margin: 0 auto;
-      padding: 0; }
-      body div.container-fluid div.quiz div#quiz-inner div.quiz-content div.col-xs-8 div.quiz-btn-row {
-        margin: 0; }
-        body div.container-fluid div.quiz div#quiz-inner div.quiz-content div.col-xs-8 div.quiz-btn-row div.col-xs-4 {
-          width: calc(100% / 3);
-          padding: 0; }
-          @media (max-width: 600px) {
+  body div.container-fluid div.quiz {
+    min-height: 500px; }
+    body div.container-fluid div.quiz div#quiz-inner div.quiz-content {
+      margin: 0; }
+      body div.container-fluid div.quiz div#quiz-inner div.quiz-content div.col-xs-8 {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0; }
+        body div.container-fluid div.quiz div#quiz-inner div.quiz-content div.col-xs-8 div.quiz-btn-row {
+          margin: 0; }
+          body div.container-fluid div.quiz div#quiz-inner div.quiz-content div.col-xs-8 div.quiz-btn-row div.col-xs-4 {
+            width: calc(100% / 3);
+            padding: 0; }
             body div.container-fluid div.quiz div#quiz-inner div.quiz-content div.col-xs-8 div.quiz-btn-row div.col-xs-4 button {
-              width: 100px;
-              height: 100px; } }
-          @media (max-width: 400px) {
-            body div.container-fluid div.quiz div#quiz-inner div.quiz-content div.col-xs-8 div.quiz-btn-row div.col-xs-4 button {
+              outline: none; }
+              @media (max-width: 600px) {
+                body div.container-fluid div.quiz div#quiz-inner div.quiz-content div.col-xs-8 div.quiz-btn-row div.col-xs-4 button {
+                  width: 100px;
+                  height: 100px; } }
+              @media (max-width: 400px) {
+                body div.container-fluid div.quiz div#quiz-inner div.quiz-content div.col-xs-8 div.quiz-btn-row div.col-xs-4 button {
+                  width: 80px;
+                  height: 80px; } }
+              @media (max-width: 460px) {
+                body div.container-fluid div.quiz div#quiz-inner div.quiz-content div.col-xs-8 div.quiz-btn-row div.col-xs-4 button span {
+                  font-size: 12px;
+                  bottom: -27px;
+                  left: 50%;
+                  width: 120%;
+                  -webkit-transform: translateX(-50%);
+                          transform: translateX(-50%); } }
+      body div.container-fluid div.quiz div#quiz-inner div.quiz-content.hide-item div.col-xs-8 {
+        float: none;
+        width: calc(100% - 200px);
+        margin: 0 auto;
+        padding: 0 20px; }
+        @media (max-width: 768px) {
+          body div.container-fluid div.quiz div#quiz-inner div.quiz-content.hide-item div.col-xs-8 {
+            width: calc(100% - 160px); } }
+        body div.container-fluid div.quiz div#quiz-inner div.quiz-content.hide-item div.col-xs-8 div.btn {
+          top: calc(50% - 10px);
+          -webkit-transform: translateY(-50%);
+                  transform: translateY(-50%); }
+          @media (max-width: 768px) {
+            body div.container-fluid div.quiz div#quiz-inner div.quiz-content.hide-item div.col-xs-8 div.btn {
+              top: calc(50% - 7px);
               width: 80px;
-              height: 80px; } }
-          @media (max-width: 460px) {
-            body div.container-fluid div.quiz div#quiz-inner div.quiz-content div.col-xs-8 div.quiz-btn-row div.col-xs-4 button span {
+              height: 80px;
+              background-size: 200%; } }
+          @media (max-width: 768px) {
+            body div.container-fluid div.quiz div#quiz-inner div.quiz-content.hide-item div.col-xs-8 div.btn span {
               font-size: 12px;
-              bottom: -27px;
+              top: 75px;
               left: 50%;
               width: 120%;
-              transform: translateX(-50%); } }
+              -webkit-transform: translateX(-50%);
+                      transform: translateX(-50%); } }
+          body div.container-fluid div.quiz div#quiz-inner div.quiz-content.hide-item div.col-xs-8 div.btn.goback {
+            left: -100px; }
+            @media (max-width: 768px) {
+              body div.container-fluid div.quiz div#quiz-inner div.quiz-content.hide-item div.col-xs-8 div.btn.goback {
+                left: -80px; } }
+            @media (max-width: 768px) {
+              body div.container-fluid div.quiz div#quiz-inner div.quiz-content.hide-item div.col-xs-8 div.btn.goback:hover {
+                background-position: left -160px; } }
+          body div.container-fluid div.quiz div#quiz-inner div.quiz-content.hide-item div.col-xs-8 div.btn.goforward {
+            right: -100px; }
+            @media (max-width: 768px) {
+              body div.container-fluid div.quiz div#quiz-inner div.quiz-content.hide-item div.col-xs-8 div.btn.goforward {
+                right: -80px; } }
+            @media (max-width: 768px) {
+              body div.container-fluid div.quiz div#quiz-inner div.quiz-content.hide-item div.col-xs-8 div.btn.goforward:hover {
+                background-position: right -160px; } }
   body section.main-section {
     min-height: calc(100vh - 217px);
     padding: 100px 0; }
@@ -464,16 +544,22 @@ body {
         body div.background-wrap#calculator section.quote-tabs div.container div.row, body div.background-wrap#quote_form section.quote-tabs div.container div.row {
           margin: 0; }
           body div.background-wrap#calculator section.quote-tabs div.container div.row div.col-md-12, body div.background-wrap#quote_form section.quote-tabs div.container div.row div.col-md-12 {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
             float: none;
             padding: 0;
-            flex-wrap: wrap;
-            justify-content: space-between; }
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between; }
             body div.background-wrap#calculator section.quote-tabs div.container div.row div.col-md-12 a.tab, body div.background-wrap#quote_form section.quote-tabs div.container div.row div.col-md-12 a.tab {
               font-size: 20px;
               line-height: 1;
               width: calc(50% - 1.25px);
               padding: 11px;
+              -webkit-transition: all .3s ease;
               transition: all .3s ease;
               text-align: center;
               letter-spacing: .3px;
@@ -513,12 +599,18 @@ body {
               body div.background-wrap#calculator section.quote div.container div.row div.col-md-12 form div.inline-text,
               body div.background-wrap#calculator section.quote div.container div.row div.col-md-12 form div.inline-select, body div.background-wrap#quote_form section.quote div.container div.row div.col-md-12 form div.inline-text,
               body div.background-wrap#quote_form section.quote div.container div.row div.col-md-12 form div.inline-select {
+                display: -webkit-box;
+                display: -ms-flexbox;
                 display: flex;
                 margin: 0;
                 padding: 10px 0 10px 12px;
                 border-bottom: 2px dotted #f7f7f7;
-                justify-content: space-between;
-                align-items: center; }
+                -webkit-box-pack: justify;
+                    -ms-flex-pack: justify;
+                        justify-content: space-between;
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                        align-items: center; }
                 @media (max-width: 768px) {
                   body div.background-wrap#calculator section.quote div.container div.row div.col-md-12 form div.inline-text,
                   body div.background-wrap#calculator section.quote div.container div.row div.col-md-12 form div.inline-select, body div.background-wrap#quote_form section.quote div.container div.row div.col-md-12 form div.inline-text,
@@ -529,7 +621,8 @@ body {
                 body div.background-wrap#quote_form section.quote div.container div.row div.col-md-12 form div.inline-select.required:before {
                   top: calc(50% - 1px);
                   left: 0;
-                  transform: translateY(-50%); }
+                  -webkit-transform: translateY(-50%);
+                          transform: translateY(-50%); }
                 body div.background-wrap#calculator section.quote div.container div.row div.col-md-12 form div.inline-text input[type='text'],
                 body div.background-wrap#calculator section.quote div.container div.row div.col-md-12 form div.inline-select input[type='text'], body div.background-wrap#quote_form section.quote div.container div.row div.col-md-12 form div.inline-text input[type='text'],
                 body div.background-wrap#quote_form section.quote div.container div.row div.col-md-12 form div.inline-select input[type='text'] {
@@ -546,8 +639,12 @@ body {
                   border-radius: 5px;
                   outline: none;
                   background: #f7f7f7;
-                  order: 2;
-                  appearance: none; }
+                  -webkit-box-ordinal-group: 3;
+                      -ms-flex-order: 2;
+                          order: 2;
+                  -webkit-appearance: none;
+                     -moz-appearance: none;
+                          appearance: none; }
                   @media (max-width: 768px) {
                     body div.background-wrap#calculator section.quote div.container div.row div.col-md-12 form div.inline-text input[type='text'],
                     body div.background-wrap#calculator section.quote div.container div.row div.col-md-12 form div.inline-select input[type='text'], body div.background-wrap#quote_form section.quote div.container div.row div.col-md-12 form div.inline-text input[type='text'],
@@ -560,7 +657,9 @@ body {
                 body div.background-wrap#calculator section.quote div.container div.row div.col-md-12 form div.inline-select span.select-wrapper, body div.background-wrap#quote_form section.quote div.container div.row div.col-md-12 form div.inline-text span.select-wrapper,
                 body div.background-wrap#quote_form section.quote div.container div.row div.col-md-12 form div.inline-select span.select-wrapper {
                   float: right;
-                  order: 2; }
+                  -webkit-box-ordinal-group: 3;
+                      -ms-flex-order: 2;
+                          order: 2; }
                   @media (max-width: 768px) {
                     body div.background-wrap#calculator section.quote div.container div.row div.col-md-12 form div.inline-text span.select-wrapper:after,
                     body div.background-wrap#calculator section.quote div.container div.row div.col-md-12 form div.inline-select span.select-wrapper:after, body div.background-wrap#quote_form section.quote div.container div.row div.col-md-12 form div.inline-text span.select-wrapper:after,
@@ -581,7 +680,9 @@ body {
                     border-radius: 5px;
                     outline: none;
                     background: transparent;
-                    appearance: none; }
+                    -webkit-appearance: none;
+                       -moz-appearance: none;
+                            appearance: none; }
                     @media (max-width: 768px) {
                       body div.background-wrap#calculator section.quote div.container div.row div.col-md-12 form div.inline-text span.select-wrapper select,
                       body div.background-wrap#calculator section.quote div.container div.row div.col-md-12 form div.inline-select span.select-wrapper select, body div.background-wrap#quote_form section.quote div.container div.row div.col-md-12 form div.inline-text span.select-wrapper select,
@@ -601,7 +702,9 @@ body {
                   margin: 0 auto 0 0;
                   text-align: left;
                   letter-spacing: .2px;
-                  order: 1; }
+                  -webkit-box-ordinal-group: 2;
+                      -ms-flex-order: 1;
+                          order: 1; }
                   @media (max-width: 768px) {
                     body div.background-wrap#calculator section.quote div.container div.row div.col-md-12 form div.inline-text label,
                     body div.background-wrap#calculator section.quote div.container div.row div.col-md-12 form div.inline-select label, body div.background-wrap#quote_form section.quote div.container div.row div.col-md-12 form div.inline-text label,
@@ -610,6 +713,8 @@ body {
                       letter-spacing: .15px; } }
               body div.background-wrap#calculator section.quote div.container div.row div.col-md-12 form div.incrementer, body div.background-wrap#quote_form section.quote div.container div.row div.col-md-12 form div.incrementer {
                 position: relative;
+                display: -webkit-box;
+                display: -ms-flexbox;
                 display: flex;
                 width: 100%;
                 margin: 0;
@@ -617,8 +722,12 @@ body {
                 text-align: left;
                 border-bottom: 2px dotted rgba(255, 255, 255, 0.35);
                 border-bottom: 2px dotted #f7f7f7;
-                justify-content: space-between;
-                align-items: center; }
+                -webkit-box-pack: justify;
+                    -ms-flex-pack: justify;
+                        justify-content: space-between;
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                        align-items: center; }
                 @media (max-width: 768px) {
                   body div.background-wrap#calculator section.quote div.container div.row div.col-md-12 form div.incrementer, body div.background-wrap#quote_form section.quote div.container div.row div.col-md-12 form div.incrementer {
                     padding: 9px 0 9px 9px; } }
@@ -653,6 +762,7 @@ body {
                     line-height: 26px;
                     width: 26px;
                     padding: 0 9px;
+                    -webkit-transition: all .3s ease;
                     transition: all .3s ease;
                     text-align: center;
                     vertical-align: baseline;
@@ -683,12 +793,18 @@ body {
                         width: 32px;
                         height: 25px; } }
               body div.background-wrap#calculator section.quote div.container div.row div.col-md-12 form div#children div.child, body div.background-wrap#quote_form section.quote div.container div.row div.col-md-12 form div#children div.child {
+                display: -webkit-box;
+                display: -ms-flexbox;
                 display: flex;
                 margin: 0;
                 padding: 10px 0 10px 12px;
                 border-bottom: 2px dotted #f7f7f7;
-                justify-content: space-between;
-                align-items: center; }
+                -webkit-box-pack: justify;
+                    -ms-flex-pack: justify;
+                        justify-content: space-between;
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                        align-items: center; }
                 @media (max-width: 768px) {
                   body div.background-wrap#calculator section.quote div.container div.row div.col-md-12 form div#children div.child, body div.background-wrap#quote_form section.quote div.container div.row div.col-md-12 form div#children div.child {
                     padding: 9px 0 9px 9px; } }
@@ -713,7 +829,9 @@ body {
                   position: relative;
                   display: inline-block;
                   float: right;
-                  order: 2; }
+                  -webkit-box-ordinal-group: 3;
+                      -ms-flex-order: 2;
+                          order: 2; }
                   @media (max-width: 768px) {
                     body div.background-wrap#calculator section.quote div.container div.row div.col-md-12 form div#children div.child div.select-wrapper:after, body div.background-wrap#quote_form section.quote div.container div.row div.col-md-12 form div#children div.child div.select-wrapper:after {
                       font-size: 11px;
@@ -731,7 +849,9 @@ body {
                     border-radius: 5px;
                     outline: none;
                     background: transparent;
-                    appearance: none; }
+                    -webkit-appearance: none;
+                       -moz-appearance: none;
+                            appearance: none; }
                     @media (max-width: 768px) {
                       body div.background-wrap#calculator section.quote div.container div.row div.col-md-12 form div#children div.child div.select-wrapper select, body div.background-wrap#quote_form section.quote div.container div.row div.col-md-12 form div#children div.child div.select-wrapper select {
                         font-size: 11px;
@@ -771,6 +891,7 @@ body {
                 margin-top: 28px;
                 margin-bottom: 28px;
                 padding: 11px;
+                -webkit-transition: all .3s ease;
                 transition: all .3s ease;
                 letter-spacing: .3px;
                 text-transform: uppercase;
@@ -778,7 +899,9 @@ body {
                 border-radius: 5px;
                 outline: none;
                 background: #71c97a;
-                appearance: none; }
+                -webkit-appearance: none;
+                   -moz-appearance: none;
+                        appearance: none; }
                 body div.background-wrap#calculator section.quote div.container div.row div.col-md-12 form div.text-center input[type='button']:hover, body div.background-wrap#quote_form section.quote div.container div.row div.col-md-12 form div.text-center input[type='button']:hover {
                   background: #5bb262; }
                 @media (max-width: 830px) {
@@ -920,6 +1043,7 @@ body {
         margin-top: 28px;
         margin-bottom: 28px;
         padding: 11px;
+        -webkit-transition: all .3s ease;
         transition: all .3s ease;
         letter-spacing: .3px;
         text-transform: uppercase;
@@ -928,7 +1052,9 @@ body {
         border-radius: 5px;
         outline: none;
         background: #71c97a;
-        appearance: none; }
+        -webkit-appearance: none;
+           -moz-appearance: none;
+                appearance: none; }
         body div.background-wrap#quote_singlecarrier section#quote-page div.container div.row div.quote div.box form div.text-center a.btn:hover {
           background: #5bb262; }
       body div.background-wrap#quote_singlecarrier section#quote-page div.container div.row div.quote div.box form div.text-center p.meta {
@@ -1012,6 +1138,7 @@ body {
                 display: block; } }
             body footer div.container div.row div.col-md-6 ul li a {
               font-size: 14px;
+              -webkit-transition: all .3s ease;
               transition: all .3s ease;
               color: white;
               border-top: 1px solid transparent;

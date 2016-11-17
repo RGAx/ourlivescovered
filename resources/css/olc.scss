@@ -480,6 +480,7 @@ body {
             }
         }
         div.quiz {
+            min-height: 500px;
             div#quiz-inner {
                 div.quiz-content {
                     margin: 0;
@@ -493,6 +494,7 @@ body {
                                 width: calc(100% / 3);
                                 padding: 0;
                                 button {
+                                    outline: none;
                                     @media (max-width: 600px) {
                                         width: 100px;
                                         height: 100px;
@@ -508,6 +510,58 @@ body {
                                             left: 50%;
                                             width: 120%;
                                             transform: translateX(-50%);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &.hide-item {
+                        div.col-xs-8 {
+                            float: none;
+                            width: calc(100% - 200px);
+                            margin: 0 auto;
+                            padding: 0 20px;
+                            @media (max-width: 768px) {
+                                width: calc(100% - 160px);
+                            }
+                            div.btn {
+                                top: calc(50% - 10px);
+                                transform: translateY(-50%);
+                                @media (max-width: 768px) {
+                                    top: calc(50% - 7px);
+                                    width: 80px;
+                                    height: 80px;
+                                    background-size: 200%;
+                                }
+                                span {
+                                    @media (max-width: 768px) {
+                                        font-size: 12px;
+                                        top: 75px;
+                                        left: 50%;
+                                        width: 120%;
+                                        transform: translateX(-50%);
+                                    }
+                                }
+                                &.goback {
+                                    left: -100px;
+                                    @media (max-width: 768px) {
+                                        left: -80px;
+                                    }
+                                    &:hover {
+                                        @media (max-width: 768px) {
+                                            background-position: left -160px;
+                                        }
+                                    }
+                                }
+                                &.goforward {
+                                    right: -100px;
+                                    @media (max-width: 768px) {
+                                        right: -80px;
+                                    }
+                                    &:hover {
+                                        @media (max-width: 768px) {
+                                            background-position: right -160px;
                                         }
                                     }
                                 }

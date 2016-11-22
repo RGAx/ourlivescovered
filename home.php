@@ -3,10 +3,10 @@
 <div class="container-fluid">
     <div id="hero">
         <div id="heroCarousel" class = " carousel slide">
-            <ol class = "carousel-indicators ">
+            <!-- <ol class = "carousel-indicators ">
                 <li data-target = "#heroCarousel" data-slide-to = "0" class="active"></li>
                 <li data-target = "#heroCarousel" data-slide-to = "1"></li>
-            </ol>
+            </ol> -->
             <div class="carousel-inner">
                 <div class="item active">
                     <img src = "resources/images/hero1.jpg">
@@ -18,7 +18,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="item">
+                <!-- <div class="item">
                     <img src = "resources/images/hero2.jpg">
                     <div class="carousel-caption">
                         <h4 class="hero-caption">First time parents? Twins? No worries. </h4>
@@ -27,7 +27,7 @@
                         Our Life Covered can get you covered with the life insurance your family needs in as little as 15 minutes.
                         </p>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
         <div class="cta-container">

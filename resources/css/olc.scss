@@ -329,7 +329,7 @@ body {
                                 right: auto;
                                 bottom: 0;
                                 width: 100%;
-                                padding: 10px 20px 35px;
+                                padding: 10px 15px 35px;
                                 background: rgba(black, .7);
                             }
                             @media (max-width:460px) {
@@ -643,6 +643,129 @@ body {
                         @media (max-width: 460px) {
                             font-size: 13px;
                             margin-top: 5px;
+                        }
+                    }
+                }
+            }
+        }
+        div.value-statement {
+            div.row {
+                margin: 0;
+                div.col-md-12 {
+                    padding: 0;
+                    h1 {
+                        @media (max-width: 768px) {
+                            font-size: 30px;
+                        }
+                    }
+                    h2 {
+                        @media (max-width: 768px) {
+                            font-size: 20px;
+                        }
+                    }
+                }
+                &.product-features {
+                    margin-bottom: 20px;
+                    div.col-xs-4 {
+                        @media (max-width: 505px) {
+                            float: none;
+                            width: 100%;
+                            max-width: 135px;
+                            margin: 0 auto 50px;
+                            padding: 0;
+                        }
+                        img {
+                            @media (max-width: 768px) {
+                                height: 49px;
+                            }
+                        }
+                        span {
+                            font-size: 16px;
+                            @media (max-width: 768px) {
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        div#footer-carousel {
+            div#footerCarousel {
+                ol.carousel-indicators {
+                    bottom: 0;
+                }
+                div.carousel-inner {
+                    @media (max-width:800px) {
+                        // height: 113.9430284857571vw;
+                    }
+                    @media (max-width:600px) {
+                        height: auto;
+                    }
+                    div.item {
+                        @media (max-width:800px) {
+                            height: auto;
+                        }
+                        // @media (max-width:460px) {
+                        //     height: auto;
+                        // }
+                        img {
+                            width: 100%;
+                            @media (max-width:800px) {
+                                width: 250vw;
+                                max-width: none;
+                            }
+                        }
+                        div.carousel-caption {
+                            top: 50%;
+                            right: 20px;
+                            bottom: auto;
+                            left: auto;
+                            width: 40%;
+                            padding: 0;
+                            transform: translateY(-50%);
+                            // @media (max-width: 768px) {
+                            //     top: 10px;
+                            //     transform: none;
+                            // }
+                            @media (max-width:800px) {
+                                top: auto;
+                                right: auto;
+                                bottom: 0;
+                                width: 100%;
+                                padding: 10px 15px 35px;
+                                transform: none;
+                                background: rgba(black, .7);
+                            }
+                            @media (max-width:600px) {
+                                position: relative;
+                                bottom: auto;
+                                height: 52vw;
+                            }
+                            h4.hero-caption {
+                                @media (max-width: 1320px) {
+                                    font-size: 23px;
+                                }
+                                @media (max-width:600px) {
+                                    font-size: 5vw;
+                                }
+                            }
+                            p {
+                                @media (max-width: 1320px) {
+                                    font-size: 14px;
+                                }
+                                @media (max-width:800px) {
+                                    color: white;
+                                }
+                                @media (max-width:600px) {
+                                    font-size: 3.25vw;
+                                }
+                            }
+                            a.btn {
+                                @media (max-width:600px) {
+                                    font-size: 11px;
+                                    font-weight: bold;
+                                }
+                            }
                         }
                     }
                 }

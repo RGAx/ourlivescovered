@@ -200,16 +200,17 @@
             </div>
         </div>
         <div class="row product-features">
-        	<div class="col-xs-3">
-                <img src="resources/images/calculator-icon.png" class="center-block"  alt=""/>Calculate your coverage amount
+        	<div class="col-xs-4">
+                <img src="resources/images/calculator-icon.png" class="center-block"  alt=""/>
+                <span>Calculate your coverage amount</span>
             </div>
-            <div class="col-xs-1"></div>
-            <div class="col-xs-3">
-                <img src="resources/images/list-icon.png" class="center-block"  alt=""/>See quotes from multiple providers
+            <div class="col-xs-4">
+                <img src="resources/images/list-icon.png" class="center-block"  alt=""/>
+                <span>See quotes from multiple providers</span>
             </div>
-            <div class="col-xs-1"></div>
-            <div class="col-xs-3">
-                <img src="resources/images/quote-icon.png" class="center-block"  alt=""/>Apply and get coverage right away*
+            <div class="col-xs-4">
+                <img src="resources/images/quote-icon.png" class="center-block"  alt=""/>
+                <span>Apply and get coverage right away*</span>
             </div>
         </div>
     </div>

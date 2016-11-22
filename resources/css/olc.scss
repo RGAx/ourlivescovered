@@ -305,10 +305,12 @@ body {
                             width: 100%;
                             @media (max-width:667px) {
                                 width: 209.8950524737631vw;
-                                max-width: initial;
+                                max-width: none;
                             }
                         }
                         div.carousel-caption {
+                            bottom: auto;
+                            left: auto;
                             @media (max-width: 1320px) {
                                 right: 20px;
                                 width: 51%;

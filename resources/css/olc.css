@@ -258,62 +258,65 @@ body {
       @media (max-width: 667px) {
         body div.container-fluid div#hero div.carousel div.carousel-inner div.item img {
           width: 209.8950524737631vw;
-          max-width: initial; } }
-    @media (max-width: 1320px) {
-      body div.container-fluid div#hero div.carousel div.carousel-inner div.item div.carousel-caption {
-        right: 20px;
-        width: 51%; } }
-    @media (max-width: 970px) {
-      body div.container-fluid div#hero div.carousel div.carousel-inner div.item div.carousel-caption {
-        top: 50%;
-        padding: 0;
-        -webkit-transform: translateY(-50%);
-                transform: translateY(-50%); } }
-    @media (max-width: 768px) {
-      body div.container-fluid div#hero div.carousel div.carousel-inner div.item div.carousel-caption {
-        top: 10px;
-        -webkit-transform: none;
-                transform: none; } }
-    @media (max-width: 667px) {
-      body div.container-fluid div#hero div.carousel div.carousel-inner div.item div.carousel-caption {
-        top: auto;
-        right: auto;
-        bottom: 0;
-        width: 100%;
-        padding: 10px 20px 35px;
-        background: rgba(0, 0, 0, 0.7); } }
-    @media (max-width: 460px) {
-      body div.container-fluid div#hero div.carousel div.carousel-inner div.item div.carousel-caption {
-        position: relative;
-        bottom: auto;
-        height: 62.5vw; } }
-    @media (max-width: 1320px) {
-      body div.container-fluid div#hero div.carousel div.carousel-inner div.item div.carousel-caption h4.hero-caption {
-        font-size: 28px; } }
-    @media (max-width: 667px) {
-      body div.container-fluid div#hero div.carousel div.carousel-inner div.item div.carousel-caption h4.hero-caption {
-        font-size: 21px; } }
-    @media (max-width: 460px) {
-      body div.container-fluid div#hero div.carousel div.carousel-inner div.item div.carousel-caption h4.hero-caption {
-        font-size: 5.25vw; } }
-    @media (max-width: 1320px) {
-      body div.container-fluid div#hero div.carousel div.carousel-inner div.item div.carousel-caption h4.hero-caption-bold {
-        font-size: 36px; } }
-    @media (max-width: 667px) {
-      body div.container-fluid div#hero div.carousel div.carousel-inner div.item div.carousel-caption h4.hero-caption-bold {
-        font-size: 27px; } }
-    @media (max-width: 460px) {
-      body div.container-fluid div#hero div.carousel div.carousel-inner div.item div.carousel-caption h4.hero-caption-bold {
-        font-size: 6.75vw; } }
-    @media (max-width: 1320px) {
-      body div.container-fluid div#hero div.carousel div.carousel-inner div.item div.carousel-caption p {
-        font-size: 18px; } }
-    @media (max-width: 667px) {
-      body div.container-fluid div#hero div.carousel div.carousel-inner div.item div.carousel-caption p {
-        font-size: 14px; } }
-    @media (max-width: 460px) {
-      body div.container-fluid div#hero div.carousel div.carousel-inner div.item div.carousel-caption p {
-        font-size: 3.5vw; } }
+          max-width: none; } }
+    body div.container-fluid div#hero div.carousel div.carousel-inner div.item div.carousel-caption {
+      bottom: auto;
+      left: auto; }
+      @media (max-width: 1320px) {
+        body div.container-fluid div#hero div.carousel div.carousel-inner div.item div.carousel-caption {
+          right: 20px;
+          width: 51%; } }
+      @media (max-width: 970px) {
+        body div.container-fluid div#hero div.carousel div.carousel-inner div.item div.carousel-caption {
+          top: 50%;
+          padding: 0;
+          -webkit-transform: translateY(-50%);
+                  transform: translateY(-50%); } }
+      @media (max-width: 768px) {
+        body div.container-fluid div#hero div.carousel div.carousel-inner div.item div.carousel-caption {
+          top: 10px;
+          -webkit-transform: none;
+                  transform: none; } }
+      @media (max-width: 667px) {
+        body div.container-fluid div#hero div.carousel div.carousel-inner div.item div.carousel-caption {
+          top: auto;
+          right: auto;
+          bottom: 0;
+          width: 100%;
+          padding: 10px 20px 35px;
+          background: rgba(0, 0, 0, 0.7); } }
+      @media (max-width: 460px) {
+        body div.container-fluid div#hero div.carousel div.carousel-inner div.item div.carousel-caption {
+          position: relative;
+          bottom: auto;
+          height: 62.5vw; } }
+      @media (max-width: 1320px) {
+        body div.container-fluid div#hero div.carousel div.carousel-inner div.item div.carousel-caption h4.hero-caption {
+          font-size: 28px; } }
+      @media (max-width: 667px) {
+        body div.container-fluid div#hero div.carousel div.carousel-inner div.item div.carousel-caption h4.hero-caption {
+          font-size: 21px; } }
+      @media (max-width: 460px) {
+        body div.container-fluid div#hero div.carousel div.carousel-inner div.item div.carousel-caption h4.hero-caption {
+          font-size: 5.25vw; } }
+      @media (max-width: 1320px) {
+        body div.container-fluid div#hero div.carousel div.carousel-inner div.item div.carousel-caption h4.hero-caption-bold {
+          font-size: 36px; } }
+      @media (max-width: 667px) {
+        body div.container-fluid div#hero div.carousel div.carousel-inner div.item div.carousel-caption h4.hero-caption-bold {
+          font-size: 27px; } }
+      @media (max-width: 460px) {
+        body div.container-fluid div#hero div.carousel div.carousel-inner div.item div.carousel-caption h4.hero-caption-bold {
+          font-size: 6.75vw; } }
+      @media (max-width: 1320px) {
+        body div.container-fluid div#hero div.carousel div.carousel-inner div.item div.carousel-caption p {
+          font-size: 18px; } }
+      @media (max-width: 667px) {
+        body div.container-fluid div#hero div.carousel div.carousel-inner div.item div.carousel-caption p {
+          font-size: 14px; } }
+      @media (max-width: 460px) {
+        body div.container-fluid div#hero div.carousel div.carousel-inner div.item div.carousel-caption p {
+          font-size: 3.5vw; } }
     @media (max-width: 1320px) {
       body div.container-fluid div#hero div.cta-container {
         top: 340px;

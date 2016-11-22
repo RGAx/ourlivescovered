@@ -70,7 +70,17 @@
             <div id ="quiz quiz-header" class="col-md-12">
                 <div class="row">
                     <div class="col-md-12">
+                        <h1 class="text-center"><span>Do I Need Insurance?</span></h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
                         <h2 class="text-center">Take the quiz.</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="text-center">These three questions can help you decide.</h3>
                     </div>
                 </div>
             </div>

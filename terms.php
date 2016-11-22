@@ -6,7 +6,7 @@
             <div class="row">
                 <div class="col-md-8 col-md-offset-2  margin-bottom-m">
                     <h2 class="text-center margin-bottom-m">TWO RIVERS AGENCY WEBSITE TERMS OF USE</h2>
-                    <p>OURLIFECOVERED<sup>SM</sup> is a digital Life Insurance sales site of the Two Rivers Agency. Two Rivers operates as Rivers Run Insurance Agency in California and New York.</p>
+                    <p>OURLIFECOVERED<sup>SM</sup> is a digital Life Insurance sales site of the Two Rivers Agency. Two Rivers operates as Rivers Run Insurance Agency in California.</p>
                     <p>These Two Rivers Agency Terms of Use outline the terms and conditions relating to your use of Two Rivers Agency and provide additional information about Two Rivers Agency. These Terms of Use are applicable to your use of this site regardless of how you accessed it. If you do not wish to be bound by these Terms of Use, please discontinue using and accessing this site immediately.</p>
                     <h3>Your Use of This Site</h3>
                     <p>You may not use this site to engage in any illegal activity. You may not use this site to engage in conduct which is defamatory, libelous, threatening or harassing or that infringes on a third party intellectual property or other proprietary rights. In the event you engage in activity that is illegal, defamatory, libelous, threatening, or harassing, Two Rivers Agency reserves the right to disclose any information you provide through the use of this site or other Two Rivers Agency owned electronic sites or applications to law enforcement authorities as deemed appropriate in the sole discretion of Two Rivers Agency. You agree that any information you provide through this site will be truthful and accurate.</p>
@@ -33,7 +33,7 @@
                     <h3>Applicable Law/Severability</h3>
                     <p>These Terms of Use shall be governed by and interpreted according to the laws of the State of Missouri without respect to any conflict of laws provisions. If any portion of these Terms of Use is unlawful, void or unenforceable, it shall not affect the validity or enforceability of any other provision.</p>
                     <h3>Additional Information About Two Rivers Agency</h3>
-                    <p>Two Rivers Agency is organized under the laws of the State of Missouri and licensed in all 50 states and the District of Columbia. Two Rivers operates as Rivers Run Insurance Agency in California and New York. Both companies are wholly-owned subsidiaries of RGAx. The companies are principally engaged in writing life insurance.   </p>
+                    <p>Two Rivers Agency is organized under the laws of the State of Missouri and licensed in all 50 states and the District of Columbia. Two Rivers operates as Rivers Run Insurance Agency in California. Both companies are wholly-owned subsidiaries of RGAx. The companies are principally engaged in writing life insurance.   </p>
                     <h3>Language Notice</h3>
                     <p>Two Rivers Agency insurance policies, agreements, applications, forms and required notices are written in English. This document has been translated for your convenience. In the event of any difference in interpretation, the English language version controls.</p>
                     <p>Please Contact Us for additional information</p>

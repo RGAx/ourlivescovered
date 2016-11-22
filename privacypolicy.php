@@ -6,7 +6,7 @@
 	                <div class="row">
 	                    <div class="col-md-8 col-md-offset-2  margin-bottom-m">
 	                        <h2 class="text-center margin-bottom-m">Two Rivers Online Privacy Policy</h2>
-	                        <p>OURLIFECOVERED<sup>SM</sup> is a digital Life Insurance sales site of the Two Rivers Agency. Two Rivers operates as Rivers Run Insurance Agency in California and New York.</p>
+	                        <p>OURLIFECOVERED<sup>SM</sup> is a digital Life Insurance sales site of the Two Rivers Agency. Two Rivers operates as Rivers Run Insurance Agency in California.</p>
 	                        <p>
 	                            This statement discloses the privacy practices for the Two Rivers Agency website, and includes:<br><br>
 	                            •   What information is gathered/tracked<br>
@@ -66,9 +66,9 @@
 	                        </p>
 	                        <h3>For More Information</h3>
 	                        <p>
-	                            The Two Rivers Agency website is maintained by Two Rivers Agency IT Support, located at 16600 Swingley Ridge Rd., Chesterfield, MO 63017. Visit the Contact Us section for additional information.<br>
-	                            Last revised: October, 2016
+	                            The Two Rivers Agency website is maintained by Two Rivers Agency IT Support, located at 16600 Swingley Ridge Rd., Chesterfield, MO 63017. Visit the Contact Us section for additional information.
 	                        </p>
+	                        <p>Last revised: November, 2016</p>
 	                    </div>
 	                </div>
 	            </div>

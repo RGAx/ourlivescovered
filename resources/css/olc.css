@@ -60,7 +60,7 @@ body {
   color: #515151;
   background: white;
   font-family: 'open-sans', 'Helvetica Neue', Helvetica, Helvetica, Arial, sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-style: normal;
   font-variant: normal; }
   body div#loading {
@@ -130,10 +130,11 @@ body {
         display: -ms-flexbox !important;
         display: flex !important;
         float: right;
-        width: auto !important;
+        width: calc(100% - 275px);
         margin: 0;
+        padding: 0;
         list-style-type: none;
-        text-align: center !important;
+        text-align: right;
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
@@ -159,6 +160,7 @@ body {
             transition: all .5s ease;
             -webkit-transform: translateY(-100vh);
                     transform: translateY(-100vh);
+            text-align: center;
             pointer-events: none;
             background: rgba(244, 152, 194, 0.97);
             -webkit-box-align: center;
@@ -398,6 +400,22 @@ body {
           font-size: 14px; } }
   body div.container-fluid div.quiz {
     min-height: 500px; }
+    body div.container-fluid div.quiz div.quiz-header div.col-md-12 {
+      padding: 0; }
+      body div.container-fluid div.quiz div.quiz-header div.col-md-12 div.row {
+        margin: 0; }
+        body div.container-fluid div.quiz div.quiz-header div.col-md-12 div.row div.col-md-12 h1 {
+          height: 54px; }
+          @media (max-width: 768px) {
+            body div.container-fluid div.quiz div.quiz-header div.col-md-12 div.row div.col-md-12 h1 {
+              width: 285px;
+              height: 41px; } }
+        @media (max-width: 768px) {
+          body div.container-fluid div.quiz div.quiz-header div.col-md-12 div.row div.col-md-12 h2 {
+            font-size: 41px; } }
+        @media (max-width: 768px) {
+          body div.container-fluid div.quiz div.quiz-header div.col-md-12 div.row div.col-md-12 h3 {
+            font-size: 19px; } }
     body div.container-fluid div.quiz div#quiz-inner div.quiz-content {
       margin: 0; }
       body div.container-fluid div.quiz div#quiz-inner div.quiz-content div.col-xs-8 {
@@ -435,6 +453,14 @@ body {
         @media (max-width: 768px) {
           body div.container-fluid div.quiz div#quiz-inner div.quiz-content.hide-item div.col-xs-8 {
             width: calc(100% - 160px); } }
+        @media (max-width: 768px) {
+          body div.container-fluid div.quiz div#quiz-inner div.quiz-content.hide-item div.col-xs-8 h4 {
+            font-size: 20px !important; } }
+        body div.container-fluid div.quiz div#quiz-inner div.quiz-content.hide-item div.col-xs-8 p {
+          font-size: 15px; }
+          @media (max-width: 768px) {
+            body div.container-fluid div.quiz div#quiz-inner div.quiz-content.hide-item div.col-xs-8 p {
+              font-size: 11px; } }
         body div.container-fluid div.quiz div#quiz-inner div.quiz-content.hide-item div.col-xs-8 div.btn {
           top: calc(50% - 10px);
           -webkit-transform: translateY(-50%);
@@ -471,6 +497,30 @@ body {
             @media (max-width: 768px) {
               body div.container-fluid div.quiz div#quiz-inner div.quiz-content.hide-item div.col-xs-8 div.btn.goforward:hover {
                 background-position: right -160px; } }
+  body div.container-fluid div.home-divider div.container {
+    width: 100%; }
+    body div.container-fluid div.home-divider div.container div.col-md-6 {
+      float: none;
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0;
+      text-align: center; }
+      @media (max-width: 768px) {
+        body div.container-fluid div.home-divider div.container div.col-md-6 h2 {
+          font-size: 23px; } }
+      @media (max-width: 460px) {
+        body div.container-fluid div.home-divider div.container div.col-md-6 h2 {
+          font-size: 17px;
+          margin-bottom: 5px; } }
+      @media (max-width: 768px) {
+        body div.container-fluid div.home-divider div.container div.col-md-6 h3 {
+          font-size: 18px;
+          margin-top: 15px; } }
+      @media (max-width: 460px) {
+        body div.container-fluid div.home-divider div.container div.col-md-6 h3 {
+          font-size: 13px;
+          margin-top: 5px; } }
   body section.main-section {
     min-height: calc(100vh - 217px);
     padding: 100px 0; }
@@ -632,7 +682,7 @@ body {
                   font-weight: normal;
                   line-height: 1;
                   float: right;
-                  width: 132px;
+                  width: 200px;
                   padding: 4px 12px;
                   text-align: right;
                   letter-spacing: .2px;
@@ -652,22 +702,35 @@ body {
                     body div.background-wrap#calculator section.quote div.container div.row div.col-md-12 form div.inline-select input[type='text'], body div.background-wrap#quote_form section.quote div.container div.row div.col-md-12 form div.inline-text input[type='text'],
                     body div.background-wrap#quote_form section.quote div.container div.row div.col-md-12 form div.inline-select input[type='text'] {
                       font-size: 14px;
-                      width: 100px;
+                      width: 150px;
                       padding: 3px 8px;
                       letter-spacing: .15px; } }
                 body div.background-wrap#calculator section.quote div.container div.row div.col-md-12 form div.inline-text span.select-wrapper,
                 body div.background-wrap#calculator section.quote div.container div.row div.col-md-12 form div.inline-select span.select-wrapper, body div.background-wrap#quote_form section.quote div.container div.row div.col-md-12 form div.inline-text span.select-wrapper,
                 body div.background-wrap#quote_form section.quote div.container div.row div.col-md-12 form div.inline-select span.select-wrapper {
+                  position: relative;
+                  display: inline-block;
                   float: right;
                   -webkit-box-ordinal-group: 3;
                       -ms-flex-order: 2;
                           order: 2; }
-                  @media (max-width: 768px) {
-                    body div.background-wrap#calculator section.quote div.container div.row div.col-md-12 form div.inline-text span.select-wrapper:after,
-                    body div.background-wrap#calculator section.quote div.container div.row div.col-md-12 form div.inline-select span.select-wrapper:after, body div.background-wrap#quote_form section.quote div.container div.row div.col-md-12 form div.inline-text span.select-wrapper:after,
-                    body div.background-wrap#quote_form section.quote div.container div.row div.col-md-12 form div.inline-select span.select-wrapper:after {
-                      font-size: 11px;
-                      top: 8px; } }
+                  body div.background-wrap#calculator section.quote div.container div.row div.col-md-12 form div.inline-text span.select-wrapper:after,
+                  body div.background-wrap#calculator section.quote div.container div.row div.col-md-12 form div.inline-select span.select-wrapper:after, body div.background-wrap#quote_form section.quote div.container div.row div.col-md-12 form div.inline-text span.select-wrapper:after,
+                  body div.background-wrap#quote_form section.quote div.container div.row div.col-md-12 form div.inline-select span.select-wrapper:after {
+                    font-family: FontAwesome;
+                    font-size: 10px;
+                    line-height: 1;
+                    position: absolute;
+                    top: 11px;
+                    right: 9px;
+                    content: '\f078';
+                    pointer-events: none; }
+                    @media (max-width: 768px) {
+                      body div.background-wrap#calculator section.quote div.container div.row div.col-md-12 form div.inline-text span.select-wrapper:after,
+                      body div.background-wrap#calculator section.quote div.container div.row div.col-md-12 form div.inline-select span.select-wrapper:after, body div.background-wrap#quote_form section.quote div.container div.row div.col-md-12 form div.inline-text span.select-wrapper:after,
+                      body div.background-wrap#quote_form section.quote div.container div.row div.col-md-12 form div.inline-select span.select-wrapper:after {
+                        font-size: 11px;
+                        top: 8px; } }
                   body div.background-wrap#calculator section.quote div.container div.row div.col-md-12 form div.inline-text span.select-wrapper select,
                   body div.background-wrap#calculator section.quote div.container div.row div.col-md-12 form div.inline-select span.select-wrapper select, body div.background-wrap#quote_form section.quote div.container div.row div.col-md-12 form div.inline-text span.select-wrapper select,
                   body div.background-wrap#quote_form section.quote div.container div.row div.col-md-12 form div.inline-select span.select-wrapper select {

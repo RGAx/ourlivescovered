@@ -26,7 +26,7 @@ $darkgrey: #595959; // Secondary Action Button : hover
 
 @mixin OpenSans300() {
     font-family: 'open-sans', 'Helvetica Neue', Helvetica, Helvetica, Arial, sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     font-style: normal;
     font-variant: normal;
 }
@@ -171,10 +171,11 @@ body {
                     ul#top_nav_menu {
                         display: flex !important;
                         float: right;
-                        width: auto !important;
+                        width: calc(100% - 275px);
                         margin: 0;
+                        padding: 0;
                         list-style-type: none;
-                        text-align: center !important;
+                        text-align: right;
 
                         align-items: center;
                         justify-content: flex-end;
@@ -191,6 +192,7 @@ body {
                             padding: 25px;
                             transition: all .5s ease;
                             transform: translateY(-100vh);
+                            text-align: center;
                             pointer-events: none;
                             background: rgba($pink, .97);
 
@@ -481,6 +483,33 @@ body {
         }
         div.quiz {
             min-height: 500px;
+            div.quiz-header {
+                div.col-md-12 {
+                    padding: 0;
+                    div.row {
+                        margin: 0;
+                        div.col-md-12 {
+                            h1 {
+                                height: 54px;
+                                @media (max-width: 768px) {
+                                    width: 285px;
+                                    height: 41px;
+                                }
+                            }
+                            h2 {
+                                @media (max-width: 768px) {
+                                    font-size: 41px;
+                                }
+                            }
+                            h3 {
+                                @media (max-width: 768px) {
+                                    font-size: 19px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
             div#quiz-inner {
                 div.quiz-content {
                     margin: 0;
@@ -524,6 +553,17 @@ body {
                             padding: 0 20px;
                             @media (max-width: 768px) {
                                 width: calc(100% - 160px);
+                            }
+                            h4 {
+                                @media (max-width: 768px) {
+                                    font-size: 20px !important;
+                                }
+                            }
+                            p {
+                                font-size: 15px;
+                                @media (max-width: 768px) {
+                                    font-size: 11px;
+                                }
                             }
                             div.btn {
                                 top: calc(50% - 10px);
@@ -569,6 +609,38 @@ body {
                                     }
                                 }
                             }
+                        }
+                    }
+                }
+            }
+        }
+        div.home-divider {
+            div.container {
+                width: 100%;
+                div.col-md-6 {
+                    float: none;
+                    width: 100%;
+                    max-width: 800px;
+                    margin: 0 auto;
+                    padding: 0;
+                    text-align: center;
+                    h2 {
+                        @media (max-width: 768px) {
+                            font-size: 23px;
+                        }
+                        @media (max-width: 460px) {
+                            font-size: 17px;
+                            margin-bottom: 5px;
+                        }
+                    }
+                    h3 {
+                        @media (max-width: 768px) {
+                            font-size: 18px;
+                            margin-top: 15px;
+                        }
+                        @media (max-width: 460px) {
+                            font-size: 13px;
+                            margin-top: 5px;
                         }
                     }
                 }
@@ -746,7 +818,7 @@ body {
                                         font-weight: normal;
                                         line-height: 1;
                                         float: right;
-                                        width: 132px;
+                                        width: 200px;
                                         padding: 4px 12px;
                                         text-align: right;
                                         letter-spacing: .2px;
@@ -760,16 +832,26 @@ body {
                                         appearance: none;
                                         @media (max-width: 768px) {
                                             font-size: 14px;
-                                            width: 100px;
+                                            width: 150px;
                                             padding: 3px 8px;
                                             letter-spacing: .15px;
                                         }
                                     }
                                     span.select-wrapper {
+                                        position: relative;
+                                        display: inline-block;
                                         float: right;
 
                                         order: 2;
                                         &:after {
+                                            font-family: FontAwesome;
+                                            font-size: 10px;
+                                            line-height: 1;
+                                            position: absolute;
+                                            top: 11px;
+                                            right: 9px;
+                                            content: '\f078';
+                                            pointer-events: none;
                                             @media (max-width: 768px) {
                                                 font-size: 11px;
                                                 top: 8px;

@@ -21,7 +21,7 @@
                             </div>
                             <div class="inline-text required">
                                 <label class=" " for="calc-first-name">Hi, my name is</label>
-                                <input required="" class=" " type="text" id="calc-first-name" name="first-name" maxlength="25" placeholder="your first name">
+                                <input required="" class=" " type="text" id="calc-first-name" name="first-name" maxlength="25" placeholder="your first and last name">
                             </div>
                             <div class="inline-text required">
                                 <label class=" " for="calc-date-of-birth">and I was born on</label>

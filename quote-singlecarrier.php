@@ -13,7 +13,7 @@
                                     <span>Recommended Coverage</span>
                                 </div>
                                 <div class="text-center">
-                                    <img class="transamerica" src="resources/images/transamerica.svg" alt="">
+                                    <img class="transamerica" src="resources/images/transamerica.svg" alt="Transamerica Logo">
                                 </div>
                                 <div class="row margin-top-s margin-bottom-s">
                                     <div class="best-class">

@@ -6,7 +6,7 @@
 	                <div class="row">
 	                    <div class="col-md-8 col-md-offset-2  margin-bottom-m">
 	                        <h2 class="text-center margin-bottom-m">Two Rivers Online Privacy Policy</h2>
-	                        <p>OURLIFECOVERED<sup>SM</sup> is a digital Life Insurance sales site of the Two Rivers Agency. Two Rivers operates as Rivers Run Insurance Agency in California.</p>
+	                        <p>OUR LIFE COVERED<sup>SM</sup> is a digital Life Insurance sales site of the Two Rivers Agency. Two Rivers operates as Rivers Run Insurance Agency in California.</p>
 	                        <p>
 	                            This statement discloses the privacy practices for the Two Rivers Agency website, and includes:<br><br>
 	                            •   What information is gathered/tracked<br>

@@ -48,10 +48,10 @@
                                 <input class=" " type="text" pattern="[0-9]*" id="calc-form-phone" name="calc-form-phone">
                                 <label class=" " for="contact-form-phone">Phone Number</label>
                             </div>
-                            <div class="inline-text required">
+                            <!-- <div class="inline-text required">
                                 <input required="" class=" " type="text" id="calc-annual-income" name="annual-income" maxlength="25">
                                 <label class=" " for="calc-annual-income">Annual Income</label>
-                            </div>
+                            </div> -->
                             <div class="inline-select required complete">
                                 <label for="calc-smoker">Smoker or Non-smoker</label>
                                 <span class="select-wrapper small">
@@ -183,7 +183,7 @@
                         <div id="disclaimers" class="col-md-4 col-md-offset-1">
                               <h4 class="text-center margin-bottom-s">Disclaimer</h4>
                               <p class="disclaimers-content">The quotes that will be provided reflect the best values available based only on your selection of age, gender and smoking status. These quotes were produced automatically.</p>
-                              <p class="disclaimers-content">Final rates are always subject to underwriting approval by the insurance company. <a href="financialRatings.php">Click here</a> to better understand the underwriting criteria. You have an option of continuing with Two Rivers Agency and apply online, or having Health IQ contact you shortly to gather additional information and to further assure that your customized quote is accurate. After speaking with you, Health IQ will send your customized quote via email. It will weigh responses to health and lifestyle questions to more accurately estimate your rate. Please read through our <a href="legalInformation.php">legal policy</a> to better understand the processing and information being made available. <a href="privacypolicy.do">Click here</a> for policy forms and descriptions of available plans.</p>
+                              <p class="disclaimers-content">Final rates are always subject to underwriting approval by the insurance company. <a href="legalInformation.php">Click here</a> to better understand the underwriting criteria. You have an option of continuing with Two Rivers Agency and apply online, or having Health IQ contact you shortly to gather additional information and to further assure that your customized quote is accurate. After speaking with you, Health IQ will send your customized quote via email. It will weigh responses to health and lifestyle questions to more accurately estimate your rate. Please read through our <a href="legalInformation.php">legal policy</a> to better understand the processing and information being made available. <a href="privacypolicy.do">Click here</a> for policy forms and descriptions of available plans.</p>
                         </div>
                     </div>
                 </div>

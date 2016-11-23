@@ -539,6 +539,7 @@ body {
                 background-position: right -60px; } }
         body div.container-fluid div.quiz div#quiz-inner div.quiz-content.hide-item div.col-xs-8 a.btn {
           width: 100%;
+          max-width: 300px;
           padding: 12px; }
           @media (max-width: 768px) {
             body div.container-fluid div.quiz div#quiz-inner div.quiz-content.hide-item div.col-xs-8 a.btn {
@@ -661,6 +662,63 @@ body {
       body section.main-section {
         min-height: calc(100vh - 405.16px);
         padding: 50px 0; } }
+    body section.main-section#insurance101 {
+      padding: 0 0 100px; }
+      body section.main-section#insurance101 div.container {
+        width: 100%;
+        padding: 0; }
+        body section.main-section#insurance101 div.container div.row {
+          margin: 0; }
+          body section.main-section#insurance101 div.container div.row div.col-md-12 {
+            padding: 0; }
+            body section.main-section#insurance101 div.container div.row div.col-md-12 div.insurance101-header {
+              background: #f7f7f7;
+              text-align: center;
+              padding: 35px; }
+              body section.main-section#insurance101 div.container div.row div.col-md-12 div.insurance101-header h1 {
+                margin: 0;
+                font-size: 30px;
+                font-weight: 600;
+                color: #b2b2b2;
+                margin-bottom: 20px; }
+              body section.main-section#insurance101 div.container div.row div.col-md-12 div.insurance101-header p {
+                font-size: 16px;
+                display: block;
+                max-width: 530px;
+                margin: 0 auto;
+                color: #777; }
+            body section.main-section#insurance101 div.container div.row div.col-md-12 div.toggle-tabs {
+              text-align: center;
+              margin-top: 70px;
+              border-bottom: 1px solid #3ca5d1; }
+              body section.main-section#insurance101 div.container div.row div.col-md-12 div.toggle-tabs a.tab {
+                display: inline-block;
+                width: 185px;
+                text-align: center;
+                padding-bottom: 20px; }
+                body section.main-section#insurance101 div.container div.row div.col-md-12 div.toggle-tabs a.tab:nth-of-type(2) {
+                  border-left: 1px solid #ececec;
+                  border-right: 1px solid #ececec; }
+                body section.main-section#insurance101 div.container div.row div.col-md-12 div.toggle-tabs a.tab:hover img, body section.main-section#insurance101 div.container div.row div.col-md-12 div.toggle-tabs a.tab.active img {
+                  -webkit-filter: grayscale(0%);
+                          filter: grayscale(0%); }
+                body section.main-section#insurance101 div.container div.row div.col-md-12 div.toggle-tabs a.tab:hover span, body section.main-section#insurance101 div.container div.row div.col-md-12 div.toggle-tabs a.tab.active span {
+                  color: #3ca5d1; }
+                body section.main-section#insurance101 div.container div.row div.col-md-12 div.toggle-tabs a.tab img {
+                  height: 40px;
+                  display: inline-block;
+                  -webkit-filter: grayscale(100%);
+                          filter: grayscale(100%);
+                  -webkit-transition: all .3s ease;
+                  transition: all .3s ease; }
+                body section.main-section#insurance101 div.container div.row div.col-md-12 div.toggle-tabs a.tab span {
+                  display: inline-block;
+                  margin-top: 5px;
+                  width: 100%;
+                  font-size: 15px;
+                  color: #8c8c8c;
+                  -webkit-transition: all .3s ease;
+                  transition: all .3s ease; }
     body section.main-section#contact-us form div.inline-text {
       font-size: 16px;
       position: relative;

@@ -227,7 +227,7 @@
                     <div class="carousel-caption">
                         <h4 class="hero-caption">We do the leg work.</h4>
                         <p>Tell us a bit about your lifestyle, and we’ll search from hundreds of policies to find the right match for you. Get your quote, apply, and get covered. Fast and simple.</p>
-                        <a class="btn" href="#">Find the Right Fit</a>
+                        <a class="btn" href="calculator.php">Find the Right Fit</a>
                     </div>
                 </div>
                 <div class="item">
@@ -235,7 +235,7 @@
                     <div class="carousel-caption">
                         <h4 class="hero-caption">A little could do a lot.</h4>
                         <p>Even with a policy for as low as $25 per month, you could leave your family with a lot more than just memories, and help protect them against future expenses.</p>
-                        <a class="btn" href="#">See what $25 can do</a>
+                        <a class="btn" href="affordability.php">See what $25 can do</a>
                     </div>
                 </div>
                 <div class="item">
@@ -243,7 +243,7 @@
                     <div class="carousel-caption">
                         <h4 class="hero-caption">Already know your number?</h4>
                         <p>If you already have a good idea about how much coverage you need to protect your family, Enter it here and we’ll get your quote started.</p>
-                        <a class="btn" href="#">Get a Quote</a>
+                        <a class="btn" href="quote-form.php">Get a Quote</a>
                     </div>
                 </div>
             </div>

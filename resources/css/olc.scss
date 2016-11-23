@@ -654,6 +654,7 @@ body {
                             }
                             a.btn {
                                 width: 100%;
+                                max-width: 300px;
                                 padding: 12px;
                                 @media (max-width: 768px) {
                                     font-size: 13px;
@@ -829,6 +830,76 @@ body {
         @media (max-width: 740px) {
             min-height: calc(100vh - 405.16px);
             padding: 50px 0;
+        }
+        &#insurance101 {
+            padding: 0 0 100px;
+            div.container {
+                width: 100%;
+                padding: 0;
+                div.row {
+                    margin: 0;
+                    div.col-md-12 {
+                        padding: 0;
+                        div.insurance101-header {
+                            background: $lightgrey;
+                            text-align: center;
+                            padding: 35px;
+                            h1 {
+                                margin: 0;
+                                font-size: 30px;
+                                font-weight: 600;
+                                color: $midgrey;
+                                margin-bottom: 20px;
+                            }
+                            p {
+                                font-size: 16px;
+                                display: block;
+                                max-width: 530px;
+                                margin: 0 auto;
+                                color: #777;
+                            }
+                        }
+                        div.toggle-tabs {
+                            text-align: center;
+                            margin-top: 70px;
+                            border-bottom: 1px solid #3ca5d1;
+                            a.tab {
+                                display: inline-block;
+                                width: 185px;
+                                text-align: center;
+                                padding-bottom: 20px;
+                                &:nth-of-type(2) {
+                                    border-left: 1px solid #ececec;
+                                    border-right: 1px solid #ececec;
+                                }
+                                &:hover,
+                                &.active {
+                                    img {
+                                        filter: grayscale(0%);
+                                    }
+                                    span {
+                                        color: #3ca5d1;
+                                    }
+                                }
+                                img {
+                                    height: 40px;
+                                    display: inline-block;
+                                    filter: grayscale(100%);
+                                    transition: all .3s ease;
+                                }
+                                span {
+                                    display: inline-block;
+                                    margin-top: 5px;
+                                    width: 100%;
+                                    font-size: 15px;
+                                    color: #8c8c8c;
+                                    transition: all .3s ease;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
         &#contact-us {
             form {

@@ -902,6 +902,33 @@ body {
         }
         &#calculator,
         &#quote_form {
+            section.quote-header {
+                margin-bottom: 50px;
+                div.container {
+                    width: 100%;
+                    padding: 25px 0 35px;
+                    background: $lightgrey;
+                    div.row {
+                        margin: 0;
+                        div.col-md-12 {
+                            float: none;
+                            padding: 0;
+                            h1 {
+                                font-size: 30px;
+                                font-weight: 600;
+                                color: $midgrey;
+                            }
+                            p {
+                                font-size: 16px;
+                                display: block;
+                                max-width: 440px;
+                                margin: 0 auto;
+                                color: #777;
+                            }
+                        }
+                    }
+                }
+            }
             section.quote-tabs {
                 width: 100%;
                 max-width: 530px;

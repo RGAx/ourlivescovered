@@ -409,23 +409,28 @@ body {
         body div.container-fluid div#hero div.scrollprompt div.row div.col-sm-12 button.btn {
           font-size: 14px; } }
   body div.container-fluid div.quiz {
-    min-height: 500px; }
-    body div.container-fluid div.quiz div.quiz-header div.col-md-12 {
-      padding: 0; }
-      body div.container-fluid div.quiz div.quiz-header div.col-md-12 div.row {
-        margin: 0; }
-        body div.container-fluid div.quiz div.quiz-header div.col-md-12 div.row div.col-md-12 h1 {
-          height: 54px; }
-          @media (max-width: 768px) {
-            body div.container-fluid div.quiz div.quiz-header div.col-md-12 div.row div.col-md-12 h1 {
-              width: 285px;
-              height: 41px; } }
-        @media (max-width: 768px) {
+    min-height: 500px;
+    padding: 20px 10px; }
+    body div.container-fluid div.quiz div.quiz-header {
+      margin: 0; }
+      body div.container-fluid div.quiz div.quiz-header div.col-md-12 {
+        padding: 0; }
+        body div.container-fluid div.quiz div.quiz-header div.col-md-12 div.row {
+          margin: 0; }
+          body div.container-fluid div.quiz div.quiz-header div.col-md-12 div.row div.col-md-12 h1 {
+            height: 54px; }
+            @media (max-width: 768px) {
+              body div.container-fluid div.quiz div.quiz-header div.col-md-12 div.row div.col-md-12 h1 {
+                width: 285px;
+                height: 41px; } }
           body div.container-fluid div.quiz div.quiz-header div.col-md-12 div.row div.col-md-12 h2 {
-            font-size: 41px; } }
-        @media (max-width: 768px) {
-          body div.container-fluid div.quiz div.quiz-header div.col-md-12 div.row div.col-md-12 h3 {
-            font-size: 19px; } }
+            line-height: 1; }
+            @media (max-width: 768px) {
+              body div.container-fluid div.quiz div.quiz-header div.col-md-12 div.row div.col-md-12 h2 {
+                font-size: 41px; } }
+          @media (max-width: 768px) {
+            body div.container-fluid div.quiz div.quiz-header div.col-md-12 div.row div.col-md-12 h3 {
+              font-size: 19px; } }
     body div.container-fluid div.quiz div#quiz-inner div.quiz-content {
       margin: 0; }
       body div.container-fluid div.quiz div#quiz-inner div.quiz-content div.col-xs-8 {
@@ -463,6 +468,12 @@ body {
         @media (max-width: 768px) {
           body div.container-fluid div.quiz div#quiz-inner div.quiz-content.hide-item div.col-xs-8 {
             width: calc(100% - 160px); } }
+        @media (max-width: 600px) {
+          body div.container-fluid div.quiz div#quiz-inner div.quiz-content.hide-item div.col-xs-8 {
+            width: calc(100% - 60px); } }
+        body div.container-fluid div.quiz div#quiz-inner div.quiz-content.hide-item div.col-xs-8 div.quiz-btn-row div.col-xs-4 {
+          width: 50%;
+          margin: 0; }
         @media (max-width: 768px) {
           body div.container-fluid div.quiz div#quiz-inner div.quiz-content.hide-item div.col-xs-8 h4 {
             font-size: 20px !important; } }
@@ -481,6 +492,10 @@ body {
               width: 80px;
               height: 80px;
               background-size: 200%; } }
+          @media (max-width: 600px) {
+            body div.container-fluid div.quiz div#quiz-inner div.quiz-content.hide-item div.col-xs-8 div.btn {
+              width: 30px;
+              height: 30px; } }
           body div.container-fluid div.quiz div#quiz-inner div.quiz-content.hide-item div.col-xs-8 div.btn:active {
             box-shadow: none; }
           @media (max-width: 768px) {
@@ -491,22 +506,43 @@ body {
               width: 120%;
               -webkit-transform: translateX(-50%);
                       transform: translateX(-50%); } }
+          @media (max-width: 600px) {
+            body div.container-fluid div.quiz div#quiz-inner div.quiz-content.hide-item div.col-xs-8 div.btn span {
+              display: none; } }
           body div.container-fluid div.quiz div#quiz-inner div.quiz-content.hide-item div.col-xs-8 div.btn.goback {
             left: -100px; }
             @media (max-width: 768px) {
               body div.container-fluid div.quiz div#quiz-inner div.quiz-content.hide-item div.col-xs-8 div.btn.goback {
                 left: -80px; } }
+            @media (max-width: 600px) {
+              body div.container-fluid div.quiz div#quiz-inner div.quiz-content.hide-item div.col-xs-8 div.btn.goback {
+                left: -30px; } }
             @media (max-width: 768px) {
               body div.container-fluid div.quiz div#quiz-inner div.quiz-content.hide-item div.col-xs-8 div.btn.goback:hover {
                 background-position: left -160px; } }
+            @media (max-width: 600px) {
+              body div.container-fluid div.quiz div#quiz-inner div.quiz-content.hide-item div.col-xs-8 div.btn.goback:hover {
+                background-position: left -60px; } }
           body div.container-fluid div.quiz div#quiz-inner div.quiz-content.hide-item div.col-xs-8 div.btn.goforward {
             right: -100px; }
             @media (max-width: 768px) {
               body div.container-fluid div.quiz div#quiz-inner div.quiz-content.hide-item div.col-xs-8 div.btn.goforward {
                 right: -80px; } }
+            @media (max-width: 600px) {
+              body div.container-fluid div.quiz div#quiz-inner div.quiz-content.hide-item div.col-xs-8 div.btn.goforward {
+                right: -30px; } }
             @media (max-width: 768px) {
               body div.container-fluid div.quiz div#quiz-inner div.quiz-content.hide-item div.col-xs-8 div.btn.goforward:hover {
                 background-position: right -160px; } }
+            @media (max-width: 600px) {
+              body div.container-fluid div.quiz div#quiz-inner div.quiz-content.hide-item div.col-xs-8 div.btn.goforward:hover {
+                background-position: right -60px; } }
+        body div.container-fluid div.quiz div#quiz-inner div.quiz-content.hide-item div.col-xs-8 a.btn {
+          width: 100%;
+          padding: 12px; }
+          @media (max-width: 768px) {
+            body div.container-fluid div.quiz div#quiz-inner div.quiz-content.hide-item div.col-xs-8 a.btn {
+              font-size: 13px; } }
   body div.container-fluid div.home-divider div.container {
     width: 100%; }
     body div.container-fluid div.home-divider div.container div.col-md-6 {

@@ -495,7 +495,9 @@ body {
         }
         div.quiz {
             min-height: 500px;
+            padding: 20px 10px;
             div.quiz-header {
+                margin: 0;
                 div.col-md-12 {
                     padding: 0;
                     div.row {
@@ -509,6 +511,7 @@ body {
                                 }
                             }
                             h2 {
+                                line-height: 1;
                                 @media (max-width: 768px) {
                                     font-size: 41px;
                                 }
@@ -566,6 +569,15 @@ body {
                             @media (max-width: 768px) {
                                 width: calc(100% - 160px);
                             }
+                            @media (max-width: 600px) {
+                                width: calc(100% - 60px);
+                            }
+                            div.quiz-btn-row {
+                                div.col-xs-4 {
+                                    width: 50%;
+                                    margin: 0;
+                                }
+                            }
                             h4 {
                                 @media (max-width: 768px) {
                                     font-size: 20px !important;
@@ -586,6 +598,10 @@ body {
                                     height: 80px;
                                     background-size: 200%;
                                 }
+                                @media (max-width: 600px) {
+                                    width: 30px;
+                                    height: 30px;
+                                }
                                 &:active {
                                     box-shadow: none;
                                 }
@@ -597,15 +613,24 @@ body {
                                         width: 120%;
                                         transform: translateX(-50%);
                                     }
+                                    @media (max-width: 600px) {
+                                        display: none;
+                                    }
                                 }
                                 &.goback {
                                     left: -100px;
                                     @media (max-width: 768px) {
                                         left: -80px;
                                     }
+                                    @media (max-width: 600px) {
+                                        left: -30px;
+                                    }
                                     &:hover {
                                         @media (max-width: 768px) {
                                             background-position: left -160px;
+                                        }
+                                        @media (max-width: 600px) {
+                                            background-position: left -60px;
                                         }
                                     }
                                 }
@@ -614,11 +639,24 @@ body {
                                     @media (max-width: 768px) {
                                         right: -80px;
                                     }
+                                    @media (max-width: 600px) {
+                                        right: -30px;
+                                    }
                                     &:hover {
                                         @media (max-width: 768px) {
                                             background-position: right -160px;
                                         }
+                                        @media (max-width: 600px) {
+                                            background-position: right -60px;
+                                        }
                                     }
+                                }
+                            }
+                            a.btn {
+                                width: 100%;
+                                padding: 12px;
+                                @media (max-width: 768px) {
+                                    font-size: 13px;
                                 }
                             }
                         }

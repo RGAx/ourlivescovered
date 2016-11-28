@@ -9,7 +9,7 @@
             </ol> -->
             <div class="carousel-inner">
                 <div class="item active">
-                    <img src = "resources/images/hero1.jpg">
+                    <img src = "resources/images/hero-mom.jpg">
                     <div class="carousel-caption">
                         <h4 class="hero-caption">Unlike the perfect selfies people share,</h4>
                         <h4 class="hero-caption-bold">Life. Isn't. Always. Pretty.</h4>

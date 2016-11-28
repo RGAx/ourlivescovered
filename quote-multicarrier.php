@@ -115,7 +115,7 @@
 		        </form>
 		    </div>
 		    <div id="legal_policy">
-		    	<a href="legalInformation.php">Legal Policy <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+		    	<a href="policyForms.php">Legal Policy <i class="fa fa-angle-right" aria-hidden="true"></i></a>
 		    </div>
 	    </div>
 	</section>

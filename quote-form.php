@@ -133,7 +133,6 @@
                                         <label for="calc-coverage1">Coverage</label>
                                         <span class="select-wrapper  small">
                                            <select required="" name="coverage" id="calc-coverage" class="small" onchange="selectedValue(this)" onload="selectedValue(this)">
-                                                <option value="50000">$50,000</option>
                                                 <option value="100000" selected="">$100,000</option>
                                                 <option value="200000">$200,000</option>
                                                 <option value="350000">$350,000</option>

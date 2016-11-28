@@ -29,7 +29,7 @@
                                             <option value="thirty">30-34</option>
                                             <option value="thirtyfive">35-39</option>
                                             <option value="forty">40-44</option>
-                                            <option value="fortyfive">40-49</option>
+                                            <option value="fortyfive">45-49</option>
                                             <option value="fifty">50+</option>
                                         </select>
                                     </div>

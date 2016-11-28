@@ -2217,12 +2217,8 @@ body {
     padding-bottom: 125px; }
     @media (max-width: 768px) {
       body section.cover {
-        padding-top: 94px;
-        padding-bottom: 94px; } }
-    @media (max-width: 500px) {
-      body section.cover {
-        padding-top: 100px;
-        padding-bottom: 70px; } }
+        padding-top: 50px;
+        padding-bottom: 50px; } }
     body section.cover div.col-md-12 {
       float: none;
       width: 100%;
@@ -2304,6 +2300,9 @@ body {
           @media (max-width: 768px) {
             body section.cover div.col-md-12 div.form-wrapper div.primary-container {
               padding: 23px 30px; } }
+          @media (max-width: 500px) {
+            body section.cover div.col-md-12 div.form-wrapper div.primary-container {
+              padding: 15px; } }
           body section.cover div.col-md-12 div.form-wrapper div.primary-container h4 {
             font-size: 48px;
             line-height: .92;
@@ -2446,10 +2445,18 @@ body {
         font-size: 48px;
         font-weight: 600;
         line-height: 1.2;
+        margin: 0 0 20px;
         color: white; }
-        @media (max-width: 768px) {
+        @media (max-width: 991px) {
           body section#affordability_hero div.container div.row div.col-md-12 h1 {
-            font-size: 36px; } }
+            font-size: 36px;
+            margin: 0 0 10px; } }
+        @media (max-width: 600px) {
+          body section#affordability_hero div.container div.row div.col-md-12 h1 {
+            font-size: 27px; } }
+        @media (max-width: 460px) {
+          body section#affordability_hero div.container div.row div.col-md-12 h1 {
+            font-size: 20px; } }
       body section#affordability_hero div.container div.row div.col-md-12 div.form-wrapper {
         max-width: 775px;
         background: transparent;
@@ -2459,6 +2466,12 @@ body {
           border: none;
           border-radius: 10px 10px 0 0;
           background: rgba(0, 0, 0, 0.18); }
+          @media (max-width: 768px) {
+            body section#affordability_hero div.container div.row div.col-md-12 div.form-wrapper div.primary-container {
+              padding: 23px 30px; } }
+          @media (max-width: 500px) {
+            body section#affordability_hero div.container div.row div.col-md-12 div.form-wrapper div.primary-container {
+              padding: 20px; } }
           body section#affordability_hero div.container div.row div.col-md-12 div.form-wrapper div.primary-container form {
             margin: 0; }
             body section#affordability_hero div.container div.row div.col-md-12 div.form-wrapper div.primary-container form div.select-wrapper {
@@ -2498,7 +2511,9 @@ body {
                         appearance: none; }
                 @media (max-width: 630px) {
                   body section#affordability_hero div.container div.row div.col-md-12 div.form-wrapper div.primary-container form div.select-wrapper select {
-                    width: 100%; } }
+                    font-size: 17px;
+                    width: 100%;
+                    height: 35px; } }
         body section#affordability_hero div.container div.row div.col-md-12 div.form-wrapper div.secondary-container {
           padding: 15px 40px;
           border-radius: 0 0 10px 10px;
@@ -2508,6 +2523,9 @@ body {
             line-height: 1.952380952380952;
             margin: 0;
             color: white; }
+            @media (max-width: 768px) {
+              body section#affordability_hero div.container div.row div.col-md-12 div.form-wrapper div.secondary-container p#initialQuote {
+                font-size: 14px; } }
             body section#affordability_hero div.container div.row div.col-md-12 div.form-wrapper div.secondary-container p#initialQuote span.quoted-amount {
               font-weight: 700;
               line-height: 1;
@@ -2517,8 +2535,14 @@ body {
               background: #f498c2; }
               body section#affordability_hero div.container div.row div.col-md-12 div.form-wrapper div.secondary-container p#initialQuote span.quoted-amount#totalCoverage {
                 width: 120px; }
+                @media (max-width: 768px) {
+                  body section#affordability_hero div.container div.row div.col-md-12 div.form-wrapper div.secondary-container p#initialQuote span.quoted-amount#totalCoverage {
+                    width: 90px; } }
               body section#affordability_hero div.container div.row div.col-md-12 div.form-wrapper div.secondary-container p#initialQuote span.quoted-amount#totalSavings {
                 width: 63px; }
+                @media (max-width: 768px) {
+                  body section#affordability_hero div.container div.row div.col-md-12 div.form-wrapper div.secondary-container p#initialQuote span.quoted-amount#totalSavings {
+                    width: 47px; } }
             body section#affordability_hero div.container div.row div.col-md-12 div.form-wrapper div.secondary-container p#initialQuote sup {
               font-size: 80%;
               top: -.4em; }
@@ -2548,6 +2572,11 @@ body {
                     appearance: none; }
             body section#affordability_hero div.container div.row div.col-md-12 div.form-wrapper div.gobutton-container input.btn:hover {
               background: #5bb262; }
+            @media (max-width: 768px) {
+              body section#affordability_hero div.container div.row div.col-md-12 div.form-wrapper div.gobutton-container input.btn {
+                font-size: 15px;
+                width: 188px;
+                padding: 15px; } }
   body footer {
     position: relative;
     background-color: #595959; }

@@ -160,7 +160,7 @@
             	<div class="col-xs-8 col-xs-offset-2">
                     <h4 class="answer">Home is even sweeter when it’s paid off.</h4>
                     <p class="answer">One of the most common reasons people buy life insurance is to make sure that their loved ones are able to keep up with mortgage payments and keep a roof over their heads.</p>
-                    <a class="btn quiz-cta" href="quote-form.php">Calculate What You Need</a>
+                    <a class="btn quiz-cta" href="calculator.php">Calculate What You Need</a>
                     <div class="row quiz-btn-row"></div>
         		<div class="btn goback"><span>Previous</span></div>
                 <div class="btn goforward"><span>Next</span></div></div>
@@ -169,7 +169,7 @@
             	<div class="col-xs-8 col-xs-offset-2">
                     <h4 class="answer">Hey, someone has to pay the rent.</h4>
                     <p class="answer">Did you know that in some states, renting a home can cost over 50% more per month than owning. Regardless of whether you own or rent, your family will likely need help keeping up with payments.</p>
-                    <a class="btn quiz-cta" href="quote-form.php">Calculate What You Need</a>
+                    <a class="btn quiz-cta" href="calculator.php">Calculate What You Need</a>
                     <div class="row quiz-btn-row"></div>
         		<div class="btn goback"><span>Previous</span></div>
                 <div class="btn goforward"><span>Next</span></div></div>

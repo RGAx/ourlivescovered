@@ -695,8 +695,11 @@ body {
                 position: relative;
                 display: inline-block;
                 width: 185px;
-                padding-bottom: 20px;
+                padding: 0 5px 20px;
                 text-align: center; }
+                @media (max-width: 570px) {
+                  body section.main-section#insurance101 div.container div.row div.col-md-12 div.toggle-tabs a.tab {
+                    width: 32%; } }
                 body section.main-section#insurance101 div.container div.row div.col-md-12 div.toggle-tabs a.tab:nth-of-type(2) {
                   border-right: 1px solid #ececec;
                   border-left: 1px solid #ececec; }
@@ -725,6 +728,9 @@ body {
                   transition: all .3s ease;
                   -webkit-filter: grayscale(100%);
                           filter: grayscale(100%); }
+                  @media (max-width: 570px) {
+                    body section.main-section#insurance101 div.container div.row div.col-md-12 div.toggle-tabs a.tab img {
+                      height: 25px; } }
                 body section.main-section#insurance101 div.container div.row div.col-md-12 div.toggle-tabs a.tab span {
                   font-size: 15px;
                   display: inline-block;
@@ -733,12 +739,15 @@ body {
                   -webkit-transition: all .3s ease;
                   transition: all .3s ease;
                   color: #8c8c8c; }
+                  @media (max-width: 570px) {
+                    body section.main-section#insurance101 div.container div.row div.col-md-12 div.toggle-tabs a.tab span {
+                      font-size: 10px; } }
             body section.main-section#insurance101 div.container div.row div.col-md-12 div.page {
+              display: none;
               width: 100%;
               max-width: 1160px;
               margin: 0 auto;
-              padding-top: 45px;
-              display: none; }
+              padding-top: 45px; }
               body section.main-section#insurance101 div.container div.row div.col-md-12 div.page.visible {
                 display: block; }
               body section.main-section#insurance101 div.container div.row div.col-md-12 div.page img {
@@ -771,13 +780,13 @@ body {
                 padding: 0 0 70px; }
                 body section.main-section#insurance101 div.container div.row div.col-md-12 div.page#the_basics div#basics_intro div.textarea {
                   padding-right: 50px; }
-                  @media (max-width: 991px) {
+                  @media (max-width: 768px) {
                     body section.main-section#insurance101 div.container div.row div.col-md-12 div.page#the_basics div#basics_intro div.textarea {
                       padding-right: 15px;
                       padding-bottom: 20px; } }
               body section.main-section#insurance101 div.container div.row div.col-md-12 div.page#the_basics div#app_process div.imgarea {
                 padding-right: 50px; }
-                @media (max-width: 991px) {
+                @media (max-width: 768px) {
                   body section.main-section#insurance101 div.container div.row div.col-md-12 div.page#the_basics div#app_process div.imgarea {
                     padding-right: 15px;
                     padding-bottom: 30px; }
@@ -807,22 +816,22 @@ body {
                     float: right;
                     width: calc(100% - 73px); }
               body section.main-section#insurance101 div.container div.row div.col-md-12 div.page#seven_buts div#accordion {
-                max-width: 715px;
                 width: 100%;
+                max-width: 705px;
                 margin: 0 auto;
-                padding: 0 20px; }
+                padding: 0 15px; }
                 body section.main-section#insurance101 div.container div.row div.col-md-12 div.page#seven_buts div#accordion h3 {
                   margin-bottom: 65px; }
                 body section.main-section#insurance101 div.container div.row div.col-md-12 div.page#seven_buts div#accordion div.panel {
                   margin-bottom: 20px;
-                  border-radius: 0;
                   border: none;
+                  border-radius: 0;
                   box-shadow: none; }
                   body section.main-section#insurance101 div.container div.row div.col-md-12 div.page#seven_buts div#accordion div.panel div.panel-heading {
-                    background: none;
-                    border: none;
+                    position: relative;
                     padding-left: 55px;
-                    position: relative; }
+                    border: none;
+                    background: none; }
                     body section.main-section#insurance101 div.container div.row div.col-md-12 div.page#seven_buts div#accordion div.panel div.panel-heading h4.panel-title {
                       font-size: 17px;
                       font-weight: 700;
@@ -830,29 +839,92 @@ body {
                       body section.main-section#insurance101 div.container div.row div.col-md-12 div.page#seven_buts div#accordion div.panel div.panel-heading h4.panel-title a {
                         color: inherit; }
                         body section.main-section#insurance101 div.container div.row div.col-md-12 div.page#seven_buts div#accordion div.panel div.panel-heading h4.panel-title a:before {
-                          content: '\f068';
                           font-family: FontAwesome;
                           font-size: 12px;
+                          line-height: 30px;
                           position: absolute;
+                          top: 50%;
                           left: 0;
+                          display: block;
                           width: 28px;
                           height: 28px;
-                          display: block;
-                          line-height: 30px;
-                          color: white;
-                          background: #f498c2;
-                          text-align: center;
-                          border-radius: 100%;
-                          top: 50%;
+                          content: '\f068';
                           -webkit-transform: translateY(-50%);
-                                  transform: translateY(-50%); }
+                                  transform: translateY(-50%);
+                          text-align: center;
+                          color: white;
+                          border-radius: 100%;
+                          background: #f498c2; }
                         body section.main-section#insurance101 div.container div.row div.col-md-12 div.page#seven_buts div#accordion div.panel div.panel-heading h4.panel-title a.collapsed:before {
                           content: '\f067'; }
                   body section.main-section#insurance101 div.container div.row div.col-md-12 div.page#seven_buts div#accordion div.panel div.panel-collapse {
                     padding-left: 55px; }
                     body section.main-section#insurance101 div.container div.row div.col-md-12 div.page#seven_buts div#accordion div.panel div.panel-collapse div.panel-body {
-                      border: none;
-                      padding: 0; }
+                      padding: 0;
+                      border: none; }
+              body section.main-section#insurance101 div.container div.row div.col-md-12 div.page#whats_right {
+                max-width: 100%; }
+                body section.main-section#insurance101 div.container div.row div.col-md-12 div.page#whats_right h2 {
+                  font-size: 21px;
+                  margin-bottom: 20px; }
+                  @media (max-width: 768px) {
+                    body section.main-section#insurance101 div.container div.row div.col-md-12 div.page#whats_right h2 {
+                      font-size: 16px;
+                      margin-bottom: 15px; } }
+                body section.main-section#insurance101 div.container div.row div.col-md-12 div.page#whats_right p {
+                  font-size: 14px; }
+                  @media (max-width: 768px) {
+                    body section.main-section#insurance101 div.container div.row div.col-md-12 div.page#whats_right p {
+                      font-size: 12px; } }
+                body section.main-section#insurance101 div.container div.row div.col-md-12 div.page#whats_right div#corporate_partner {
+                  position: relative;
+                  width: 100%;
+                  max-width: 642px;
+                  margin: 0 auto;
+                  padding: 0 15px 50px; }
+                  body section.main-section#insurance101 div.container div.row div.col-md-12 div.page#whats_right div#corporate_partner img#lh-logo {
+                    position: absolute;
+                    top: 35px;
+                    left: -200px;
+                    width: 120px; }
+                    @media (max-width: 1070px) {
+                      body section.main-section#insurance101 div.container div.row div.col-md-12 div.page#whats_right div#corporate_partner img#lh-logo {
+                        position: relative;
+                        top: auto;
+                        left: auto;
+                        float: left;
+                        margin: 5px 20px 20px 0; } }
+                    @media (max-width: 768px) {
+                      body section.main-section#insurance101 div.container div.row div.col-md-12 div.page#whats_right div#corporate_partner img#lh-logo {
+                        position: relative;
+                        top: auto;
+                        left: auto;
+                        float: left;
+                        margin: 5px 10px 10px 0; } }
+                  body section.main-section#insurance101 div.container div.row div.col-md-12 div.page#whats_right div#corporate_partner div.video-js {
+                    margin-top: 35px; }
+                body section.main-section#insurance101 div.container div.row div.col-md-12 div.page#whats_right div#lend_hand {
+                  padding: 65px 0;
+                  background: #f7f7f7; }
+                  @media (max-width: 768px) {
+                    body section.main-section#insurance101 div.container div.row div.col-md-12 div.page#whats_right div#lend_hand {
+                      padding: 49px 0; } }
+                  body section.main-section#insurance101 div.container div.row div.col-md-12 div.page#whats_right div#lend_hand div.content-wrapper {
+                    overflow: auto;
+                    width: 100%;
+                    max-width: 930px;
+                    margin: 0 auto; }
+                    @media (max-width: 768px) {
+                      body section.main-section#insurance101 div.container div.row div.col-md-12 div.page#whats_right div#lend_hand div.content-wrapper div.col-sm-8 {
+                        padding-top: 20px; } }
+                    body section.main-section#insurance101 div.container div.row div.col-md-12 div.page#whats_right div#lend_hand div.content-wrapper div.col-sm-8 a#donate {
+                      font-size: 19px;
+                      font-weight: 700;
+                      display: inline-block;
+                      margin-top: 18px;
+                      padding: 13px 35px;
+                      color: white;
+                      background: #3ca5d1; }
     body section.main-section#contact-us form div.inline-text {
       font-size: 16px;
       position: relative;

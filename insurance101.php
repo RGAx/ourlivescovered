@@ -24,20 +24,20 @@
                     </div>
                     <div id="the_basics" class="page visible">
                         <div id="basics_intro">
-                            <div class="textarea col-md-6">
+                            <div class="textarea col-sm-6">
                                 <h2>Accidents happen. Cars swerve. Zombies bite</h2>
                                 <p>Death isn’t a typical concern for young healthy people. Term life insurance is often the best option for protecting against the unexpected. It provides coverage for a specific period of time, and is designed to help your loved ones make up for the loss of your income if something were to happen to you.</p>
                                 <p>In doing so, it covers financial obligations that disappear over time, such as a mortgage, college tuition and loans. The healthier and younger you are, the more affordable coverage will be.</p>
                             </div>
-                            <div class="imgarea col-md-6">
+                            <div class="imgarea col-sm-6">
                                 <img src="resources/images/moving-chair.jpg">
                             </div>
                         </div>
                         <div id="app_process">
-                            <div class="imgarea col-md-5">
+                            <div class="imgarea col-sm-5">
                                 <img src="resources/images/ipad.jpg">
                             </div>
-                            <div class="textarea col-md-7">
+                            <div class="textarea col-sm-7">
                                 <h2>The Application Process</h2>
                                 <p>Getting life insurance isn't difficult, but there are a few steps in the process.</p>
                                 <div id="nums">
@@ -162,6 +162,29 @@
                         </div>
                     </div>
                     <div id="whats_right" class="page">
+                        <div id="corporate_partner">
+                            <h2>Have you met our corporate partner BFF?</h2>
+                            <img id="lh-logo" src="resources/images/life-happens-logo.jpg">
+                            <p>Our Life Covered has partnered with Life Happens, a nonprofit organization that is just as dedicated as we are to educating people about the importance of protecting themselves and their families with the coverage they need.</p>
+                            <p>Danica Patrick, professional race car driver and the 2016 spokesperson for Life Insurance Awareness Month, sums up the difference life insurance can make.</p>
+                            <video id='brigcovepersonalplayer' data-account="4486098250001" data-player="HyV9Hkf5" data-video-id="4924793818001" data-embed="default" style="width: 100%; height:auto; padding-bottom: 56.25%;" class="video-js bc-video" controls ></video>
+                            <script src="//players.brightcove.net/4486098250001/HyV9Hkf5_default/index.min.js"></script>
+                            <script id="pageScript" type="text/javascript">
+                                var myPlayer = videojs("brigcovepersonalplayer");
+                            </script>
+                        </div>
+                        <div id="lend_hand">
+                            <div class="content-wrapper">
+                                <div class="col-sm-4">
+                                    <img id="lh-logo" src="resources/images/girl-reading.jpg">
+                                </div>
+                                <div class="col-sm-8">
+                                    <h2>Lend a hand to someone left hanging.</h2>
+                                    <p>Our Life Covered is proud to support the Life Lessons Scholarship Program, which assists young people seeking a college education who are struggling financially because their parent died, leaving little or no life insurance. Please join us and make a donation today.</p>
+                                    <a id="donate" class="btn" href="#">Donate Now</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -2596,11 +2596,19 @@ body {
         background-image: url('../images/affordability-bg.jpg');
         background-position: top right;
         background-size: cover;
+        padding-bottom: 10px;
         @media (max-width: 630px) {
             background-position: 72% 50%;
         }
         div.container {
             div.row {
+                &:last-of-type {
+                    text-align: left;
+                    small {
+                        color: white;
+                        font-size: 14px;
+                    }
+                }
                 div.col-md-12 {
                     float: none;
                     width: 100%;
@@ -2703,7 +2711,7 @@ body {
                             width: 100%;
                             margin: 30px auto 100px;
                             @media (max-width: 768px) {
-                                margin: 23px 0 75px;
+                                margin: 23px auto 75px
                             }
                             input.btn {
                                 font-size: 20px;

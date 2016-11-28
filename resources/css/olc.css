@@ -2221,10 +2221,16 @@ body {
   body section#affordability_hero {
     background-image: url("../images/affordability-bg.jpg");
     background-position: top right;
-    background-size: cover; }
+    background-size: cover;
+    padding-bottom: 10px; }
     @media (max-width: 630px) {
       body section#affordability_hero {
         background-position: 72% 50%; } }
+    body section#affordability_hero div.container div.row:last-of-type {
+      text-align: left; }
+      body section#affordability_hero div.container div.row:last-of-type small {
+        color: white;
+        font-size: 14px; }
     body section#affordability_hero div.container div.row div.col-md-12 {
       float: none;
       width: 100%;
@@ -2315,7 +2321,7 @@ body {
           margin: 30px auto 100px; }
           @media (max-width: 768px) {
             body section#affordability_hero div.container div.row div.col-md-12 div.form-wrapper div.gobutton-container {
-              margin: 23px 0 75px; } }
+              margin: 23px auto 75px; } }
           body section#affordability_hero div.container div.row div.col-md-12 div.form-wrapper div.gobutton-container input.btn {
             font-size: 20px;
             font-weight: normal;

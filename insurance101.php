@@ -1,6 +1,6 @@
 <?php require_once('header.html'); ?>
 
-	<section id="insurance101" class="cover main-section">
+	<section id="insurance101" class="main-section">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">

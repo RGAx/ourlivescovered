@@ -52,6 +52,11 @@
                         </div>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <small>*Coverage amounts are estimates. Our licensed agent will provide an exact amount.</small>
+                </div>
+            </div>
         </div>
     </section>
 

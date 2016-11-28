@@ -663,7 +663,7 @@ body {
         min-height: calc(100vh - 405.16px);
         padding: 50px 0; } }
     body section.main-section#insurance101 {
-      padding: 0 0 100px; }
+      padding: 0; }
       body section.main-section#insurance101 div.container {
         width: 100%;
         padding: 0; }
@@ -692,6 +692,7 @@ body {
               text-align: center;
               border-bottom: 1px solid #3ca5d1; }
               body section.main-section#insurance101 div.container div.row div.col-md-12 div.toggle-tabs a.tab {
+                position: relative;
                 display: inline-block;
                 width: 185px;
                 padding-bottom: 20px;
@@ -704,6 +705,19 @@ body {
                           filter: grayscale(0%); }
                 body section.main-section#insurance101 div.container div.row div.col-md-12 div.toggle-tabs a.tab:hover span, body section.main-section#insurance101 div.container div.row div.col-md-12 div.toggle-tabs a.tab.active span {
                   color: #3ca5d1; }
+                body section.main-section#insurance101 div.container div.row div.col-md-12 div.toggle-tabs a.tab.active:after {
+                  position: absolute;
+                  bottom: -16px;
+                  left: 50%;
+                  display: block;
+                  width: 20px;
+                  height: 16px;
+                  content: '';
+                  -webkit-transform: translateX(-50%);
+                          transform: translateX(-50%);
+                  border-width: 16px 10px 0 10px;
+                  border-style: solid;
+                  border-color: #3ca5d1 transparent transparent transparent; }
                 body section.main-section#insurance101 div.container div.row div.col-md-12 div.toggle-tabs a.tab img {
                   display: inline-block;
                   height: 40px;
@@ -719,6 +733,76 @@ body {
                   -webkit-transition: all .3s ease;
                   transition: all .3s ease;
                   color: #8c8c8c; }
+            body section.main-section#insurance101 div.container div.row div.col-md-12 div.page {
+              width: 100%;
+              max-width: 1160px;
+              margin: 0 auto;
+              padding-top: 45px; }
+              body section.main-section#insurance101 div.container div.row div.col-md-12 div.page img {
+                display: block;
+                width: 100%; }
+              body section.main-section#insurance101 div.container div.row div.col-md-12 div.page h2 {
+                font-size: 25px;
+                font-weight: 700;
+                margin: 0 0 25px;
+                color: #2b2b2b; }
+                @media (max-width: 768px) {
+                  body section.main-section#insurance101 div.container div.row div.col-md-12 div.page h2 {
+                    font-size: 19px; } }
+              body section.main-section#insurance101 div.container div.row div.col-md-12 div.page p {
+                font-size: 16px;
+                color: #2b2b2b; }
+                @media (max-width: 768px) {
+                  body section.main-section#insurance101 div.container div.row div.col-md-12 div.page p {
+                    font-size: 12px; } }
+              body section.main-section#insurance101 div.container div.row div.col-md-12 div.page div#basics_intro {
+                overflow: auto;
+                width: 100%;
+                max-width: 1060px;
+                margin: 0 auto;
+                padding: 0 0 70px; }
+                body section.main-section#insurance101 div.container div.row div.col-md-12 div.page div#basics_intro div.textarea {
+                  padding-right: 50px; }
+                  @media (max-width: 991px) {
+                    body section.main-section#insurance101 div.container div.row div.col-md-12 div.page div#basics_intro div.textarea {
+                      padding-right: 15px;
+                      padding-bottom: 20px; } }
+              body section.main-section#insurance101 div.container div.row div.col-md-12 div.page div#app_process div.imgarea {
+                padding-right: 50px; }
+                @media (max-width: 991px) {
+                  body section.main-section#insurance101 div.container div.row div.col-md-12 div.page div#app_process div.imgarea {
+                    padding-right: 15px;
+                    padding-bottom: 30px; }
+                    body section.main-section#insurance101 div.container div.row div.col-md-12 div.page div#app_process div.imgarea img {
+                      max-width: 400px;
+                      margin: 0 auto; } }
+              body section.main-section#insurance101 div.container div.row div.col-md-12 div.page div#app_process div.textarea div#nums {
+                margin-top: 25px; }
+                body section.main-section#insurance101 div.container div.row div.col-md-12 div.page div#app_process div.textarea div#nums div.single-num {
+                  overflow: auto;
+                  margin-bottom: 45px; }
+                  body section.main-section#insurance101 div.container div.row div.col-md-12 div.page div#app_process div.textarea div#nums div.single-num:last-of-type {
+                    margin-bottom: 10px; }
+                  body section.main-section#insurance101 div.container div.row div.col-md-12 div.page div#app_process div.textarea div#nums div.single-num span.pinknum {
+                    font-size: 30px;
+                    line-height: 48px;
+                    display: block;
+                    float: left;
+                    width: 48px;
+                    height: 48px;
+                    margin-right: 25px;
+                    text-align: center;
+                    color: white;
+                    border-radius: 100%;
+                    background: #f498c2; }
+                  body section.main-section#insurance101 div.container div.row div.col-md-12 div.page div#app_process div.textarea div#nums div.single-num div.textwrapper {
+                    float: right;
+                    width: calc(100% - 73px); }
+                    body section.main-section#insurance101 div.container div.row div.col-md-12 div.page div#app_process div.textarea div#nums div.single-num div.textwrapper h3 {
+                      font-size: 19px;
+                      font-weight: 700;
+                      margin: 10px 0 0;
+                      color: #2b2b2b; }
     body section.main-section#contact-us form div.inline-text {
       font-size: 16px;
       position: relative;
@@ -2219,18 +2303,18 @@ body {
                 font-size: 18px;
                 letter-spacing: .225px; } }
   body section#affordability_hero {
+    padding-bottom: 10px;
     background-image: url("../images/affordability-bg.jpg");
     background-position: top right;
-    background-size: cover;
-    padding-bottom: 10px; }
+    background-size: cover; }
     @media (max-width: 630px) {
       body section#affordability_hero {
         background-position: 72% 50%; } }
     body section#affordability_hero div.container div.row:last-of-type {
       text-align: left; }
       body section#affordability_hero div.container div.row:last-of-type small {
-        color: white;
-        font-size: 14px; }
+        font-size: 14px;
+        color: white; }
     body section#affordability_hero div.container div.row div.col-md-12 {
       float: none;
       width: 100%;

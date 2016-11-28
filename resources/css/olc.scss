@@ -832,7 +832,7 @@ body {
             padding: 50px 0;
         }
         &#insurance101 {
-            padding: 0 0 100px;
+            padding: 0;
             div.container {
                 width: 100%;
                 padding: 0;
@@ -864,6 +864,7 @@ body {
                             text-align: center;
                             border-bottom: 1px solid #3ca5d1;
                             a.tab {
+                                position: relative;
                                 display: inline-block;
                                 width: 185px;
                                 padding-bottom: 20px;
@@ -881,6 +882,21 @@ body {
                                         color: #3ca5d1;
                                     }
                                 }
+                                &.active {
+                                    &:after {
+                                        position: absolute;
+                                        bottom: -16px;
+                                        left: 50%;
+                                        display: block;
+                                        width: 20px;
+                                        height: 16px;
+                                        content: '';
+                                        transform: translateX(-50%);
+                                        border-width: 16px 10px 0 10px;
+                                        border-style: solid;
+                                        border-color: #3ca5d1 transparent transparent transparent;
+                                    }
+                                }
                                 img {
                                     display: inline-block;
                                     height: 40px;
@@ -895,6 +911,94 @@ body {
                                     margin-top: 5px;
                                     transition: all .3s ease;
                                     color: #8c8c8c;
+                                }
+                            }
+                        }
+                        div.page {
+                            width: 100%;
+                            max-width: 1160px;
+                            margin: 0 auto;
+                            padding-top: 45px;
+                            img {
+                                display: block;
+                                width: 100%;
+                            }
+                            h2 {
+                                font-size: 25px;
+                                font-weight: 700;
+                                margin: 0 0 25px;
+                                color: #2b2b2b;
+                                @media (max-width: 768px) {
+                                    font-size: 19px;
+                                }
+                            }
+                            p {
+                                font-size: 16px;
+                                color: #2b2b2b;
+                                @media (max-width: 768px) {
+                                    font-size: 12px;
+                                }
+                            }
+                            div#basics_intro {
+                                overflow: auto;
+                                width: 100%;
+                                max-width: 1060px;
+                                margin: 0 auto;
+                                padding: 0 0 70px;
+                                div.textarea {
+                                    padding-right: 50px;
+                                    @media (max-width: 991px) {
+                                        padding-right: 15px;
+                                        padding-bottom: 20px;
+                                    }
+                                }
+                            }
+                            div#app_process {
+                                div.imgarea {
+                                    padding-right: 50px;
+                                    @media (max-width: 991px) {
+                                        padding-right: 15px;
+                                        padding-bottom: 30px;
+                                        img {
+                                            max-width: 400px;
+                                            margin: 0 auto;
+                                        }
+                                    }
+                                }
+                                div.textarea {
+                                    div#nums {
+                                        margin-top: 25px;
+                                        div.single-num {
+                                            overflow: auto;
+                                            margin-bottom: 45px;
+                                            &:last-of-type {
+                                                margin-bottom: 10px;
+                                            }
+                                            span.pinknum {
+                                                font-size: 30px;
+                                                line-height: 48px;
+                                                display: block;
+                                                float: left;
+                                                width: 48px;
+                                                height: 48px;
+                                                margin-right: 25px;
+                                                text-align: center;
+                                                color: white;
+                                                border-radius: 100%;
+                                                background: $pink;
+                                            }
+                                            div.textwrapper {
+                                                float: right;
+                                                width: calc(100% - 73px);
+                                                h3 {
+                                                    font-size: 19px;
+                                                    font-weight: 700;
+                                                    margin: 10px 0 0;
+                                                    color: #2b2b2b;
+                                                }
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -2593,10 +2697,10 @@ body {
         }
     }
     section#affordability_hero {
+        padding-bottom: 10px;
         background-image: url('../images/affordability-bg.jpg');
         background-position: top right;
         background-size: cover;
-        padding-bottom: 10px;
         @media (max-width: 630px) {
             background-position: 72% 50%;
         }
@@ -2605,8 +2709,8 @@ body {
                 &:last-of-type {
                     text-align: left;
                     small {
-                        color: white;
                         font-size: 14px;
+                        color: white;
                     }
                 }
                 div.col-md-12 {
@@ -2711,7 +2815,7 @@ body {
                             width: 100%;
                             margin: 30px auto 100px;
                             @media (max-width: 768px) {
-                                margin: 23px auto 75px
+                                margin: 23px auto 75px;
                             }
                             input.btn {
                                 font-size: 20px;

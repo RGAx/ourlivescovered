@@ -12,6 +12,16 @@ $(document).ready(function() {
         $('a#close_menu').removeClass('open');
     });
 
+    // activate tabs on Insurance 101 page
+    $('div.toggle-tabs a.tab').on('click', function(e) {
+        e.preventDefault();
+        var sectionID = $(this).attr('href');
+        $('a.tab').removeClass('active');
+        $(this).addClass('active');
+        $('div.page').removeClass('visible');
+        $('div#' + sectionID).addClass('visible');
+    });
+
     // build array for Affordability path
     var tempTable = {
         twentyfive: {

@@ -9,20 +9,20 @@
                         <p>Insurance doesn't have to be confusing, and we want to make sure you understand how it works, and the options you have.</p>
                     </div>
                     <div class="toggle-tabs">
-                        <a href="#" id="the_basics" class="tab active">
+                        <a href="the_basics" class="tab active">
                             <img src="resources/images/abc.png">
                             <span>The Basics</span>
                         </a>
-                        <a href="#" id="seven_buts" class="tab">
+                        <a href="seven_buts" class="tab">
                             <img src="resources/images/question.png">
                             <span>Seven Big Buts</span>
                         </a>
-                        <a href="#" id="whats_right" class="tab">
+                        <a href="whats_right" class="tab">
                             <img src="resources/images/family.png">
                             <span>Doing What's Right</span>
                         </a>
                     </div>
-                    <div id="the_basics" class="page">
+                    <div id="the_basics" class="page visible">
                         <div id="basics_intro">
                             <div class="textarea col-md-6">
                                 <h2>Accidents happen. Cars swerve. Zombies bite</h2>
@@ -71,6 +71,97 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div id="seven_buts" class="page">
+                        <div class="panel-group" id="accordion">
+                            <h3>If you don’t have life insurance because of any of the reasons below, hear us out...</h3>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"">But isn’t life insurance really expensive?</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseOne" class="panel-collapse collapse in">
+                                    <div class="panel-body">
+                                        <p>Some people tend to over-estimate the cost of life insurance by 3 to 8 times the actual cost.  The low rates can be surprising.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" class="collapsed">But I’m probably not going to die any time soon.</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseTwo" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque congue scelerisque odio, in placerat nulla viverra quis. Ut suscipit ipsum.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" class="collapsed">But my partner makes most of our money. Why should I get insurance?</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseThree" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque congue scelerisque odio, in placerat nulla viverra quis. Ut suscipit ipsum.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour" class="collapsed">But I get life insurance through my employer. Isn’t that enough?</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseFour" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque congue scelerisque odio, in placerat nulla viverra quis. Ut suscipit ipsum.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive" class="collapsed">But don’t people usually buy insurance through an agent?</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseFive" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque congue scelerisque odio, in placerat nulla viverra quis. Ut suscipit ipsum.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseSix" class="collapsed">But isn’t it just as good or better to invest my money?</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseSix" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque congue scelerisque odio, in placerat nulla viverra quis. Ut suscipit ipsum.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" class="collapsed">But don’t I have to get a medical exam to get insurance?</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseSeven" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque congue scelerisque odio, in placerat nulla viverra quis. Ut suscipit ipsum.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="whats_right" class="page">
                     </div>
                 </div>
             </div>

@@ -181,7 +181,7 @@
                                 <div class="col-sm-8">
                                     <h2>Lend a hand to someone left hanging.</h2>
                                     <p>OUR LIFE COVERED<sup>SM</sup> is proud to support the Life Lessons Scholarship Program, which assists young people seeking a college education who are struggling financially because their parent died, leaving little or no life insurance. Please join us and make a donation today.</p>
-                                    <a id="donate" class="btn" href="#">Donate Now</a>
+                                    <a id="donate" class="btn" href="https://www.lifehappens.org/life-lessons-scholarship-program/donate-to-life-lessons/">Donate Now</a>
                                 </div>
                             </div>
                         </div>

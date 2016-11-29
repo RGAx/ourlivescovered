@@ -165,7 +165,7 @@
                         <div id="corporate_partner">
                             <h2>Have you met our corporate partner BFF?</h2>
                             <img id="lh-logo" src="resources/images/life-happens-logo.jpg">
-                            <p>Our Life Covered has partnered with Life Happens, a nonprofit organization that is just as dedicated as we are to educating people about the importance of protecting themselves and their families with the coverage they need.</p>
+                            <p>OUR LIFE COVERED<sup>SM</sup> has partnered with Life Happens, a nonprofit organization that is just as dedicated as we are to educating people about the importance of protecting themselves and their families with the coverage they need.</p>
                             <p>Danica Patrick, professional race car driver and the 2016 spokesperson for Life Insurance Awareness Month, sums up the difference life insurance can make.</p>
                             <video id='brigcovepersonalplayer' data-account="4486098250001" data-player="HyV9Hkf5" data-video-id="4924793818001" data-embed="default" style="width: 100%; height:auto; padding-bottom: 56.25%;" class="video-js bc-video" controls ></video>
                             <script src="//players.brightcove.net/4486098250001/HyV9Hkf5_default/index.min.js"></script>
@@ -180,7 +180,7 @@
                                 </div>
                                 <div class="col-sm-8">
                                     <h2>Lend a hand to someone left hanging.</h2>
-                                    <p>Our Life Covered is proud to support the Life Lessons Scholarship Program, which assists young people seeking a college education who are struggling financially because their parent died, leaving little or no life insurance. Please join us and make a donation today.</p>
+                                    <p>OUR LIFE COVERED<sup>SM</sup> is proud to support the Life Lessons Scholarship Program, which assists young people seeking a college education who are struggling financially because their parent died, leaving little or no life insurance. Please join us and make a donation today.</p>
                                     <a id="donate" class="btn" href="#">Donate Now</a>
                                 </div>
                             </div>

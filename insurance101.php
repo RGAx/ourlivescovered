@@ -175,10 +175,10 @@
                         </div>
                         <div id="lend_hand">
                             <div class="content-wrapper">
-                                <div class="col-sm-4">
+                                <div class="col-sm-5">
                                     <img id="lh-logo" src="resources/images/girl-reading.jpg">
                                 </div>
-                                <div class="col-sm-8">
+                                <div class="col-sm-7">
                                     <h2>Lend a hand to someone left hanging.</h2>
                                     <p>OUR LIFE COVERED<sup>SM</sup> is proud to support the Life Lessons Scholarship Program, which assists young people seeking a college education who are struggling financially because their parent died, leaving little or no life insurance. Please join us and make a donation today.</p>
                                     <a id="donate" class="btn" href="https://www.lifehappens.org/life-lessons-scholarship-program/donate-to-life-lessons/">Donate Now</a>

@@ -95,7 +95,7 @@
                                 </div>
                                 <div id="collapseTwo" class="panel-collapse collapse">
                                     <div class="panel-body">
-                                        <p>The younger you get your coverage, the lower your premiums will be. The longer you wait, the more likely you are to develop medical conditions that exaggerate the premium cost to you. If you buy when you're young and in great health, your premium is locked in – even when you convert to another life insurance product in most cases.</p>
+                                        <p>The younger you get your coverage, the lower your premiums may be. The longer you wait, the more likely you are to develop medical conditions that increase your premium costs. If you buy when you're young and in great health, your premium is locked in – for up to 30 years.</p>
                                     </div>
                                 </div>
                             </div>
@@ -107,7 +107,7 @@
                                 </div>
                                 <div id="collapseThree" class="panel-collapse collapse">
                                     <div class="panel-body">
-                                        <p>Most people think that since a non-working partner makes no income, there is nothing there to insure. The loss of a non-working partner might require a need for additional services to care for your family, such as childcare. In addition, life insurance allows the surviving partner to take some unpaid time off work to help the family adjust to their loss.</p>
+                                        <p>Most people believe if their income is lower or if they are a stay-at-home parent, they should not be insured. The loss of a non-working partner might require a need for services to care for your family, such as childcare. In addition, life insurance allows the surviving partner to take some unpaid time off work to help the family adjust to their loss.</p>
                                     </div>
                                 </div>
                             </div>
@@ -119,7 +119,7 @@
                                 </div>
                                 <div id="collapseFour" class="panel-collapse collapse">
                                     <div class="panel-body">
-                                        <p>Many employers provide group life insurance to employees. While this may provide a healthy baseline, many experts recommend 8-10 times your income in coverage to safeguard your dependents’ future needs. And these policies can rarely be taken with you if you leave employment.</p>
+                                        <p>Many employers provide group life insurance to employees. While this may provide a healthy baseline, it may not be enough to provide your family the help they need should something happen to you.  In fact, many experts recommend 8-10 times your income in coverage to safeguard your dependents’ future needs. And, in most cases, these policies do not go with you when you leave.</p>
                                     </div>
                                 </div>
                             </div>
@@ -131,7 +131,7 @@
                                 </div>
                                 <div id="collapseFive" class="panel-collapse collapse">
                                     <div class="panel-body">
-                                        <p>Individual life insurance rates are filed with state regulators, and remain the same for both online purchases or with an insurance agent. We offer Transamerica Life Insurance Company for an immediate online purchase and partner with the Health IQ call center in offering other insurance competitors so you get the best rate – saving you time and money.</p>
+                                        <p>Life insurance can be purchased through an agent, but it can also be purchased online directly through the carrier.  Individual life insurance rates are filed with state regulators, and remain the same for both online purchases or with an insurance agent. We offer Transamerica Life Insurance Company for an immediate online purchase and partner with a call center in offering other insurance competitors so you get the best rate – saving you time and money.</p>
                                     </div>
                                 </div>
                             </div>
@@ -143,7 +143,7 @@
                                 </div>
                                 <div id="collapseSix" class="panel-collapse collapse">
                                     <div class="panel-body">
-                                        <p>There is a point in time for some people where investments have amassed enough volume that they don't need life insurance any longer. For most younger Americans, accumulated savings and investments would do little more than cover final expenses. If your investments do not meet the needs of your loved ones, you may need life insurance.</p>
+                                        <p>For younger Americans, accumulated savings and investments would do little more than cover final expenses. For others, their investments have grown enough that they don't need life insurance any longer. If your investments do not meet the needs of your loved ones, you may need life insurance.</p>
                                     </div>
                                 </div>
                             </div>
@@ -155,7 +155,7 @@
                                 </div>
                                 <div id="collapseSeven" class="panel-collapse collapse">
                                     <div class="panel-body">
-                                        <p>Your health history is instrumental in setting your premium. Occupation, hobbies, medical history, family history, and driving record give an insurer a window into your health and even likelihood to put your life at risk. All of these are factors in setting your premium. For healthy people like you, you could see premiums that are less than half of those paid by the average insured.</p>
+                                        <p>A medical exam depends on the coverage amount selected.  In most cases, your health and family history provide enough information to forgo a medical exam.  Other key factors such as occupation, hobbies, and driving record give the insurer a window into your health and potential risk factors in your life.   All of these factors provide the insurer enough information to set your premium.  For healthy people like you, your premiums could potentially be less than half of those paid by the average insured.</p>
                                     </div>
                                 </div>
                             </div>

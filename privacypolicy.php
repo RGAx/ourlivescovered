@@ -9,9 +9,9 @@
 	                        <p>OUR LIFE COVERED<sup>SM</sup> is a digital Life Insurance sales site of the Two Rivers Agency. Two Rivers operates as Rivers Run Insurance Agency in California.</p>
 	                        <p>
 	                            This statement discloses the privacy practices for the Two Rivers Agency website, and includes:<br><br>
-	                            •   What information is gathered/tracked<br>
-	                            •   How the information is used; and<br>
-	                            •   Who information is shared with.<br><br>
+	                            &bull;   What information is gathered/tracked<br>
+	                            &bull;   How the information is used; and<br>
+	                            &bull;   Who information is shared with.<br><br>
 	                            Questions regarding this statement should be directed by email to info@tworiversagency.com.
 	                        </p>
 	                        <h3>Summary</h3>
@@ -21,23 +21,23 @@
 	                        <h3>Agent Contact Request Forms</h3>
 	                        <p>
 	                            When you would like to have a Two Rivers Agency Agent contact you, we will ask you for:<br><br>
-	                            •   your name<br>
-	                            •   your street address<br>
-	                            •   your phone number<br>
-	                            •   your email address<br><br>
+	                            &bull;   your name<br>
+	                            &bull;   your street address<br>
+	                            &bull;   your phone number<br>
+	                            &bull;   your email address<br><br>
 	                            Since life and disability insurance is primarily state-regulated, and our agents are licensed by state, we need your street address so that we may forward your information to the appropriate agent. Your name, phone number and/or email address enable you to be contacted, per your request.
 	                        </p>
 	                        <h3>Customer Service Request Forms</h3>
 	                        <p>
 	                            We want to provide our customers with a means to communicate with us 24 hours a day, seven days a week. We do this through our Customer Service email forms.<br>
 	                            In order to provide you with the service you need the most efficient way possible, we will ask you for some or all of the following information:<br><br>
-	                            •   your name<br>
-	                            •   your social security number<br>
-	                            •   your street address<br>
-	                            •   your policy number (if applicable)<br>
-	                            •   your Insurance Service Account number (if applicable)<br>
-	                            •   your phone number<br>
-	                            •   your email address<br><br>
+	                            &bull;   your name<br>
+	                            &bull;   your social security number<br>
+	                            &bull;   your street address<br>
+	                            &bull;   your policy number (if applicable)<br>
+	                            &bull;   your Insurance Service Account number (if applicable)<br>
+	                            &bull;   your phone number<br>
+	                            &bull;   your email address<br><br>
 	                            This information is for our internal use to service your request, so that we or our administrators may access your customer information. It is not shared with any other third party, unless permitted or required by law.
 	                        </p>
 	                        <h3>Interactive Forms or Calculators</h3>

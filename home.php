@@ -36,20 +36,23 @@
                 <h3>Find the right life insurance policy, fast.</h3>
                 </div>
             </div>
-            <div class="row"><form action="quote-form.php" method="get">
-                <div class="col-sm-8">
-                    <select class="form-control" name="preference">
-                        <option>
-                            Select the option that sounds most like you...
-                        </option>
-                        <option value="1">I know what I can afford</option>
-                        <option value="2">I know how much I need</option>
-                        <option value="3">I'm not sure how much I need</option>
-                    </select>
-                </div>
-                <div class="col-sm-4">
-                <input class="btn btn-primary" type="submit" value="Let's Go!">
-            </div></form>
+            <div class="row">
+                <div class="error-text" style="display: block;">Please select the option that sounds most like you.</div>
+                <form action="quote-form.php" method="get">
+                    <div class="col-sm-8">
+                        <select class="form-control" name="preference">
+                            <option>
+                                Select the option that sounds most like you...
+                            </option>
+                            <option value="1">I know what I can afford</option>
+                            <option value="2">I know how much I need</option>
+                            <option value="3">I'm not sure how much I need</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-4">
+                        <input class="btn btn-primary" type="submit" value="Let's Go!">
+                    </div>
+                </form>
             </div>
         </div>
         <div class="scrollprompt">

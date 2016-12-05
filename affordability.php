@@ -17,8 +17,8 @@
                                         <select name="affordablePremium" id="affordablePremium" class="coverageamt-select afford-dropdown">
                                             <!-- <option value="">Amount</option> -->
                                             <option value="twentyfive">$25 per month</option>
-                                            <option value="fifty">$50 per month</option>
-                                            <option value="onehundred">$100 per month</option>
+                                            <option value="fifty">$40 per month</option>
+                                            <option value="onehundred">$50 per month</option>
                                         </select>
                                     </div>
                                     <div class="select-wrapper">

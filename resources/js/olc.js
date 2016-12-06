@@ -504,8 +504,6 @@ $(document).ready(function() {
 
     $(".btn.quiz").click(function() {
 
-        $("div.quiz-header h1").hide();
-        $("div.quiz-header h3").hide();
 
         var clickedLink = this.id;
         var nextPage;

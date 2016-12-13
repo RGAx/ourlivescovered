@@ -35,7 +35,7 @@
                         </div>
                         <div id="app_process">
                             <div class="imgarea col-sm-5">
-                                <img src="resources/images/ipad.jpg">
+                                <img src="resources/images/ipad.jpg?v=2.0">
                             </div>
                             <div class="textarea col-sm-7">
                                 <h2>The Application Process</h2>

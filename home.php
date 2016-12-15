@@ -1,40 +1,32 @@
 ﻿<?php require_once('header.html'); ?>
-
 <div class="container-fluid">
     <div id="hero" class="homepage">
     	<div class="main-cta">
-                        <div class="desktop-only">
-                        <h4 class="hero-caption">Unlike the perfect selfies people share,</h4>
-                        <h4 class="hero-caption-bold">Life. Isn't. Always. Pretty.</h4>
-                        <p>
-                        Our Life Covered can help you find affordable life insurance on your terms, protecting your family from the unexpected.
-                        </p>
-                        </div>
-                        <div class="mobile-only">
-                        <h4 class="hero-caption-bold">Find affordable life insurance on your terms.</h4>
-                        </div>
-                        
-                        <form class="cta-form" action="quote-form.php" method="get">
-                               <h3>Choose how to shop...</h3>
-                                <div class="row">
-                                    <div class="col-sm-8">
-                                        <select class="form-control" name="preference">
-                                            <option value="1">I know what I can afford</option>
-                                            <option value="2">I know how much I need</option>
-                                            <option value="3">I'm not sure how much I need</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-sm-4">
-                                    <input class="btn btn-primary" type="submit" value="Let's Go!">
-                                    </div>
-                                </div>
-                        </form>
-                        <div class="clear"></div>
+            <div class="desktop-only">
+                <h4 class="hero-caption">Unlike the perfect selfies people share,</h4>
+                <h4 class="hero-caption-bold">Life. Isn't. Always. Pretty.</h4>
+                <p>Our Life Covered can help you find affordable life insurance on your terms, protecting your family from the unexpected.</p>
+            </div>
+            <div class="mobile-only">
+                <h4 class="hero-caption-bold">Find affordable life insurance on your terms.</h4>
+            </div>
+            <form class="cta-form" action="quote-form.php" method="get">
+                <h3>Choose how to shop...</h3>
+                <div class="row">
+                    <div class="col-sm-8">
+                        <select class="form-control" name="preference">
+                            <option value="1">I know what I can afford</option>
+                            <option value="2">I know how much I need</option>
+                            <option value="3">I'm not sure how much I need</option>
+                        </select>
                     </div>
-                    
-       
-       
-       
+                    <div class="col-sm-4">
+                        <input class="btn btn-primary" type="submit" value="Let's Go!">
+                    </div>
+                </div>
+            </form>
+            <div class="clear"></div>
+        </div>
     </div>
     <div class="container quiz">
    	    <div class="row quiz-header">
@@ -176,6 +168,7 @@
         </div>
     </div>
     <div id="footer-carousel">
+        <p id="astrik-home">*Individual cases may vary due to dependencies on specific underwriting criteria in the application process.</p>
         <div id="footerCarousel" class = "carousel slide">
             <ol class = "carousel-indicators ">
                 <li data-target = "#footerCarousel" data-slide-to = "0" class="active"></li>
@@ -211,5 +204,4 @@
         </div>
     </div>
 </div>
-
 <?php require_once('footer.html'); ?>

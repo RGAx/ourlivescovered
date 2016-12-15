@@ -144,7 +144,7 @@ body {
           color: white; }
       body header div.container div.row div.col-md-12 div.header-call {
         font-size: 15px;
-        display: block;
+        display: none;
         float: right;
         color: #fcecf3; }
         @media (max-width: 768px) {
@@ -157,7 +157,7 @@ body {
         color: #fcecf3; }
         @media (max-width: 768px) {
           body header div.container div.row div.col-md-12 div.header-call-mobile {
-            display: block; } }
+            display: none; } }
         @media (max-width: 584px) {
           body header div.container div.row div.col-md-12 div.header-call-mobile {
             display: none; } }

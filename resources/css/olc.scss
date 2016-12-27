@@ -2043,7 +2043,8 @@ body {
                                         }
                                     }
                                     div.row.margin-bottom-s {
-                                        div.best-class {
+                                        margin: 15px 0;
+                                        div.standard-class {
                                             font-weight: 600;
                                             color: $pink;
                                             div.text-center {
@@ -2064,8 +2065,7 @@ body {
                                         }
                                         div.standard-class {
                                             font-weight: 600;
-                                            padding-top: 12px;
-                                            padding-left: 0;
+                                            color: $pink;
                                             div.text-left {
                                                 text-align: center;
                                                 span.currency {
@@ -2080,11 +2080,6 @@ body {
                                                     vertical-align: top;
                                                 }
                                                 span.freq {
-                                                    font-size: 11px;
-                                                }
-                                            }
-                                            div.text-center {
-                                                span.rate-name {
                                                     font-size: 11px;
                                                 }
                                             }

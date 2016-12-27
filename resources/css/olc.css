@@ -1728,38 +1728,37 @@ body {
         body div.background-wrap#quote_singlecarrier section#quote-page div.container div.row div.quote div.box form div.text-center img.transamerica {
           width: 175px;
           vertical-align: middle; }
-        body div.background-wrap#quote_singlecarrier section#quote-page div.container div.row div.quote div.box form div.row.margin-bottom-s div.best-class {
-          font-weight: 600;
-          color: #f498c2; }
-          body div.background-wrap#quote_singlecarrier section#quote-page div.container div.row div.quote div.box form div.row.margin-bottom-s div.best-class div.text-center span.currency {
-            font-size: 20px;
-            line-height: 47px;
-            vertical-align: top; }
-          body div.background-wrap#quote_singlecarrier section#quote-page div.container div.row div.quote div.box form div.row.margin-bottom-s div.best-class div.text-center span.price {
-            font-size: 46px;
-            line-height: 46px; }
-          body div.background-wrap#quote_singlecarrier section#quote-page div.container div.row div.quote div.box form div.row.margin-bottom-s div.best-class div.text-center span.rate-name {
-            font-size: 25px;
-            color: #515151; }
-        body div.background-wrap#quote_singlecarrier section#quote-page div.container div.row div.quote div.box form div.row.margin-bottom-s div.standard-class {
-          font-weight: 600;
-          padding-top: 12px;
-          padding-left: 0; }
-          body div.background-wrap#quote_singlecarrier section#quote-page div.container div.row div.quote div.box form div.row.margin-bottom-s div.standard-class div.text-left {
-            text-align: center; }
-            body div.background-wrap#quote_singlecarrier section#quote-page div.container div.row div.quote div.box form div.row.margin-bottom-s div.standard-class div.text-left span.currency {
-              font-size: 15px;
-              line-height: 29px;
-              padding-left: 10px;
-              vertical-align: text-bottom; }
-            body div.background-wrap#quote_singlecarrier section#quote-page div.container div.row div.quote div.box form div.row.margin-bottom-s div.standard-class div.text-left span.price {
-              font-size: 25px;
-              line-height: 25px;
+        body div.background-wrap#quote_singlecarrier section#quote-page div.container div.row div.quote div.box form div.row.margin-bottom-s {
+          margin: 15px 0; }
+          body div.background-wrap#quote_singlecarrier section#quote-page div.container div.row div.quote div.box form div.row.margin-bottom-s div.standard-class {
+            font-weight: 600;
+            color: #f498c2; }
+            body div.background-wrap#quote_singlecarrier section#quote-page div.container div.row div.quote div.box form div.row.margin-bottom-s div.standard-class div.text-center span.currency {
+              font-size: 20px;
+              line-height: 47px;
               vertical-align: top; }
-            body div.background-wrap#quote_singlecarrier section#quote-page div.container div.row div.quote div.box form div.row.margin-bottom-s div.standard-class div.text-left span.freq {
-              font-size: 11px; }
-          body div.background-wrap#quote_singlecarrier section#quote-page div.container div.row div.quote div.box form div.row.margin-bottom-s div.standard-class div.text-center span.rate-name {
-            font-size: 11px; }
+            body div.background-wrap#quote_singlecarrier section#quote-page div.container div.row div.quote div.box form div.row.margin-bottom-s div.standard-class div.text-center span.price {
+              font-size: 46px;
+              line-height: 46px; }
+            body div.background-wrap#quote_singlecarrier section#quote-page div.container div.row div.quote div.box form div.row.margin-bottom-s div.standard-class div.text-center span.rate-name {
+              font-size: 25px;
+              color: #515151; }
+          body div.background-wrap#quote_singlecarrier section#quote-page div.container div.row div.quote div.box form div.row.margin-bottom-s div.standard-class {
+            font-weight: 600;
+            color: #f498c2; }
+            body div.background-wrap#quote_singlecarrier section#quote-page div.container div.row div.quote div.box form div.row.margin-bottom-s div.standard-class div.text-left {
+              text-align: center; }
+              body div.background-wrap#quote_singlecarrier section#quote-page div.container div.row div.quote div.box form div.row.margin-bottom-s div.standard-class div.text-left span.currency {
+                font-size: 15px;
+                line-height: 29px;
+                padding-left: 10px;
+                vertical-align: text-bottom; }
+              body div.background-wrap#quote_singlecarrier section#quote-page div.container div.row div.quote div.box form div.row.margin-bottom-s div.standard-class div.text-left span.price {
+                font-size: 25px;
+                line-height: 25px;
+                vertical-align: top; }
+              body div.background-wrap#quote_singlecarrier section#quote-page div.container div.row div.quote div.box form div.row.margin-bottom-s div.standard-class div.text-left span.freq {
+                font-size: 11px; }
         body div.background-wrap#quote_singlecarrier section#quote-page div.container div.row div.quote div.box form div.sliders div {
           font-size: 14px;
           font-weight: 600; }

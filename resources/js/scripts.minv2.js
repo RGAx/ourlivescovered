@@ -54,6 +54,19 @@ function loadCookies(cookieName, formObj) {
         for (var key in obj) if (key.indexOf("children") == 0) {
             var index = key.split("[")[1].split("]")[0];
             loadDependentFromCookie(index), formObj.elements[key].value = obj[key];
+        } else {
+        	if(sessionStorage.getItem('src') == "iknowwhatiwant") {
+        		if(key != "annual-income" & key != "rec-coverage" & formObj.elements[key]!=undefined)
+            		formObj.elements[key].value = obj[key];
+        	} else if(sessionStorage.getItem('src') == "affordability") {
+        		if(key != "coverage" & key != "annual-income" & key != "gender"  & key != "rec-coverage" & formObj.elements[key]!=undefined)
+        			formObj.elements[key].value = obj[key];
+        	} else if(sessionStorage.getItem('src') == "calculateneed") {
+        		if(key != "annual-income" & formObj.elements[key]!=undefined)
+        		formObj.elements[key].value = obj[key];
+        	} else {
+        		formObj.elements[key].value = obj[key];
+        	}
         } //else formObj.elements[key].value = obj[key];
     }
 }
@@ -5483,6 +5496,7 @@ function numberWithCommas(x) {
     return (x != null) ? x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") : "";
 }
 function removeCommas(x) {
+	var x = (x != null) ? x.toString().replace("$", "") : "";
     return (x != null) ? x.toString().replace(/\,/g, "") : "";
 }
 $("#retirementSavings").inputmask({
@@ -5612,7 +5626,7 @@ function displayErrorText(message, selector) {
 	}, 1000);
 }
 
-function validateNeeds() {
+function validateNeeds(obj) {
 	$("#needsCalculatorErrorMsgId").find(".error-text").hide();
 	if (isValidInputAmount($("#retirementSavings").val()) == 1) {
 		return void displayErrorText("Please enter your retirement savings.",
@@ -5709,7 +5723,7 @@ function validateNeeds() {
 	        type: "POST",
 	        data: formData,
 	        success: function(data, textStatus, jqXHR) {
-	        	calculatorSuccess(data);
+	        	calculatorSuccess(data,obj);
 	        },
 	        error: function(jqXHR, textStatus, errorThrown) {
 	        	calculatorFailure(data);
@@ -5718,9 +5732,18 @@ function validateNeeds() {
 	}
 }
 
-function calculatorSuccess(response) {
-	document.getElementById('needs-calculator').style.display="none";
-	document.getElementById('calculator-report').style.display="block";
+function calculatorSuccess(response,obj) {		
+	if(obj=="natlang" && (JSON.parse(response).coverage<= 2e6)){		
+		document.getElementById('calculator').style.display="none";
+		document.getElementById('needs-calculator').style.display="none";
+		document.getElementById('quote_form_natlang').style.display="block";
+	}else if(obj=="standard" && (JSON.parse(response).coverage<= 2e6)){
+		document.getElementById('needs-calculator').style.display="none";
+		document.getElementById('calculator-report').style.display="block";
+	}else{		
+		//No chnages required
+	}
+	
 	var Map = {};
 	Map[1] = 'One Child';
 	Map[2] = 'Two Children';
@@ -5782,7 +5805,9 @@ function calculatorSuccess(response) {
 			    $("#quote-page .quote-progress").show(),
 			    //void changeSection("#calculator-report"),
 			    $("#calc-requested_coverage").val(response.coverage), 
-			    $("#calc-policy_term").val(response.term);
+			    $("#calc-policy_term").val(response.term),
+			    $("#calc-annual-income").val("$" + numberWithCommas($("#annualIncome").val())),
+			    $("#calc-coverage").val("$" + numberWithCommas(response.coverage));
 	}
 	else if (response.estimatedPrivateCollegeExpenses <= 0 && response.estimatedPublicCollegeExpenses > 0) {
 		return (response.coverage <= 0 && ($("#calculator-report h2").text("Congratulations!"), 
@@ -5814,7 +5839,9 @@ function calculatorSuccess(response) {
 			     $("#quote-page .quote-progress").show(),
 			    //void changeSection("#calculator-report"),
 			    $("#calc-requested_coverage").val(response.coverage), 
-			    $("#calc-policy_term").val(response.term));
+			    $("#calc-policy_term").val(response.term)),
+			    $("#calc-annual-income").val("$" + numberWithCommas($("#annualIncome").val())),
+			    $("#calc-coverage").val("$" + numberWithCommas(response.coverage));
 	}
 	else if (response.estimatedPublicCollegeExpenses <= 0 && response.estimatedPrivateCollegeExpenses > 0) {
 		return (response.coverage <= 0 && ($("#calculator-report h2").text("Congratulations!"), 
@@ -5846,7 +5873,9 @@ function calculatorSuccess(response) {
 			    $("#quote-page .quote-progress").show(),
 			    //void changeSection("#calculator-report"),
 			    $("#calc-requested_coverage").val(response.coverage), 
-			    $("#calc-policy_term").val(response.term));
+			    $("#calc-policy_term").val(response.term)),
+			    $("#calc-annual-income").val("$" + numberWithCommas($("#annualIncome").val())),
+			    $("#calc-coverage").val("$" + numberWithCommas(response.coverage));
 	}
 	else if (response.estimatedPrivateCollegeExpenses > 0 && response.estimatedPublicCollegeExpenses > 0) {
 		return (response.coverage <= 0 && ($("#calculator-report h2").text("Congratulations!"), 
@@ -5878,8 +5907,9 @@ function calculatorSuccess(response) {
 			    $("#quote-page .quote-progress").show(),
 			    //void changeSection("#calculator-report"),
 			    $("#calc-requested_coverage").val(response.coverage), 
-			    $("#calc-policy_term").val(response.term));
-		
+			    $("#calc-policy_term").val(response.term)),
+			    $("#calc-annual-income").val("$" + numberWithCommas($("#annualIncome").val())),
+			    $("#calc-coverage").val("$" + numberWithCommas(response.coverage));
 	}
 }
 
@@ -5887,29 +5917,68 @@ function calculatorFailure(response) {
 	alert("failure");
 }
 
-function validateQuote(obj) {
+function validateQuote(obj) {	
+	var str_array = obj.split(',');	
 	$("#needs-calculator-demographics-form").find(".error-text").hide();
 	var regExp = new RegExp(/^\(\d{3}\) \d{3}-\d{4}$/);
-	if ($("#calc-first-name").val().length < 3) {
-		return void displayErrorText("Please enter your first name.", "#calculator-demographics");
+	/*if (str_array[1] == "natlang") {	
+		
+		if($("#calc-first-name").val().length < 3)
+			return void displayErrorText("Please enter your first name.", "#quote_form_natlang");
+		
+		var namesArray = $("#calc-first-name").val().split(' ');
+
+		if(namesArray.length < 2)
+			return void displayErrorText("Please enter your last name.", "#quote_form_natlang");
+		
+		if(namesArray[1].length < 3)
+			return void displayErrorText("Please enter your last name atleast with 3 characters.", "#quote_form_natlang");
+		
+	}*/
+	if (str_array[1] == undefined && $("#calc-first-name").val().length < 3) {		
+		return void displayErrorText("Please enter your first name.", "#quote_form");
 	}
-	else if ($("#calc-date-of-birth").val().length < 7) {
-    	return void displayErrorText("Please enter a valid date of birth.", "#calculator-demographics");
+	else if ((str_array[1] == "natlang") && $("#calc-first-name").val().length < 3) {		
+		return void displayErrorText("Please enter your first name.", "#quote_form_natlang");
+	}
+	else if (str_array[1] == undefined && ($("#calc-last-name").val().length < 3)) {		
+		return void displayErrorText("Please enter your last name.", "#quote_form");
+	}
+	else if ((str_array[1] == "natlang") && $("#calc-last-name").val().length < 3) {		
+		return void displayErrorText("Please enter your last name.", "#quote_form_natlang");
+	}
+	else if (str_array[1] == undefined && $("#calc-date-of-birth").val().length < 7) {
+    	return void displayErrorText("Please enter a valid date of birth.", "#quote_form");
 	}	
-	else if (!isValidEmail($("#calc-email-address").val())) { 
-    	return void displayErrorText("Please enter a valid email address.", "#calculator-demographics");
-	} 
-	else if($("#calc-form-phone").val().length == 0) {
-		return void displayErrorText("Please enter a phone number.", "#calculator-demographics");
+	else if ((str_array[1] == "natlang") && $("#calc-date-of-birth").val().length < 7) {
+    	return void displayErrorText("Please enter a valid date of birth.", "#quote_form_natlang");
 	}
-	else if($("#calc-form-phone").val().length > 0 && !regExp.test($("#calc-form-phone").val())) {
-    		return void displayErrorText("Please enter a valid phone number.", "#calculator-demographics");
+	else if (str_array[1] == undefined &&  !isValidEmail($("#calc-email-address").val())) { 
+    	return void displayErrorText("Please enter a valid email address.", "#quote_form");
+	}
+	else if (str_array[1] == "natlang" &&  !isValidEmail($("#calc-email-address").val())) { 
+    	return void displayErrorText("Please enter a valid email address.", "#quote_form_natlang");
+	}
+	else if(str_array[1] == undefined && ($("#calc-form-phone").val()!= undefined && $("#calc-form-phone").val().length == 0) ) {		
+		return void displayErrorText("Please enter a phone number.", "#quote_form");
+	}
+	else if(str_array[1] == undefined && $("#calc-form-phone").val()!= undefined && $("#calc-form-phone").val().length > 0 && !regExp.test($("#calc-form-phone").val()) ) {		
+    		return void displayErrorText("Please enter a valid phone number.", "#quote_form");
     }
-	else if ($("#calc-state").val()== '') {
-		return void displayErrorText("Please select a state.", "#calculator-demographics");
+	else if((str_array[1] == "natlang" && $("#calc-form-phone").val().length == 0) ) {		
+		return void displayErrorText("Please enter a phone number.", "#quote_form_natlang");
+	}
+	else if(str_array[1] == "natlang" &&  $("#calc-form-phone").val().length > 0 && !regExp.test($("#calc-form-phone").val()) ) {		
+    		return void displayErrorText("Please enter a valid phone number.", "#quote_form_natlang");
+    }
+	else if (str_array[1] == undefined && $("#calc-state").val()== '') {
+		return void displayErrorText("Please select a state.", "#quote_form");
+	}
+	else if (str_array[1] == "natlang" && $("#calc-state").val()== '') {
+		return void displayErrorText("Please select a state.", "#quote_form_natlang");
 	}
 	/*else if ($("#calc-state").val() == 'NY') {
-		window.location.href='/'+hostName+'/loadNYContactus.do';
+		window.location.href='/'+hostName+'/loa dNYContactus.do';
 	}*/
 	else {
 		var demographicData = $(needsCalculatorDemographicsForm).serializeObject();
@@ -5918,11 +5987,13 @@ function validateQuote(obj) {
 		var allowMarketing=document.getElementById('calc-allow_marketing').checked;
 		var phone=$("#calc-form-phone").val();
 		var coverageAmount = 0;
-		
-		if(obj=="howMuchDoINeed") {
+
+		if(str_array[0]=="calculateneed") {
 			coverageAmount = demographicData['requested_coverage'];
-		} else if(obj=="iKnowWhatINeed") {
+		} else if(str_array[0] == "iknowwhatiwant") {			
 			coverageAmount = demographicData['coverage'];
+		} else if(str_array[0] =="affordability") {
+			coverageAmount = $("#calc-coverage").val();
 		} else {
 			coverageAmount = demographicData['requested_coverage'];
 		}
@@ -5938,19 +6009,20 @@ function validateQuote(obj) {
 		if (!USCitizen || !PolicyOwner || !ReplacementPolicy) {
 			window.location.href='/'+hostName+'/contactus.do';
 		}
-		else {
+		else {			
 		showOverlay("wOverlayId", "loading");
 	    $.ajax({
 	        url: "getQuote.do",
 	        type: "POST",
 	        data: {
-	        	coverageAmount : coverageAmount,//demographicData['requested_coverage'],
+	        	coverageAmount : removeCommas(coverageAmount),//demographicData['requested_coverage'],
 				policyTerm : demographicData['policy_term'],
 				birthDate : demographicData['date-of-birth'],
 				gender : demographicData['gender'],
 				smoker : demographicData['smoker'],
 				emailAddress : demographicData['email-address'],
 				firstName : demographicData['first-name'],
+				lastName : demographicData['last-name'],
 				state : demographicData['state'],
 				USCitizen : USCitizen,
 				PolicyOwner : PolicyOwner,
@@ -5961,16 +6033,46 @@ function validateQuote(obj) {
 				quotePhone : phone
 	        },
 	        success: function(data, textStatus, jqXHR) {
-	        	if(obj=="howMuchDoINeed")
-	        	document.getElementById('needs-calculator').style.display="none";
+	        	var retdata = JSON.parse(data);
+	        	var errorMessage = retdata.errorMessage;
+	        	var isMultiCarrier = retdata.isMultiCarrier;
+	        	if(errorMessage !== ""){
+	        		displayErrorText(errorMessage, "#quote_form");
+	        		hideOverlay("wOverlayId", "loading");
+	        		return false;
+	        	}else{
+	        		var profile = JSON.parse(retdata.profileVO);
+	        		if(profile.appliedQuoteVO.productPremiumsCoveragesList.length<1) {
+	        			window.location.href='/'+hostName+'/noproductsfound.do';
+	        			return false;
+	        		}
+	        		if(profile.coverage>2e6 && str_array[0]=="affordability") {
+	        			window.location.href='/'+hostName+'/affordabledifference.do';
+	        			return false;
+	        		}
+	        	}
+	        	
+        		sessionStorage.setItem("quoteData",data);
+        		sessionStorage.setItem("isMultiCarrier",isMultiCarrier);
+        		hideOverlay("wOverlayId", "loading");
+        		
+        		if(isMultiCarrier)
+        			window.location.href='/'+hostName+'/quote-multicarrier.do';
+        		else
+        			window.location.href='/'+hostName+'/quote-singlecarrier.do';
+        		
+	        	/*
 	        	var retdata = JSON.parse(data);
 	        	var errorMessage = retdata.errorMessage;
 	        	if(errorMessage !== ""){
-	        		displayErrorText(errorMessage, "#calculator-demographics");
+	        		displayErrorText(errorMessage, "#quote_form");
 	        	}else{
 	        		document.getElementById('calculator-report').style.display="none";
 		        	document.getElementById('quote-page').style.display="block";
+	        		
 	        		var profile = JSON.parse(retdata.profileVO);
+	        		sessionStorage.setItem('profile',JSON.stringify(profile));
+	        		window.location.href='/'+hostName+'/quote-singlecarrier.do';
 	        		var fakeResponseData = {
 	    		        bestClassPrice: +parseInt(profile.appliedQuoteVO.bestPremiumPerMonth),
 	    		        standardClassPrice: +parseInt(profile.appliedQuoteVO.standardPremiumPerMonth)
@@ -5978,20 +6080,20 @@ function validateQuote(obj) {
 	        		$("#original-quote_selected").val(selectedPath);
 	        		$("#comparison-quote_selected").val(selectedPath);
 	        		
-	        		if(obj=="howMuchDoINeed") {
+	        		if(obj=="calculateneed") {
 	        			successCallback(fakeResponseData);
-	        		} else if(obj=="iKnowWhatINeed") {
+	        		} else if(obj=="iknowwhatiwant") {
 	        			successCallbackForIKnow(fakeResponseData);
+	        		} else if(obj=="affordability") {
+	        			successCallbackForAffordability(fakeResponseData,profile);
 	        		} else {
 	        			successCallback(fakeResponseData);
 	        		}
-	        		
-	        		
 	        	}
 	        	hideOverlay("wOverlayId", "loading");
 	        	$('#quote-page').find('.error-text').html("");
 	        	$('#quote-page').find('.success-text').html("");
-				$('#quote-page').find('.success-text').css({'display':'none'});
+				$('#quote-page').find('.success-text').css({'display':'none'});*/
 	        },
 	        error: function(jqXHR, textStatus, errorThrown) {
 	        	displayErrorText("Please try again.", formId);
@@ -6002,38 +6104,129 @@ function validateQuote(obj) {
 	}	
 	
 }
+function loadSingleCarrierWithQuoteData(selectedWorkFlow,selectedPathId){
+	var retdata = JSON.parse(sessionStorage.getItem("quoteData"));
+	var errorMessage = retdata.errorMessage;
+	if(errorMessage !== ""){
+		//displayErrorText(errorMessage, "#calculator-demographics");
+	}else{
+		var profile = JSON.parse(retdata.profileVO);
+		var fakeResponseData = {
+	        bestClassPrice: +parseInt(profile.appliedQuoteVO.bestPremiumPerMonth),
+	        standardClassPrice: +parseInt(profile.appliedQuoteVO.standardPremiumPerMonth)
+	    };
+		$("#original-quote_selected").val(selectedPathId);
+		$("#comparison-quote_selected").val(selectedPathId);
+		if(selectedWorkFlow=="calculateneed") {
+			successCallback(fakeResponseData,profile);
+		} else if(selectedWorkFlow=="iknowwhatiwant") {
+			successCallbackForIKnow(fakeResponseData,profile);
+		} else if(selectedWorkFlow=="affordability") {
+			successCallbackForAffordability(fakeResponseData,profile);
+		} else {
+			successCallback(fakeResponseData,profile);
+		}
+	}
+	hideOverlay("wOverlayId", "loading");
+	$('#quote-page').find('.error-text').html("");
+	$('#quote-page').find('.success-text').html("");
+	$('#quote-page').find('.success-text').css({'display':'none'});
+}
 
+function loadMultiCarrierWithQuoteData(selectedWorkFlow,selectedPathId){
+	var retdata = JSON.parse(sessionStorage.getItem("quoteData"));
+	var errorMessage = retdata.errorMessage;
+	if(errorMessage !== ""){
+		//displayErrorText(errorMessage, "#calculator-demographics");
+	}else{
+		var profile = JSON.parse(retdata.profileVO);
+		var fakeResponseData = {
+	        bestClassPrice: +parseInt(profile.appliedQuoteVO.bestPremiumPerMonth),
+	        standardClassPrice: +parseInt(profile.appliedQuoteVO.standardPremiumPerMonth)
+	    };
+		$("#original-quote_selected").val(selectedPathId);
+		$("#comparison-quote_selected").val(selectedPathId);
+		if(selectedWorkFlow=="calculateneed") {
+			successCallbackMultiCarrier(fakeResponseData,profile);
+		} else if(selectedWorkFlow=="iknowwhatiwant") {
+			successCallbackMultiCarrier(fakeResponseData,profile);
+		} else if(selectedWorkFlow=="affordability") {
+			successCallbackMultiCarrier(fakeResponseData,profile);
+		} else {
+			successCallbackMultiCarrier(fakeResponseData,profile);
+		}
+	}
+	hideOverlay("wOverlayId", "loading");
+	$('#quote-page').find('.error-text').html("");
+	$('#quote-page').find('.success-text').html("");
+	$('#quote-page').find('.success-text').css({'display':'none'});
+}
 
-successCallback = function(response) {
-	$("#quote-page").find(".calculated-coverage").html('$'+numberWithCommas($("#calc-requested_coverage").val())),
-	populateRecommendedCoverageSlider($("#calc-requested_coverage").val()),
-	populateUpdatedCoverageSlider($("#calc-requested_coverage").val()),	
-	coverage=$("#calc-requested_coverage").val(),term = $("#rec-coverage").val(),
+successCallbackMultiCarrier = function(response,profile) {
+	$("#quote-page").find(".calculated-coverage").html('$'+numberWithCommas(profile.coverage)),
+	//populateRecommendedCoverageSlider(profile.coverage),
+	populateUpdatedCoverageSlider(profile.coverage),	
+	coverage=profile.coverage,term = profile.term,
     $(".best-class .price").text(response.bestClassPrice), $(".standard-class .price").text(response.standardClassPrice), 
-    $("#preselected-coverage, #comparison-coverage").val(coverage), $("#preselected-term, #comparison-term").val(term),$(".calculated-term").html(term + " Years"),
-    populateRecommendedTermSlider($("#rec-coverage").val()),
-    populateUpdatedTermSlider($("#rec-coverage").val()),
-    $("#original-quote-originalPolicyTerm").val($("#rec-coverage").val()),
-    $("#comparison-quote-selectedPolicyTerm").val($("#rec-coverage").val()),
+    $("#comparison-coverage").val(coverage), $("#comparison-term").val(term),$(".calculated-term").html(term + " Years"),
+    //populateRecommendedTermSlider(profile.term),
+    populateUpdatedTermSlider(profile.term),
+    populateRecommendedPremiumValues(profile.appliedQuoteVO.productPremiumsCoveragesList),
+    $("#original-quote-originalPolicyTerm").val(profile.term),
+    $("#comparison-quote-selectedPolicyTerm").val(profile.term),
     $("#original-quote-originalCoverageAmnt").val(coverage),
     $("#comparison-quote-selectedCoverageAmnt").val(coverage);
 };
 
-successCallbackForIKnow = function(response) {
-	$("#quote-page").find(".calculated-coverage").html('$'+numberWithCommas($("#calc-coverage").val())),
-	populateRecommendedCoverageSlider($("#calc-coverage").val()),
-	populateUpdatedCoverageSlider($("#calc-coverage").val()),	
-	coverage=$("#calc-coverage").val(),term = $("#rec-coverage").val(),
+successCallback = function(response,profile) {
+	$("#quote-page").find(".calculated-coverage").html('$'+numberWithCommas(profile.coverage)),
+	populateRecommendedCoverageSlider(profile.coverage),
+	populateUpdatedCoverageSlider(profile.coverage),	
+	coverage=profile.coverage,term = profile.term,
     $(".best-class .price").text(response.bestClassPrice), $(".standard-class .price").text(response.standardClassPrice), 
     $("#preselected-coverage, #comparison-coverage").val(coverage), $("#preselected-term, #comparison-term").val(term),$(".calculated-term").html(term + " Years"),
-    populateRecommendedTermSlider($("#rec-coverage").val()),
-    populateUpdatedTermSlider($("#rec-coverage").val()),
-    $("#original-quote-originalPolicyTerm").val($("#rec-coverage").val()),
-    $("#comparison-quote-selectedPolicyTerm").val($("#rec-coverage").val()),
+    populateRecommendedTermSlider(profile.term),
+    populateUpdatedTermSlider(profile.term),
+    populateRecommendedPremiumValues(profile.appliedQuoteVO.productPremiumsCoveragesList),
+    $("#original-quote-originalPolicyTerm").val(profile.term),
+    $("#comparison-quote-selectedPolicyTerm").val(profile.term),
     $("#original-quote-originalCoverageAmnt").val(coverage),
     $("#comparison-quote-selectedCoverageAmnt").val(coverage);
 };
 
+successCallbackForIKnow = function(response,profile) {
+	$("#quote-page").find(".calculated-coverage").html('$'+numberWithCommas(profile.coverage)),
+	populateRecommendedCoverageSlider(profile.coverage),
+	populateUpdatedCoverageSlider(profile.coverage),	
+	coverage=profile.coverage,term = profile.term,
+    $(".best-class .price").text(response.bestClassPrice), $(".standard-class .price").text(response.standardClassPrice), 
+    $("#preselected-coverage, #comparison-coverage").val(coverage), $("#preselected-term, #comparison-term").val(term),$(".calculated-term").html(term + " Years"),
+    populateRecommendedTermSlider(profile.term),
+    populateUpdatedTermSlider(profile.term),
+    populateRecommendedPremiumValues(profile.appliedQuoteVO.productPremiumsCoveragesList),
+    $("#original-quote-originalPolicyTerm").val(profile.term),
+    $("#comparison-quote-selectedPolicyTerm").val(profile.term),
+    $("#original-quote-originalCoverageAmnt").val(coverage),
+    $("#comparison-quote-selectedCoverageAmnt").val(coverage);
+};
+
+successCallbackForAffordability = function(response,profile) {
+	$("#quote-page").find(".calculated-coverage").html('$'+numberWithCommas(profile.coverage)),
+	populateRecommendedCoverageSlider(profile.coverage),
+	populateUpdatedCoverageSlider(profile.coverage),	
+	coverage=profile.coverage,term = profile.term,
+    $(".best-class .price").text(response.bestClassPrice), $(".standard-class .price").text(response.standardClassPrice), 
+    $("#preselected-coverage, #comparison-coverage").val(coverage), $("#preselected-term, #comparison-term").val(term),$(".calculated-term").html(term + " Years"),
+    populateRecommendedTermSlider(profile.term),
+    populateUpdatedTermSlider(profile.term),
+    populateRecommendedPremiumValues(profile.appliedQuoteVO.productPremiumsCoveragesList),
+    $("#original-quote-originalPolicyTerm").val(profile.term),
+    $("#comparison-quote-selectedPolicyTerm").val(profile.term),
+    $("#original-quote-originalCoverageAmnt").val(coverage),
+    $("#comparison-quote-selectedCoverageAmnt").val(coverage);
+};
+
+/*
 successCallbackForTwentyFiveDollars = function(response,profile) {
 	$("#quote-page").find(".calculated-coverage").html('$'+numberWithCommas(profile.affordablePremium)),
 	//populateRecommendedCoverageSlider(profile.appliedQuoteVO.coverage),
@@ -6049,7 +6242,7 @@ successCallbackForTwentyFiveDollars = function(response,profile) {
     $("#comparison-quote-selectedPolicyTerm").val($("#rec-coverage").val()),
     $("#original-quote-originalCoverageAmnt").val(coverage),
     $("#comparison-quote-selectedCoverageAmnt").val(coverage);
-};
+};*/
 
 function displaySuccessText(message, selector) {
     $(selector).find(".error-text").hide(), $(selector).find(".success-text").hide(), 
@@ -6058,7 +6251,7 @@ function displaySuccessText(message, selector) {
 
 $("#contact-form-phone").inputmask("(999) 999-9999"),$("#calc-form-phone").inputmask("(999) 999-9999");
 
-function submitContactInfo(email, phone, bestTimeToCall,comments,name) {
+function submitContactInfo(email, phone, bestTimeToCall,comments,name,timeZone) {
 		$.ajax({
 	        url: "submitContactInfo.do",
 	        type: "POST",
@@ -6068,10 +6261,16 @@ function submitContactInfo(email, phone, bestTimeToCall,comments,name) {
 	            phone: phone,
 	            bestTimeToCall: bestTimeToCall,
 	            comments: comments,
-	            name: name	       
+	            name: name,
+	            timeZone: timeZone,
+	            captchaResponse: grecaptcha.getResponse()
 	        },
 	        success: function(data, textStatus, jqXHR) {
-	        	$('#contact-form').find('.success-text').html("Thanks! We will be in touch soon!");
+	        	if(data == "captchaFailed"){
+	        		$('#contact-form').find('.success-text').html("Wrong captcha or captcha expired!");
+	        	} else {
+	        		$('#contact-form').find('.success-text').html("Thanks! We will be in touch soon!");
+	        	}
 	        	$('#contact-form').find('.success-text').css({'display':'block'});
 	        	$('#contact-form').find('.hide-contact-fields').hide();
 	        	$('#contact-form').find('.error-text').hide();
@@ -6083,11 +6282,11 @@ function submitContactInfo(email, phone, bestTimeToCall,comments,name) {
 }
 
 function sendContactForm(contactForm) {
-	var email = $("#contact-form-email").val(), phone = $("#contact-form-phone").val(), bestTimeToCall = $("#contact-form-best-time").val(), comments = $("#contact-form-comments").val(),name = $("#contact-form-name").val();
-   submitContactInfo(email, phone, bestTimeToCall, comments,name);
+	var email = $("#contact-form-email").val(), phone = $("#contact-form-phone").val(), bestTimeToCall = $("#contact-form-best-time").val(), comments = $("#contact-form-comments").val(),name = $("#contact-form-name").val(), timeZone = $("#contact-time-zone").val();
+   submitContactInfo(email, phone, bestTimeToCall, comments,name,timeZone);
 }
 
-function validateContactus() {    	
+function validateContactus() {    
 	$("#contact-form").find(".error-text").hide();
 	$("#contact-form").find(".success-text").hide();
 	if ($("#contact-form-name").val().length < 3){
@@ -6111,6 +6310,14 @@ function validateContactus() {
 	
 	if ($("#contact-form-best-time").val().length==0) {
 		return void displayErrorText("Please enter a best time to call.", "#contact-form");
+	}
+	
+	if($("#contact-time-zone").val() == "" || $("#contact-time-zone").val() == null){
+		return void displayErrorText("Please select a time zone.", "#contact-form");
+	}
+	
+	if(grecaptcha.getResponse() == null || grecaptcha.getResponse() == ""){
+		return void displayErrorText("Are you robot? Please select a captcha if not.", "#contact-form");
 	}
 	
 	sendContactForm(document.contactForm);
@@ -6211,7 +6418,7 @@ function validateForPremiumQuote() {
 				affordablePremium : affordablePremium
 	        },
 	        success: function(data, textStatus, jqXHR) {
-	        	/*if(obj=="howMuchDoINeed")
+	        	/*if(obj=="calculateneed")
 	        	document.getElementById('needs-calculator').style.display="none";*/
 	        	var retdata = JSON.parse(data);
 	        	var errorMessage = retdata.errorMessage;
@@ -6252,8 +6459,61 @@ function validateCoverageAmount(){
 		return void displayErrorText("Please select coverage amount", "#coverage_amount");
 	}else {
 		$("#select-coverage-form").submit(function(){
-		    return true;
+		 return true;
 		});
 		$("#select-coverage-form").submit();
 	}
+}
+
+function validateCoverageAmountMlc(){
+	if ($("#coverageAmount").val()== '') {
+		return void displayErrorText("Please select coverage amount", "#main_coverage_amount");
+	}else {
+		$("#main-coverage-form").submit(function(){
+		 return true;
+		});
+		$("#main-coverage-form").submit();
+	}
+}
+
+function validatePremiumMlc(){
+	if ($("#affordablePremium").val()== '') {
+		return void displayErrorText("Please select affordable amount", "#main_affordable_amount");
+	}else {
+		$("#main-affordable-form").submit(function(){
+		 return true;
+		});
+		$("#main-affordable-form").submit();
+	}
+}
+
+function validateMainNeeds(){
+	if ($("#annualIncomeId").val()== '') {
+		return void displayErrorText("Please enter annual income", "#main_determine_amount");
+	}else {
+		$("#main-determine-coverage-form").submit(function(){
+		 return true;
+		});
+		$("#main-determine-coverage-form").submit();
+	}
+}
+
+function validateOLCWorkFlow(){	
+	
+	if ($("#preference").val()== '' || undefined == $("#preference").val()) {
+		return void displayErrorTextHome("Please select the option that sounds most like you.", "#home-page");
+	}else {
+		$("#home-form").submit(function(){
+		 return true;
+		});
+		$("#home-form").submit();
+	}
+}
+
+function displayErrorTextHome(message, selector) {
+	$(selector).find(".success-text").hide(), $(selector).find(".error-text")
+			.hide(), $(selector).find(".error-text").html(message), $(selector)
+			.find(".error-text").slideDown(), $("body, html").animate({
+		scrollTop : 468
+	}, 1000);
 }

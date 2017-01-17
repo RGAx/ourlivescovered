@@ -23,7 +23,7 @@ $(document).ready(function() {
     });
 
     // build array for Affordability path
-    var tempTable = {
+    var tempTableFor20Term = {
         twentyfive: {
             twentyfive: {
                 male: {
@@ -356,7 +356,339 @@ $(document).ready(function() {
         },
     };
 
-
+  //for 10 years term array.
+    var tempTable = {
+            twentyfive: {
+                twentyfive: {
+                    male: {
+                        premium: 25,
+                        age: 25,
+                        gender: 1,
+                        standard: 44,
+                        savings: 19,
+                        coverage: 750000 
+                    },
+                    female: {
+                        premium: 25,
+                        age: 25,
+                        gender: 2,
+                        standard: 40,
+                        savings: 15,
+                        coverage: 1200000 
+                    }
+                },
+                thirty: {
+                    male: {
+                        premium: 25,
+                        age: 30,
+                        gender: 1,
+                        standard: 44,
+                        savings: 19,
+                        coverage: 725000 
+                    },
+                    female: {
+                        premium: 25,
+                        age: 30,
+                        gender: 2,
+                        standard: 42,
+                        savings: 17,
+                        coverage: 1100000 
+                    }
+                },
+                thirtyfive: {
+                    male: {
+                        premium: 25,
+                        age: 35,
+                        gender: 1,
+                        standard: 46,
+                        savings: 21,
+                        coverage: 625000 
+                    },
+                    female: {
+                        premium: 25,
+                        age: 35,
+                        gender: 2,
+                        standard: 51,
+                        savings: 26,
+                        coverage: 850000 
+                    }
+                },
+                forty: {
+                    male: {
+                        premium: 25,
+                        age: 40,
+                        gender: 1,
+                        standard: 50,
+                        savings: 25,
+                        coverage: 425000
+                    },
+                    female: {
+                        premium: 25,
+                        age: 40,
+                        gender: 2,
+                        standard: 51,
+                        savings: 26,
+                        coverage: 575000
+                    }
+                },
+                fortyfive: {
+                    male: {
+                        premium: 25,
+                        age: 45,
+                        gender: 1,
+                        standard: 50,
+                        savings: 26,
+                        coverage: 262500
+                    },
+                    female: {
+                        premium: 25,
+                        age: 45,
+                        gender: 2,
+                        standard: 41,
+                        savings: 16,
+                        coverage: 350000
+                    }
+                },
+                fifty: {
+                    male: {
+                        premium: 25,
+                        age: 50,
+                        gender: 1,
+                        standard: 37,
+                        savings: 12,
+                        coverage: 150000 
+                    },
+                    female: {
+                        premium: 25,
+                        age: 50,
+                        gender: 2,
+                        standard: 50,
+                        savings: 25,
+                        coverage: 175000 
+                    }
+                }
+            },
+    		forty: {
+                twentyfive: {
+                    male: {
+                        premium: 100,
+                        age: 25,
+                        gender: 1,
+                        standard: 167,
+                        savings: 45,
+                        coverage: 1800000
+                    },
+                    female: {
+                        premium: 100,
+                        age: 25,
+                        gender: 2,
+                        standard: 162,
+                        savings: 45,
+                        coverage: 2000000
+                    }
+                },
+                thirty: {
+                    male: {
+                        premium: 100,
+                        age: 30,
+                        gender: 1,
+                        standard: 175,
+                        savings: 40,
+                        coverage: 1500000
+                    },
+                    female: {
+                        premium: 100,
+                        age: 30,
+                        gender: 2,
+                        standard: 175,
+                        savings: 45,
+                        coverage: 2000000
+                    }
+                },
+                thirtyfive: {
+                    male: {
+                        premium: 100,
+                        age: 35,
+                        gender: 1,
+                        standard: 205,
+                        savings: 60,
+                        coverage: 1325000
+                    },
+                    female: {
+                        premium: 100,
+                        age: 35,
+                        gender: 2,
+                        standard: 215,
+                        savings: 52,
+                        coverage: 1700000
+                    }
+                },
+                forty: {
+                    male: {
+                        premium: 100,
+                        age: 40,
+                        gender: 1,
+                        standard: 207,
+                        savings: 65,
+                        coverage: 1000000
+                    },
+                    female: {
+                        premium: 100,
+                        age: 40,
+                        gender: 2,
+                        standard: 194,
+                        savings: 41,
+                        coverage: 1150000
+                    }
+                },
+                fortyfive: {
+                    male: {
+                        premium: 100,
+                        age: 45,
+                        gender: 1,
+                        standard: 173,
+                        savings: 59,
+                        coverage: 575000
+                    },
+                    female: {
+                        premium: 100,
+                        age: 45,
+                        gender: 2,
+                        standard: 175,
+                        savings: 55,
+                        coverage: 675000
+                    }
+                },
+                fifty: {
+                    male: {
+                        premium: 100,
+                        age: 50,
+                        gender: 1,
+                        standard: 162,
+                        savings: 25,
+                        coverage: 325000
+                    },
+                    female: {
+                        premium: 100,
+                        age: 50,
+                        gender: 2,
+                        standard: 175,
+                        savings: 36,
+                        coverage: 425000
+                    }
+                }
+            },
+            fifty: {
+                twentyfive: {
+                    male: {
+                        premium: 50,
+                        age: 25,
+                        gender: 1,
+                        standard: 84,
+                        savings: 34,
+                        coverage: 1800000
+                    },
+                    female: {
+                        premium: 50,
+                        age: 25,
+                        gender: 2,
+                        standard: 82,
+                        savings: 32,
+                        coverage: 2000000
+                    }
+                },
+                thirty: {
+                    male: {
+                        premium: 50,
+                        age: 30,
+                        gender: 1,
+                        standard: 89,
+                        savings: 39,
+                        coverage: 1700000
+                    },
+                    female: {
+                        premium: 50,
+                        age: 30,
+                        gender: 2,
+                        standard: 88,
+                        savings: 38,
+                        coverage: 2000000
+                    }
+                },
+                thirtyfive: {
+                    male: {
+                        premium: 50,
+                        age: 35,
+                        gender: 1,
+                        standard: 102,
+                        savings: 52,
+                        coverage: 1400000
+                    },
+                    female: {
+                        premium: 50,
+                        age: 35,
+                        gender: 2,
+                        standard: 107,
+                        savings: 57,
+                        coverage: 1800000
+                    }
+                },
+                forty: {
+                    male: {
+                        premium: 50,
+                        age: 40,
+                        gender: 1,
+                        standard: 95,
+                        savings: 45,
+                        coverage: 1100000
+                    },
+                    female: {
+                        premium: 50,
+                        age: 40,
+                        gender: 2,
+                        standard: 93,
+                        savings: 43,
+                        coverage: 1300000
+                    }
+                },
+                fortyfive: {
+                    male: {
+                        premium: 50,
+                        age: 45,
+                        gender: 1,
+                        standard: 81,
+                        savings: 31,
+                        coverage: 825000
+                    },
+                    female: {
+                        premium: 50,
+                        age: 45,
+                        gender: 2,
+                        standard: 90,
+                        savings: 40,
+                        coverage: 925000
+                    }
+                },
+                fifty: {
+                    male: {
+                        premium: 50,
+                        age: 50,
+                        gender: 1,
+                        standard: 77,
+                        savings: 27,
+                        coverage: 450000
+                    },
+                    female: {
+                        premium: 50,
+                        age: 50,
+                        gender: 2,
+                        standard: 92,
+                        savings: 42,
+                        coverage: 550000
+                    }
+                }
+            },        
+        };
     // populate the two values on the Affordability
     // path when the dropdowns are changed
     var affordDropdown = $('select.afford-dropdown');
@@ -374,6 +706,10 @@ $(document).ready(function() {
         var coverageObj = tempTable[premium][age][gender];
 
         coverage = coverageObj.coverage;
+        /*This block of code for restricting the coverage maximum to 2M. by venkat*/
+        if(coverage>2e6)
+            coverage = 2000000;
+        
         var coverageAsDollar = '$' + coverage.toFixed(0).replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");
 
         savings = coverageObj.savings;
@@ -384,6 +720,7 @@ $(document).ready(function() {
 
         totalCoverage.html(coverageAsDollar);
         totalSavings.html(savingsAsDollar);
+        $("#hiddenCoverage").val(coverageAsDollar);
     }
 
     affordDropdown.on("change", function() {
@@ -503,7 +840,6 @@ $(document).ready(function() {
     });
 
     $(".btn.quiz").click(function() {
-
 
         var clickedLink = this.id;
         var nextPage;

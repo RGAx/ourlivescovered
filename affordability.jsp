@@ -16,13 +16,14 @@ sessionStorage.setItem('src',"${src}");
                         <div class="primary-container">
                             <form action="quote-form-affordability.do" method="POST" name="mainAffordableForm" id="main-affordable-form">
                                 <div class="inline-text required">
-                                    <label class=" " for="afford-full-name">Full Name</label>
-                                    <input required="" class=" " type="text" id="afford-full-name" name="first-name" maxlength="25">
+                                    <label class=" " for="afford-first-name">First Name</label>
+                                    <input required="" class=" " type="text" id="afford-first-name" name="first-name" maxlength="25">
                                 </div>
                                 <div class="inline-text required">
                                     <label class=" " for="afford-email-address">Email Address</label>
                                     <input required="" class="  " type="text" id="afford-email-address" name="email-address" maxlength="100">
                                 </div>
+                                <small>Your email address will be used to provide you with a copy of your quote and related information. This information will be transmitted securely.</small>
                                 <div class="select-wrapper">
                                     <label for="affordablePremium">Preferred Payment</label>
                                     <select name="affordablePremium" id="affordablePremium" class="coverageamt-select afford-dropdown">
@@ -55,7 +56,7 @@ sessionStorage.setItem('src',"${src}");
                                 <input type="hidden" id="hiddenCoverage" name="totalCoverage" class="quoted-amount" value="$1,200,000">
                             </div>
                             <div class="secondary-container">
-                                <p id="initialQuote">Based on the above, you may qualify for about <span id="totalCoverage" class="quoted-amount">$1,200,000</span> in 10-year term coverage.<!-- , and save close to <span id="totalSavings" class="quoted-amount">$15</span> per month over standard premium rates.<sup>*</sup> -->
+                                <p id="initialQuote">Great news <span id="affordFirstName">[first name]</span>! Based on the above information, you may qualify for about <span id="totalCoverage" class="quoted-amount">$1,200,000</span> in 10-year term coverage.<!-- , and save close to <span id="totalSavings" class="quoted-amount">$15</span> per month over standard premium rates.<sup>*</sup> -->
                             </div>
                             <div class="gobutton-container">
                                 <input type="button" class="btn btn-primary" value="Start My Quote" id="main-affordable-form" wpvalue="continue" onclick="return validatePremiumMlc();">

@@ -3169,13 +3169,16 @@ body {
                                     }
                                 }
                                 small {
-                                    display: block;
-                                    color: white;
-                                    max-width: 512px;
-                                    width: 100%;
-                                    margin: 5px auto 15px;
+                                    font-size: 12px;
                                     line-height: 1.2;
-                                    font-size: 14px;
+                                    display: block;
+                                    width: 100%;
+                                    max-width: 512px;
+                                    margin: 5px auto 15px;
+                                    color: white;
+                                    @media (max-width: 630px) {
+                                        margin: 0 auto 20px;
+                                    }
                                 }
                                 div.select-wrapper {
                                     text-align: left;

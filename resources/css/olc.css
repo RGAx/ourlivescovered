@@ -2735,13 +2735,16 @@ body {
                     max-width: 100% !important;
                     height: 35px; } }
             body section#affordability_hero div.container div.row div.col-md-12 div.form-wrapper div.primary-container form small {
-              display: block;
-              color: white;
-              max-width: 512px;
-              width: 100%;
-              margin: 5px auto 15px;
+              font-size: 12px;
               line-height: 1.2;
-              font-size: 14px; }
+              display: block;
+              width: 100%;
+              max-width: 512px;
+              margin: 5px auto 15px;
+              color: white; }
+              @media (max-width: 630px) {
+                body section#affordability_hero div.container div.row div.col-md-12 div.form-wrapper div.primary-container form small {
+                  margin: 0 auto 20px; } }
             body section#affordability_hero div.container div.row div.col-md-12 div.form-wrapper div.primary-container form div.select-wrapper {
               text-align: left; }
               body section#affordability_hero div.container div.row div.col-md-12 div.form-wrapper div.primary-container form div.select-wrapper:nth-of-type(4) {

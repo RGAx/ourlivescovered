@@ -3118,12 +3118,12 @@ body {
                                     position: relative;
                                     display: inline-block;
                                     text-align: left;
-                                    &:nth-of-type(1) {
+                                    &:nth-of-type(2) {
                                         input {
                                             max-width: 209px;
                                         }
                                     }
-                                    &:nth-of-type(2) {
+                                    &:nth-of-type(3) {
                                         margin: 0 0 0 27px;
                                         input {
                                             max-width: 269px;
@@ -3182,7 +3182,7 @@ body {
                                 }
                                 div.select-wrapper {
                                     text-align: left;
-                                    &:nth-of-type(4) {
+                                    &:nth-of-type(5) {
                                         margin: 0 28px;
                                     }
                                     @media (max-width: 630px) {

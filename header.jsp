@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="resources/css/myLifeCoveredRGility.css">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link rel="stylesheet" href="resources/css/bootstrap.css?v=3.0.0">
-    <link rel="stylesheet" href="resources/css/olc.css?v=3.0.9">
+    <link rel="stylesheet" href="resources/css/olc.css?v=3.0.10">
     <!--[if IE 9]>
         <link rel="stylesheet" href="resources/css/ie9.css">
     <![endif]-->

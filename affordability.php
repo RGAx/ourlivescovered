@@ -12,6 +12,7 @@
                     <div class="form-wrapper">
                         <div class="primary-container">
                             <form action="quote-form-affordability.do" method="POST" name="mainAffordableForm" id="main-affordable-form">
+                                <div class="error-text"></div>
                                 <div class="inline-text required">
                                     <label class=" " for="afford-first-name">First Name</label>
                                     <input required="" class=" " type="text" id="afford-first-name" name="first-name" maxlength="25">

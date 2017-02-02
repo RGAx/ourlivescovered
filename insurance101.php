@@ -26,7 +26,7 @@
                         <div id="basics_intro">
                             <div class="textarea col-sm-6">
                                 <h2>Accidents happen. Cars swerve. Zombies bite</h2>
-                                <p>Death isn’t a typical concern for young healthy people. Term life insurance is often the best option for protecting against the unexpected. It provides coverage for a specific period of time, and is designed to help your loved ones make up for the loss of your income if something were to happen to you.</p>
+                                <p>Death isn't a typical concern for young healthy people. Term life insurance is often the best option for protecting against the unexpected. It provides coverage for a specific period of time, and is designed to help your loved ones make up for the loss of your income if something were to happen to you.</p>
                                 <p>In doing so, it covers financial obligations that disappear over time, such as a mortgage, college tuition and loans. The healthier and younger you are, the more affordable coverage will be.</p>
                             </div>
                             <div class="imgarea col-sm-6">
@@ -74,11 +74,11 @@
                     </div>
                     <div id="seven_buts" class="page">
                         <div class="panel-group" id="accordion">
-                            <h3>If you don’t have life insurance because of any of the reasons below, hear us out...</h3>
+                            <h3>If you don't have life insurance because of any of the reasons below, hear us out...</h3>
                             <div class="panel panel-default">
                                 <div class="panel-heading">
                                     <h4 class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"">But isn’t life insurance really expensive?</a>
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"">But, isn't life insurance really expensive?</a>
                                     </h4>
                                 </div>
                                 <div id="collapseOne" class="panel-collapse collapse in">
@@ -90,7 +90,7 @@
                             <div class="panel panel-default">
                                 <div class="panel-heading">
                                     <h4 class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" class="collapsed">But I’m probably not going to die any time soon.</a>
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" class="collapsed">But, I am probably not going to die any time soon.</a>
                                     </h4>
                                 </div>
                                 <div id="collapseTwo" class="panel-collapse collapse">
@@ -102,7 +102,7 @@
                             <div class="panel panel-default">
                                 <div class="panel-heading">
                                     <h4 class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" class="collapsed">But my partner makes most of our money. Why should I get insurance?</a>
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" class="collapsed">But, my partner makes most of our money. Why should I get insurance?</a>
                                     </h4>
                                 </div>
                                 <div id="collapseThree" class="panel-collapse collapse">
@@ -114,31 +114,31 @@
                             <div class="panel panel-default">
                                 <div class="panel-heading">
                                     <h4 class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour" class="collapsed">But I get life insurance through my employer. Isn’t that enough?</a>
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour" class="collapsed">But, I get life insurance through my employer. Isn't that enough?</a>
                                     </h4>
                                 </div>
                                 <div id="collapseFour" class="panel-collapse collapse">
                                     <div class="panel-body">
-                                        <p>Many employers provide group life insurance to employees. While this may provide a healthy baseline, it may not be enough to provide your family the help they need should something happen to you.  In fact, many experts recommend 8-10 times your income in coverage to safeguard your dependents’ future needs. And, in most cases, these policies do not go with you when you leave.</p>
+                                        <p>Many employers provide group life insurance to employees. While this may provide a healthy baseline, it may not be enough to provide your family the help they need should something happen to you. In fact, many experts recommend 8-10 times your income in coverage to safeguard your dependents in future needs. And, in most cases, these policies do not go with you when you leave.</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="panel panel-default">
                                 <div class="panel-heading">
                                     <h4 class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive" class="collapsed">But don’t people usually buy insurance through an agent?</a>
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive" class="collapsed">But, don't people usually buy insurance through an agent?</a>
                                     </h4>
                                 </div>
                                 <div id="collapseFive" class="panel-collapse collapse">
                                     <div class="panel-body">
-                                        <p>Life insurance can be purchased through an agent, but it can also be purchased online directly through the carrier.  Individual life insurance rates are filed with state regulators, and remain the same for both online purchases or with an insurance agent. We offer Transamerica Life Insurance Company for an immediate online purchase and partner with a call center in offering other insurance competitors so you get the best rate &mdash; saving you time and money.</p>
+                                        <p>Life insurance can be purchased through an agent, but it can also be purchased online directly through the carrier. Individual life insurance rates are filed with state regulators, and remain the same for both online purchases or with an insurance agent. We offer Transamerica Life Insurance Company for an immediate online purchase and partner with a call center in offering other insurance competitors so you get the best rate &mdash; saving you time and money.</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="panel panel-default">
                                 <div class="panel-heading">
                                     <h4 class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseSix" class="collapsed">But isn’t it just as good or better to invest my money?</a>
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseSix" class="collapsed">But, isn't it just as good or better to invest my money?</a>
                                     </h4>
                                 </div>
                                 <div id="collapseSix" class="panel-collapse collapse">
@@ -150,12 +150,12 @@
                             <div class="panel panel-default">
                                 <div class="panel-heading">
                                     <h4 class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" class="collapsed">But don’t I have to get a medical exam to get insurance?</a>
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" class="collapsed">But, don't I have to get a medical exam to get insurance?</a>
                                     </h4>
                                 </div>
                                 <div id="collapseSeven" class="panel-collapse collapse">
                                     <div class="panel-body">
-                                        <p>A medical exam depends on the coverage amount selected.  In most cases, your health and family history provide enough information to forgo a medical exam.  Other key factors such as occupation, hobbies, and driving record give the insurer a window into your health and potential risk factors in your life.   All of these factors provide the insurer enough information to set your premium.  For healthy people like you, your premiums could potentially be less than half of those paid by the average insured.</p>
+                                        <p>A medical exam depends on the coverage amount selected. In most cases, your health and family history provide enough information to forgot a medical exam. Other key factors such as occupation, hobbies, and driving record give the insurer a window into your health and potential risk factors in your life. All of these factors provide the insurer enough information to set your premium. For healthy people like you, your premiums could potentially be less than half of those paid by the average insured.</p>
                                     </div>
                                 </div>
                             </div>
@@ -165,14 +165,30 @@
                         <div id="corporate_partner">
                             <h2>Have you met our corporate partner BFF?</h2>
                             <img id="lh-logo" src="resources/images/life-happens-logo.jpg">
-                            <p>OUR LIFE COVERED<sup>SM</sup> has partnered with Life Happens, a nonprofit organization that is just as dedicated as we are to educating people about the importance of protecting themselves and their families with the coverage they need.</p>
-                            <p>Danica Patrick, professional race car driver and the 2016 spokesperson for Life Insurance Awareness Month, sums up the difference life insurance can make.</p>
-                            <video id='brigcovepersonalplayer' data-account="4486098250001" data-player="HyV9Hkf5" data-video-id="4924793818001" data-embed="default" style="width: 100%; height:auto; padding-bottom: 56.25%;" class="video-js bc-video" controls ></video>
+                            <p>OUR LIFE COVERED<sup>SM</sup> has partnered with Life Happens, a non profit organization that is just as dedicated as we are to educating people about the importance of protecting themselves and their families with the coverage they need.</p>
+                                                        
+                            
+                            <!-- <video id='brigcovepersonalplayer' data-account="4486098250001" data-player="HyV9Hkf5" data-video-id="4924793818001" data-embed="default" style="width: 100%; height:auto; padding-bottom: 56.25%;" class="video-js bc-video" controls >
+                            <source src="https://files.brightcove.com/homepage-background-v3.mp4" type="video/mp4"></video>
                             <script src="//players.brightcove.net/4486098250001/HyV9Hkf5_default/index.min.js"></script>
                             <script id="pageScript" type="text/javascript">
                                 var myPlayer = videojs("brigcovepersonalplayer");
-                            </script>
-                        </div>
+                            </script> -->                       
+                        
+                        
+                        <video data-video-id="4667321659001" data-account="4486098250001"
+                            data-player="HyV9Hkf5" data-embed="default"
+                            style="width: 100%; height: auto; padding-bottom: 56.25%;"
+                            data-application-id class="video-js" controls>
+                        </video>
+                        <script
+                            src="//players.brightcove.net/4486098250001/HyV9Hkf5_default/index.min.js"></script>
+                        <script id="pageScript" type="text/javascript">
+                            var myPlayer = videojs("4667321659001");
+                        </script>
+                        
+                    </div>
+
                         <div id="lend_hand">
                             <div class="content-wrapper">
                                 <div class="col-sm-5">

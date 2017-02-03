@@ -59,11 +59,16 @@ function loadCookies(cookieName, formObj) {
         		if(key != "annual-income" & key != "rec-coverage" & formObj.elements[key]!=undefined)
             		formObj.elements[key].value = obj[key];
         	} else if(sessionStorage.getItem('src') == "affordability") {
-        		if(key != "coverage" & key != "annual-income" & key != "gender"  & key != "rec-coverage" & formObj.elements[key]!=undefined)
-        			formObj.elements[key].value = obj[key];
+        		if(cookieName != "mainAffordableFormCookie") {
+        			if(key != "coverage" & key != "annual-income" & key != "gender"  & key != "rec-coverage" & key != "first-name" & key != "email-address" & formObj.elements[key]!=undefined)
+        				formObj.elements[key].value = obj[key];
+        		}else{
+        			if(key != "coverage" & key != "annual-income" & key != "gender"  & key != "rec-coverage" & formObj.elements[key]!=undefined)
+            			formObj.elements[key].value = obj[key];
+        		}
         	} else if(sessionStorage.getItem('src') == "calculateneed") {
         		if(key != "annual-income" & formObj.elements[key]!=undefined)
-        		formObj.elements[key].value = obj[key];
+        			formObj.elements[key].value = obj[key];
         	} else {
         		formObj.elements[key].value = obj[key];
         	}
@@ -78,11 +83,17 @@ if (document.needsCalculatorDemographicsForm != null) {
 	loadCookies("needsCalculatorDemographicsFormCookie", document.needsCalculatorDemographicsForm);
 }
 
+if (document.mainAffordableForm != null) {	
+	loadCookies("mainAffordableFormCookie", document.mainAffordableForm);
+}
+
 
 $("#needs-calculator-form").on("keyup change", function() {
     return saveCookies("needsCalculatorFormCookie", document.needsCalculatorForm);
 }), $("#needs-calculator-demographics-form").on("keyup change", function() {
     return saveCookies("needsCalculatorDemographicsFormCookie", document.needsCalculatorDemographicsForm);
+}), $("#main-affordable-form").on("keyup change", function() {
+    return saveCookies("mainAffordableFormCookie", document.mainAffordableForm);
 });
 
 function detectIE() {
@@ -6262,15 +6273,15 @@ function submitContactInfo(email, phone, bestTimeToCall,comments,name,timeZone) 
 	            bestTimeToCall: bestTimeToCall,
 	            comments: comments,
 	            name: name,
-	            timeZone: timeZone,
-	            captchaResponse: grecaptcha.getResponse()
+	            timeZone: timeZone//,
+	            /*captchaResponse: grecaptcha.getResponse()*/
 	        },
 	        success: function(data, textStatus, jqXHR) {
-	        	if(data == "captchaFailed"){
+	        	/*if(data == "captchaFailed"){
 	        		$('#contact-form').find('.success-text').html("Wrong captcha or captcha expired!");
 	        	} else {
 	        		$('#contact-form').find('.success-text').html("Thanks! We will be in touch soon!");
-	        	}
+	        	}*/
 	        	$('#contact-form').find('.success-text').css({'display':'block'});
 	        	$('#contact-form').find('.hide-contact-fields').hide();
 	        	$('#contact-form').find('.error-text').hide();
@@ -6316,9 +6327,9 @@ function validateContactus() {
 		return void displayErrorText("Please select a time zone.", "#contact-form");
 	}
 	
-	if(grecaptcha.getResponse() == null || grecaptcha.getResponse() == ""){
+	/*if(grecaptcha.getResponse() == null || grecaptcha.getResponse() == ""){
 		return void displayErrorText("Are you robot? Please select a captcha if not.", "#contact-form");
-	}
+	}*/
 	
 	sendContactForm(document.contactForm);
 	
@@ -6478,8 +6489,12 @@ function validateCoverageAmountMlc(){
 
 function validatePremiumMlc(){
 	if ($("#affordablePremium").val()== '') {
-		return void displayErrorText("Please select affordable amount", "#main_affordable_amount");
-	}else {
+		return void displayErrorText("Please select affordable amount", "#main-affordable-form");
+	} else if($("#afford-full-name").val().length < 3) {
+		return void displayErrorText("Please enter your first name.", "#main-affordable-form");
+	} else if($("#calc-email-address").val()== '' ||  !isValidEmail($("#calc-email-address").val())) {
+		return void displayErrorText("Please enter a valid email address.", "#main-affordable-form");
+	} else {
 		$("#main-affordable-form").submit(function(){
 		 return true;
 		});
@@ -6516,4 +6531,11 @@ function displayErrorTextHome(message, selector) {
 			.find(".error-text").slideDown(), $("body, html").animate({
 		scrollTop : 468
 	}, 1000);
+}
+function changingFirstName() {
+	if($("#afford-full-name").val() != '') {
+		$("#affordFirstName").text($("#afford-full-name").val());
+	}else {
+		$("#affordFirstName").text("");
+	}
 }

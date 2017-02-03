@@ -890,14 +890,14 @@ body {
               body section.main-section#insurance101 div.container div.row div.col-md-12 div.page#whats_right {
                 max-width: 100%; }
                 body section.main-section#insurance101 div.container div.row div.col-md-12 div.page#whats_right h2 {
-                  font-size: 25px;
+                  font-size: 21px;
                   margin-bottom: 20px; }
                   @media (max-width: 768px) {
                     body section.main-section#insurance101 div.container div.row div.col-md-12 div.page#whats_right h2 {
                       font-size: 16px;
                       margin-bottom: 15px; } }
                 body section.main-section#insurance101 div.container div.row div.col-md-12 div.page#whats_right p {
-                  font-size: 16px; }
+                  font-size: 14px; }
                   @media (max-width: 768px) {
                     body section.main-section#insurance101 div.container div.row div.col-md-12 div.page#whats_right p {
                       font-size: 12px; } }
@@ -2873,10 +2873,8 @@ body {
           width: 100%; }
           body footer div.container div.row div.col-md-12.sitemap {
             width: 100%;
-            margin-top: 0;
-            margin-bottom: 40px; }
+            margin-top: 0; }
           body footer div.container div.row div.col-md-12.social-icons {
-            display: none;
             margin: 40px 0;
             text-align: center; }
             body footer div.container div.row div.col-md-12.social-icons a {

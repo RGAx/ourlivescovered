@@ -4,7 +4,16 @@
 		    <div class="row">
 		        <div class="col-md-12 sitemap">
 		            <ul>
-	                    <li><a href="javascript:openHomeLink()">Home</a></li>
+	                    <li>
+                      		<c:choose>
+								<c:when test="${isMultiCarrier eq 'true' }">				
+									<a href="home.do?phoneNo=${phoneNumber}&src=${srcHome}">Home</a>
+								</c:when>
+								<c:otherwise>
+		 					 		<a href="home.do?phoneNo=${phoneNumber}&src=${srcHome}">Home</a>
+								</c:otherwise>
+						    </c:choose>
+                       	</li>
 	                    <li><a id="mylifeCoveredaboutUS" href="aboutus.do" wpvalue="about">About Us</a></li>
 	                    <li><a id="mylifeCovered-contactUs" href="contactus.do" wpvalue="contact">Contact Us</a></li>
 	                    <li><a id="mylifeCovered-privacyPolicy" href="privacypolicy.do" wpvalue="privacy_policy">Privacy Policy</a></li>
@@ -15,23 +24,23 @@
 	                </ul>
 		        </div>
 		        <div class="col-md-12 social-icons">
-        	        <a href="https://www.facebook.com/MyLifeCovered/" target="_blank">
+        	        <a href="#" target="_blank">
         	            <i class="fa fa-facebook" aria-hidden="true"></i>
         	        </a>
-        	        <a href="https://www.instagram.com/mylifecovered/" target="_blank">
+        	        <a href="#" target="_blank">
         	            <i class="fa fa-instagram" aria-hidden="true"></i>
         	        </a>
 		        </div>
 		        <div class="col-md-12 text-right">
 		            <c:choose>
 						<c:when test="${isMultiCarrier eq 'true' }">				
-							<a href="javascript:openHomeLink()" class="main_logo">
+							<a href="home.do?phoneNo=${phoneNumber}&src=${srcHome}" class="main_logo">
 							<img class="logo" src="resources/images/logo.svg">
 							</a>
 						</c:when>
 						<c:otherwise>
-							<a href="javascript:openHomeLink()" class="main_logo">
-							<img class="logo" src="resources/images/footer-logo.png">
+							<a href="home.do?phoneNo=${phoneNumber}&src=${srcHome}" class="main_logo">
+							<img class="logo" src="resources/images/logo.svg">
 							</a>
 						</c:otherwise>
 					</c:choose>

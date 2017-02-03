@@ -4,7 +4,7 @@
 			coverageValues[j] = i;
 		}
 	} else {
-		for (var i = 100000, j = 0; i<=500000 ; i+=25000, j++){
+		for (var i = 25000, j = 0; i<=500000 ; i+=25000, j++){
 			coverageValues[j] = i;
 		}
 	}
@@ -546,7 +546,7 @@
 				$("#comparison-quote .protective .best-class .price").text(productList[i].bestPremiumPerMonth.toFixed(2));
 				$("#comparison-quote .protective .standard-class .price").text(productList[i].standardPremiumPerMonth.toFixed(2));
 				//for multi carrier case
-				$("#comparison-quote .protective .multicarrier-class .price").text(productList[i].bestPremiumPerMonth.toFixed(2));
+				$("#comparison-quote .protective .multicarrier-class .price").text(productList[i].standardPremiumPerMonth.toFixed(2));
 			}
 			if(productList[i].productName == "BannerOPTerm" || productList[i].productName == "WilliamPennOPTerm") {
 				$("#original-quote .banner .best-class .price").text(productList[i].bestPremiumPerMonth.toFixed(2));
@@ -554,7 +554,7 @@
 				$("#comparison-quote .banner .best-class .price").text(productList[i].bestPremiumPerMonth.toFixed(2));
 				$("#comparison-quote .banner .standard-class .price").text(productList[i].standardPremiumPerMonth.toFixed(2));
 				//for multi carrier case
-				$("#comparison-quote .banner .multicarrier-class .price").text(productList[i].bestPremiumPerMonth.toFixed(2));
+				$("#comparison-quote .banner .multicarrier-class .price").text(productList[i].standardPremiumPerMonth.toFixed(2));
 			}
 			if(productList[i].productName == "AGSelectATerm" || productList[i].productName == "USLifeSelectATerm") {
 				$("#original-quote .aig .best-class .price").text(productList[i].bestPremiumPerMonth.toFixed(2));
@@ -562,7 +562,7 @@
 				$("#comparison-quote .aig .best-class .price").text(productList[i].bestPremiumPerMonth.toFixed(2));
 				$("#comparison-quote .aig .standard-class .price").text(productList[i].standardPremiumPerMonth.toFixed(2));
 				//for multi carrier case
-				$("#comparison-quote .aig .multicarrier-class .price").text(productList[i].bestPremiumPerMonth.toFixed(2));
+				$("#comparison-quote .aig .multicarrier-class .price").text(productList[i].standardPremiumPerMonth.toFixed(2));
 			}
 			if(productList[i].productName == "LincolnTermAcceleTicketOnly") {
 				$("#original-quote .lincoln .best-class .price").text(productList[i].bestPremiumPerMonth.toFixed(2));
@@ -570,7 +570,7 @@
 				$("#comparison-quote .lincoln .best-class .price").text(productList[i].bestPremiumPerMonth.toFixed(2));
 				$("#comparison-quote .lincoln .standard-class .price").text(productList[i].standardPremiumPerMonth.toFixed(2));
 				//for multi carrier case
-				$("#comparison-quote .lincoln .multicarrier-class .price").text(productList[i].bestPremiumPerMonth.toFixed(2));
+				$("#comparison-quote .lincoln .multicarrier-class .price").text(productList[i].standardPremiumPerMonth.toFixed(2));
 			}
 		}
 	}
@@ -600,25 +600,25 @@
 						$("#comparison-quote .protective .best-class .price").text(productList[i].bestPremiumPerMonth.toFixed(2));
 						$("#comparison-quote .protective .standard-class .price").text(productList[i].standardPremiumPerMonth.toFixed(2));
 						//for multi carrier case
-						$("#comparison-quote .protective .multicarrier-class .price").text(productList[i].bestPremiumPerMonth.toFixed(2));
+						$("#comparison-quote .protective .multicarrier-class .price").text(productList[i].standardPremiumPerMonth.toFixed(2));
 					}
 					if(productList[i].productName == "BannerOPTerm" || productList[i].productName == "WilliamPennOPTerm") {
 						$("#comparison-quote .banner .best-class .price").text(productList[i].bestPremiumPerMonth.toFixed(2));
 						$("#comparison-quote .banner .standard-class .price").text(productList[i].standardPremiumPerMonth.toFixed(2));
 						//for multi carrier case
-						$("#comparison-quote .banner .multicarrier-class .price").text(productList[i].bestPremiumPerMonth.toFixed(2));
+						$("#comparison-quote .banner .multicarrier-class .price").text(productList[i].standardPremiumPerMonth.toFixed(2));
 					}
 					if(productList[i].productName == "AGSelectATerm" || productList[i].productName == "USLifeSelectATerm") {
 						$("#comparison-quote .aig .best-class .price").text(productList[i].bestPremiumPerMonth.toFixed(2));
 						$("#comparison-quote .aig .standard-class .price").text(productList[i].standardPremiumPerMonth.toFixed(2));
 						//for multi carrier case
-						$("#comparison-quote .aig .multicarrier-class .price").text(productList[i].bestPremiumPerMonth.toFixed(2));
+						$("#comparison-quote .aig .multicarrier-class .price").text(productList[i].standardPremiumPerMonth.toFixed(2));
 					}
 					if(productList[i].productName == "LincolnTermAcceleTicketOnly") {
 						$("#comparison-quote .lincoln .best-class .price").text(productList[i].bestPremiumPerMonth.toFixed(2));
 						$("#comparison-quote .lincoln .standard-class .price").text(productList[i].standardPremiumPerMonth.toFixed(2));
 						//for multi carrier case
-						$("#comparison-quote .lincoln .multicarrier-class .price").text(productList[i].bestPremiumPerMonth.toFixed(2));
+						$("#comparison-quote .lincoln .multicarrier-class .price").text(productList[i].standardPremiumPerMonth.toFixed(2));
 					}
 				}
 			}

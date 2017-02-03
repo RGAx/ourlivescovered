@@ -1,3 +1,26 @@
+<head>
+<!-- Bing Ads Code -->
+<script>(function(w,d,t,r,u){var f,n,i;w[u]=w[u]||[],f=function(){var o={ti:"5538524"};o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")},n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function(){var s=this.readyState;s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)},i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)})(window,document,"script","//bat.bing.com/bat.js","uetq");</script><noscript><img src="//bat.bing.com/action/0?ti=5538524&Ver=2" height="0" width="0" style="display:none; visibility: hidden;" /></noscript>
+<!-- End Bing Ads Code -->
+<!-- FACEBOOK REMARKETING CODE -->
+<!-- Place Between <head> and </head> -->
+
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '365200520508834'); // Insert your pixel ID here.
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=365200520508834&ev=PageView&noscript=1"
+/></noscript>
+<!-- DO NOT MODIFY -->
+<!-- End Facebook Pixel Code -->
+</head>
 <%@include file="header.jsp" %>
 
 	<section id="insurance101" class="main-section">
@@ -155,7 +178,7 @@
                                 </div>
                                 <div id="collapseSeven" class="panel-collapse collapse">
                                     <div class="panel-body">
-                                        <p>A medical exam depends on the coverage amount selected. In most cases, your health and family history provide enough information to forgot a medical exam. Other key factors such as occupation, hobbies, and driving record give the insurer a window into your health and potential risk factors in your life. All of these factors provide the insurer enough information to set your premium. For healthy people like you, your premiums could potentially be less than half of those paid by the average insured.</p>
+                                        <p>A medical exam depends on the coverage amount selected. Other key factors such as occupation, hobbies, and driving record give the insurer a window into your health and potential risk factors in your life. All of these factors provide the insurer enough information to set your premium.</p>
                                     </div>
                                 </div>
                             </div>
@@ -166,8 +189,7 @@
                             <h2>Have you met our corporate partner BFF?</h2>
                             <img id="lh-logo" src="resources/images/life-happens-logo.jpg">
                             <p>OUR LIFE COVERED<sup>SM</sup> has partnered with Life Happens, a non profit organization that is just as dedicated as we are to educating people about the importance of protecting themselves and their families with the coverage they need.</p>
-                            <p>Danica Patrick, professional race car driver and the 2016 spokesperson for Life Insurance Awareness Month, sums up the difference life insurance can make.</p>
-                            
+                                                        
                             
                             <!-- <video id='brigcovepersonalplayer' data-account="4486098250001" data-player="HyV9Hkf5" data-video-id="4924793818001" data-embed="default" style="width: 100%; height:auto; padding-bottom: 56.25%;" class="video-js bc-video" controls >
                             <source src="https://files.brightcove.com/homepage-background-v3.mp4" type="video/mp4"></video>
@@ -177,7 +199,7 @@
                             </script> -->						
 						
 						
-						<video data-video-id="4924793818001" data-account="4486098250001"
+						<video data-video-id="4667321659001" data-account="4486098250001"
 							data-player="HyV9Hkf5" data-embed="default"
 							style="width: 100%; height: auto; padding-bottom: 56.25%;"
 							data-application-id class="video-js" controls>
@@ -185,7 +207,7 @@
 						<script
 							src="//players.brightcove.net/4486098250001/HyV9Hkf5_default/index.min.js"></script>
 						<script id="pageScript" type="text/javascript">
-							var myPlayer = videojs("4924793818001");
+							var myPlayer = videojs("4667321659001");
 						</script>
 						
 					</div>

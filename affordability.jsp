@@ -54,6 +54,14 @@ sessionStorage.setItem('src',"${src}");
                                         <option value="female" selected>Female</option>
                                     </select>
                                 </div>
+                                <div class="select-wrapper">
+                                    <label for="affordableSmoker">Smoker or Non-smoker</label>
+                                    <select name="affordableSmoker" id="affordableSmoker" class="coverageamt-select afford-dropdown">
+                                        <!-- <option value="">Non-Smoker</option> -->
+                                        <option value="nonsmoker">Non-Smoker</option>
+                                        <option value="smoker">Smoker</option>
+                                    </select>
+                                </div>
                                 <input type="hidden" id="hiddenCoverage" name="totalCoverage" class="quoted-amount" value="$1,200,000">
                             </div>
                             <div class="secondary-container">

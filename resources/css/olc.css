@@ -2692,21 +2692,27 @@ body {
               position: relative;
               display: inline-block;
               text-align: left; }
-              body section#affordability_hero div.container div.row div.col-md-12 div.form-wrapper div.primary-container form div.inline-text:nth-of-type(2) input {
-                max-width: 209px; }
+              body section#affordability_hero div.container div.row div.col-md-12 div.form-wrapper div.primary-container form div.inline-text:nth-of-type(2) {
+                width: 337px; }
+                @media (max-width: 817px) {
+                  body section#affordability_hero div.container div.row div.col-md-12 div.form-wrapper div.primary-container form div.inline-text:nth-of-type(2) {
+                    width: 100%; } }
               body section#affordability_hero div.container div.row div.col-md-12 div.form-wrapper div.primary-container form div.inline-text:nth-of-type(3) {
-                margin: 0 0 0 27px; }
-                body section#affordability_hero div.container div.row div.col-md-12 div.form-wrapper div.primary-container form div.inline-text:nth-of-type(3) input {
-                  max-width: 269px; }
-              @media (max-width: 630px) {
+                width: calc(100% - 361px);
+                margin: 0 0 0 17px; }
+                @media (max-width: 817px) {
+                  body section#affordability_hero div.container div.row div.col-md-12 div.form-wrapper div.primary-container form div.inline-text:nth-of-type(3) {
+                    width: 100%; } }
+              @media (max-width: 817px) {
                 body section#affordability_hero div.container div.row div.col-md-12 div.form-wrapper div.primary-container form div.inline-text {
                   width: 100%;
                   margin: 0 0 10px !important; } }
               body section#affordability_hero div.container div.row div.col-md-12 div.form-wrapper div.primary-container form div.inline-text label {
-                font-size: 21px;
+                font-size: 16px;
                 font-weight: 700;
                 display: block;
                 margin-bottom: 5px;
+                text-align: center;
                 color: white; }
               body section#affordability_hero div.container div.row div.col-md-12 div.form-wrapper div.primary-container form div.inline-text input {
                 font-size: 22px;
@@ -2728,7 +2734,7 @@ body {
                         appearance: none; }
                 body section#affordability_hero div.container div.row div.col-md-12 div.form-wrapper div.primary-container form div.inline-text input::-ms-clear {
                   display: none; }
-                @media (max-width: 630px) {
+                @media (max-width: 817px) {
                   body section#affordability_hero div.container div.row div.col-md-12 div.form-wrapper div.primary-container form div.inline-text input {
                     font-size: 17px;
                     width: 100%;
@@ -2742,30 +2748,32 @@ body {
               max-width: 512px;
               margin: 5px auto 15px;
               color: white; }
-              @media (max-width: 630px) {
+              @media (max-width: 817px) {
                 body section#affordability_hero div.container div.row div.col-md-12 div.form-wrapper div.primary-container form small {
                   margin: 0 auto 20px; } }
             body section#affordability_hero div.container div.row div.col-md-12 div.form-wrapper div.primary-container form div.select-wrapper {
+              margin-right: 16px;
               text-align: left; }
-              body section#affordability_hero div.container div.row div.col-md-12 div.form-wrapper div.primary-container form div.select-wrapper:nth-of-type(5) {
-                margin: 0 28px; }
-              @media (max-width: 630px) {
+              body section#affordability_hero div.container div.row div.col-md-12 div.form-wrapper div.primary-container form div.select-wrapper:last-of-type {
+                margin-right: 0; }
+              @media (max-width: 817px) {
                 body section#affordability_hero div.container div.row div.col-md-12 div.form-wrapper div.primary-container form div.select-wrapper {
                   width: 100%;
                   margin: 0 0 10px !important; } }
               body section#affordability_hero div.container div.row div.col-md-12 div.form-wrapper div.primary-container form div.select-wrapper:after {
                 font-size: 12px;
-                top: calc(50% + 18px);
+                top: calc(50% + 15px);
                 right: 12px;
                 content: '\f04b';
                 -webkit-transform: translateY(-50%) rotate(90deg);
                         transform: translateY(-50%) rotate(90deg);
                 color: #828282; }
               body section#affordability_hero div.container div.row div.col-md-12 div.form-wrapper div.primary-container form div.select-wrapper label {
-                font-size: 21px;
+                font-size: 16px;
                 font-weight: 700;
                 display: block;
                 margin-bottom: 5px;
+                text-align: center;
                 color: white; }
               body section#affordability_hero div.container div.row div.col-md-12 div.form-wrapper div.primary-container form div.select-wrapper select {
                 font-size: 22px;
@@ -2782,7 +2790,7 @@ body {
                         appearance: none; }
                 body section#affordability_hero div.container div.row div.col-md-12 div.form-wrapper div.primary-container form div.select-wrapper select::-ms-expand {
                   display: none; }
-                @media (max-width: 630px) {
+                @media (max-width: 817px) {
                   body section#affordability_hero div.container div.row div.col-md-12 div.form-wrapper div.primary-container form div.select-wrapper select {
                     font-size: 17px;
                     width: 100%;

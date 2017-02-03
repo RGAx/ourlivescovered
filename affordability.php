@@ -26,9 +26,9 @@
                                     <label for="affordablePremium">Preferred Payment</label>
                                     <select name="affordablePremium" id="affordablePremium" class="coverageamt-select afford-dropdown">
                                         <!-- <option value="">Amount</option> -->
-                                         <option value="twentyfive">$25 per month</option>
-                                         <option value="forty">$40 per month</option>
-                                         <option value="fifty">$50 per month</option>
+                                        <option value="twentyfive">$25 per month</option>
+                                        <option value="forty">$40 per month</option>
+                                        <option value="fifty">$50 per month</option>
                                     </select>
                                 </div>
                                 <div class="select-wrapper">
@@ -49,6 +49,14 @@
                                         <!-- <option value="">Gender</option> -->
                                         <option value="male">Male</option>
                                         <option value="female" selected>Female</option>
+                                    </select>
+                                </div>
+                                <div class="select-wrapper">
+                                    <label for="affordableSmoker">Smoker or Non-smoker</label>
+                                    <select name="affordableSmoker" id="affordableSmoker" class="coverageamt-select afford-dropdown">
+                                        <!-- <option value="">Non-Smoker</option> -->
+                                        <option value="nonsmoker">Non-Smoker</option>
+                                        <option value="smoker">Smoker</option>
                                     </select>
                                 </div>
                                 <input type="hidden" id="hiddenCoverage" name="totalCoverage" class="quoted-amount" value="$1,200,000">

@@ -1,3 +1,26 @@
+<head>
+<!-- Bing Ads Code -->
+<script>(function(w,d,t,r,u){var f,n,i;w[u]=w[u]||[],f=function(){var o={ti:"5538524"};o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")},n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function(){var s=this.readyState;s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)},i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)})(window,document,"script","//bat.bing.com/bat.js","uetq");</script><noscript><img src="//bat.bing.com/action/0?ti=5538524&Ver=2" height="0" width="0" style="display:none; visibility: hidden;" /></noscript>
+<!-- End Bing Ads Code -->
+<!-- FACEBOOK REMARKETING CODE -->
+<!-- Place Between <head> and </head> -->
+
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '365200520508834'); // Insert your pixel ID here.
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=365200520508834&ev=PageView&noscript=1"
+/></noscript>
+<!-- DO NOT MODIFY -->
+<!-- End Facebook Pixel Code -->
+</head>
 <%@include file="header.jsp" %>
 
 	<section id="policy-forms" class="cover main-section">
@@ -36,7 +59,6 @@
                     <p>Prudential Life Insurance Company: 751 Broad Street, 23rd Floor, Newark, NJ 07102.</p>
                     <p><strong>Transamerica Life Insurance Company -&nbsp;</strong>Trendsetter® Super Series are term life insurance policies issued by Transamerica Life Insurance Company, Cedar Rapids, IA and in New York by Transamerica Financial Life Insurance Company, Harrison, NY. Policy Forms ICC16 TL22, TL22, 1-322 11-107, 1-306 11-107, 1-305 11-107, 1-304 11-107, 1-303 11-107, or 1-334 11-107 issued by Transamerica Life Insurance Company and 3-306 38-111, 3-305 38-111, 3-304 38-111, 3-303 38-111, or 3-334 38-111 issued by Transamerica Financial Life Insurance Company. Premiums increase annually for Trendsetter Super YRT, and beginning in year 11 for the 10- year policy, in year 16 for the 15-year policy, in year 21 for the 20-year policy, in year 26 for the 25-year policy, and in year 31 for the 30-year policy. Policy forms and numbers may vary, and these policies and the riders may not be available in all jurisdictions. Insurance eligibility and premiums are subject to underwriting. In most states, in the event of suicide during the first two policy years, death benefits are limited only to the return of premiums paid.</p>
 					<p>Transamerica Financial Life Insurance Company is authorized to conduct business in New York. Transamerica Life Insurance Company is authorized to conduct business in all other states. State variations may apply.</p>
-					<p>As a highly fit person, you may qualify for preferred plus class coverage. However, this is non-binding prior to your application.</p>
 					<p>No quotes are final until underwriting is completed.  Other underwriting classes, face amounts and payment modes are available.  Premiums will be lower if paid annually.  Rates subject to change without notice.</p>
 					<p>The recommended coverage amount is determined by Two River Agency. Two River Agency is an independent contractor representing Transamerica Life Insurance Company and Transamerica Financial Life Insurance Company.</p>
                     <p>United States Life Insurance Company: 3600 Route 66, PO Box 1580, Neptune, NJ 07754-1580.</p>

@@ -1108,15 +1108,15 @@ body {
                             &#whats_right {
                                 max-width: 100%;
                                 h2 {
-                                    font-size: 21px;
+                                    font-size: 25px;
                                     margin-bottom: 20px;
                                     @media (max-width: 768px) {
-                                        font-size: 16px;
+                                        font-size: 19px;
                                         margin-bottom: 15px;
                                     }
                                 }
                                 p {
-                                    font-size: 14px;
+                                    font-size: 16px;
                                     @media (max-width: 768px) {
                                         font-size: 12px;
                                     }
@@ -3326,8 +3326,10 @@ body {
                     &.sitemap {
                         width: 100%;
                         margin-top: 0;
+                        margin-bottom: 40px;
                     }
                     &.social-icons {
+                        display: none;
                         margin: 40px 0;
                         text-align: center;
                         a {

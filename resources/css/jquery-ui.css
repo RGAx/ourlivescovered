@@ -126,7 +126,7 @@
 	cursor: pointer;
 	vertical-align: middle;
 	text-align: center;
-	overflow: visible; removes extra width in IE
+	overflow: visible; /* removes extra width in IE */
 }
 .ui-button,
 .ui-button:link,

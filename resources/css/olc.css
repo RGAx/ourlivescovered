@@ -1567,6 +1567,10 @@ body {
               body div.background-wrap#quote_form_natlang section.quote div.container div.row div.col-md-12 form div.inline-text :-ms-input-placeholder,
               body div.background-wrap#quote_form_natlang section.quote div.container div.row div.col-md-12 form div.inline-select :-ms-input-placeholder {
                 color: white; }
+              @media (max-width: 530px) {
+                body div.background-wrap#quote_form_natlang section.quote div.container div.row div.col-md-12 form div.inline-text,
+                body div.background-wrap#quote_form_natlang section.quote div.container div.row div.col-md-12 form div.inline-select {
+                  margin-bottom: 15px; } }
               body div.background-wrap#quote_form_natlang section.quote div.container div.row div.col-md-12 form div.inline-text label,
               body div.background-wrap#quote_form_natlang section.quote div.container div.row div.col-md-12 form div.inline-select label {
                 font-size: 17px;
@@ -1578,11 +1582,11 @@ body {
               body div.background-wrap#quote_form_natlang section.quote div.container div.row div.col-md-12 form div.inline-select input,
               body div.background-wrap#quote_form_natlang section.quote div.container div.row div.col-md-12 form div.inline-select select {
                 font-size: 17px;
+                font-weight: 400;
                 width: auto;
                 min-width: 0;
                 max-width: none;
                 padding: 10px;
-                color: white;
                 color: white;
                 border: none;
                 border-radius: 0;
@@ -1601,6 +1605,13 @@ body {
                 body div.background-wrap#quote_form_natlang section.quote div.container div.row div.col-md-12 form div.inline-select input::-ms-clear,
                 body div.background-wrap#quote_form_natlang section.quote div.container div.row div.col-md-12 form div.inline-select select::-ms-clear {
                   display: none; }
+                @media (max-width: 530px) {
+                  body div.background-wrap#quote_form_natlang section.quote div.container div.row div.col-md-12 form div.inline-text input,
+                  body div.background-wrap#quote_form_natlang section.quote div.container div.row div.col-md-12 form div.inline-text select,
+                  body div.background-wrap#quote_form_natlang section.quote div.container div.row div.col-md-12 form div.inline-select input,
+                  body div.background-wrap#quote_form_natlang section.quote div.container div.row div.col-md-12 form div.inline-select select {
+                    height: 35px !important;
+                    padding: 8px; } }
               body div.background-wrap#quote_form_natlang section.quote div.container div.row div.col-md-12 form div.inline-text input#calc-first-name,
               body div.background-wrap#quote_form_natlang section.quote div.container div.row div.col-md-12 form div.inline-select input#calc-first-name {
                 width: 208px; }
@@ -1610,6 +1621,9 @@ body {
               body div.background-wrap#quote_form_natlang section.quote div.container div.row div.col-md-12 form div.inline-text input#calc-annual-income,
               body div.background-wrap#quote_form_natlang section.quote div.container div.row div.col-md-12 form div.inline-select input#calc-annual-income {
                 width: 93px; }
+            @media (max-width: 530px) {
+              body div.background-wrap#quote_form_natlang section.quote div.container div.row div.col-md-12 form div.inline-text input {
+                margin-bottom: 3px; } }
             body div.background-wrap#quote_form_natlang section.quote div.container div.row div.col-md-12 form div.inline-text.email {
               margin: 25px 0;
               padding: 25px 0;
@@ -1632,6 +1646,9 @@ body {
               font-size: 100%;
               position: relative;
               display: inline-block; }
+              @media (max-width: 530px) {
+                body div.background-wrap#quote_form_natlang section.quote div.container div.row div.col-md-12 form div.inline-select span.select-wrapper {
+                  margin-bottom: 3px; } }
               body div.background-wrap#quote_form_natlang section.quote div.container div.row div.col-md-12 form div.inline-select span.select-wrapper:after {
                 font-family: FontAwesome;
                 font-size: 10px;
@@ -1641,11 +1658,25 @@ body {
                 right: 10px;
                 content: '\f078';
                 pointer-events: none;
-                color: white; }
+                color: #333; }
+                @media (max-width: 530px) {
+                  body div.background-wrap#quote_form_natlang section.quote div.container div.row div.col-md-12 form div.inline-select span.select-wrapper:after {
+                    top: 13px; } }
               body div.background-wrap#quote_form_natlang section.quote div.container div.row div.col-md-12 form div.inline-select span.select-wrapper select {
+                line-height: 1;
                 padding-right: 30px; }
                 body div.background-wrap#quote_form_natlang section.quote div.container div.row div.col-md-12 form div.inline-select span.select-wrapper select::-ms-expand {
                   display: none; }
+                body div.background-wrap#quote_form_natlang section.quote div.container div.row div.col-md-12 form div.inline-select span.select-wrapper select#calc-gender {
+                  color: #333; }
+                body div.background-wrap#quote_form_natlang section.quote div.container div.row div.col-md-12 form div.inline-select span.select-wrapper select#calc-smoker {
+                  color: #333; }
+                body div.background-wrap#quote_form_natlang section.quote div.container div.row div.col-md-12 form div.inline-select span.select-wrapper select#calc-premium {
+                  color: #333; }
+                body div.background-wrap#quote_form_natlang section.quote div.container div.row div.col-md-12 form div.inline-select span.select-wrapper select#rec-coverage {
+                  color: #333; }
+            body div.background-wrap#quote_form_natlang section.quote div.container div.row div.col-md-12 form div.inline-select input#calc-coverage {
+              color: #333; }
             body div.background-wrap#quote_form_natlang section.quote div.container div.row div.col-md-12 form p#check-all {
               font-size: 17px;
               font-weight: 700;

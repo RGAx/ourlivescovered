@@ -219,6 +219,20 @@ body {
                             display: none;
                         }
                     }
+                    div.header-call-small {
+                        font-size: 13px;
+                        margin-left: 50px;
+                        // display: none;
+                        // float: left;
+                        text-align: left;
+                        color: #fcecf3;
+                        @media (max-width: 640px) {
+                            margin-left: 0;
+                        }
+                        @media (max-width: 584px) {
+                            display: none;
+                        }
+                    }
                     ul#top_nav_menu {
                         display: flex !important;
                         float: right;
@@ -283,8 +297,8 @@ body {
                                 &.mobile-only {
                                     @media (max-width: 584px) {
                                         font-size: 14px;
-                                        // display: inline-block !important;
-                                        display: none !important;
+                                        display: inline-block !important;
+                                        // display: none !important;
                                         padding: 25px 0 15px 20px;
                                         color: #ccc;
                                     }
@@ -359,13 +373,6 @@ body {
                         }
                     }
                 }
-            }
-            div.header-call-small {
-                font-size: 13px;
-                display: none;
-                float: left;
-                text-align: left;
-                color: #fcecf3;
             }
         }
     }
@@ -3351,8 +3358,6 @@ body {
         background-position: top right;
         background-size: cover;
         &:before {
-            content: '';
-            background: rgba(black,.4);
             position: absolute;
             top: 0;
             right: 0;
@@ -3360,6 +3365,8 @@ body {
             left: 0;
             width: 100%;
             height: 100%;
+            content: '';
+            background: rgba(black,.4);
         }
         div.container {
             div.row {
@@ -3367,6 +3374,7 @@ body {
                     text-align: left;
                     small {
                         font-size: 14px;
+                        display: none;
                         color: white;
                     }
                 }
@@ -3387,9 +3395,9 @@ body {
                     }
                     p#landing_copy {
                         font-size: 24px;
-                        color: white;
                         font-weight: 600;
                         line-height: 1.25;
+                        color: white;
                         @media (max-width: 817px) {
                             font-size: 18px;
                         }
@@ -3413,27 +3421,14 @@ body {
                                 margin: 0;
                                 div.inline-text {
                                     position: relative;
-                                    display: inline-block;
+                                    display: block;
+                                    float: left;
+                                    width: calc((100% / 3) - 12px);
+                                    margin-right: 18px;
+                                    margin-bottom: 10px;
                                     text-align: left;
-                                    &:nth-of-type(2) {
-                                        width: 337px;
-                                        @media (max-width: 817px) {
-                                            width: 100%;
-                                        }
-                                    }
-                                    &:nth-of-type(3) {
-                                        width: calc(100% - 361px);
-                                        margin: 0 0 0 17px;
-                                        @media (max-width: 817px) {
-                                            width: 100%;
-                                        }
-                                    }
-                                    &:nth-of-type(4) {
-                                        width: calc((100% / 3) - (57px / 3));
-                                        margin-right: 16px;
-                                        @media (max-width: 817px) {
-                                            width: 100%;
-                                        }
+                                    &:nth-of-type(3n+4) {
+                                        margin-right: 0;
                                     }
                                     @media (max-width: 817px) {
                                         width: 100%;
@@ -3481,18 +3476,19 @@ body {
                                     display: block;
                                     width: 100%;
                                     max-width: 512px;
-                                    margin: 5px auto 0;
+                                    margin: 0 auto 20px;
                                     color: white;
                                     @media (max-width: 817px) {
                                         margin: 0 auto 20px;
                                     }
                                 }
                                 div.select-wrapper {
-                                    width: calc((100% / 3) - (57px / 3));
-                                    margin: 16px 16px 0 0;
+                                    float: left;
+                                    margin-right: 18px;
+                                    width: calc((100% / 3) - 12px);
+                                    margin-bottom: 10px;
                                     text-align: left;
-                                    &:last-of-type,
-                                    &:nth-of-type(6) {
+                                    &:nth-of-type(3n+4) {
                                         margin-right: 0;
                                     }
                                     @media (max-width: 817px) {

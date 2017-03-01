@@ -19,6 +19,10 @@
                                     <input required="" class=" " type="text" id="afford-first-name" name="first-name" maxlength="25">
                                 </div>
                                 <div class="inline-text required">
+                                    <label class=" " for="afford-phone">Phone Number</label>
+                                    <input class=" " type="text" pattern="[0-9]*" id="afford-phone" name="calc-form-phone">
+                                </div>
+                                <div class="inline-text required">
                                     <label class=" " for="afford-email-address">Email Address</label>
                                     <input required="" class="  " type="text" id="afford-email-address" name="email-address" maxlength="100">
                                 </div>

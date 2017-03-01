@@ -166,6 +166,17 @@ body {
         @media (max-width: 584px) {
           body header div.container div.row div.col-md-12 div.header-call-mobile {
             display: none; } }
+      body header div.container div.row div.col-md-12 div.header-call-small {
+        font-size: 13px;
+        margin-left: 50px;
+        text-align: left;
+        color: #fcecf3; }
+        @media (max-width: 640px) {
+          body header div.container div.row div.col-md-12 div.header-call-small {
+            margin-left: 0; } }
+        @media (max-width: 584px) {
+          body header div.container div.row div.col-md-12 div.header-call-small {
+            display: none; } }
       body header div.container div.row div.col-md-12 ul#top_nav_menu {
         display: -webkit-box !important;
         display: -ms-flexbox !important;
@@ -231,7 +242,7 @@ body {
         @media (max-width: 584px) {
           body header div.container div.row div.col-md-12 ul#top_nav_menu li.nav-call.mobile-only {
             font-size: 14px;
-            display: none !important;
+            display: inline-block !important;
             padding: 25px 0 15px 20px;
             color: #ccc; } }
         body header div.container div.row div.col-md-12 ul#top_nav_menu li a {
@@ -294,12 +305,6 @@ body {
         body header div.container div.row div.col-md-12 a#close_menu i {
           font-size: 25px;
           display: block; }
-    body header div.container div.header-call-small {
-      font-size: 13px;
-      display: none;
-      float: left;
-      text-align: left;
-      color: #fcecf3; }
   body div.container-fluid div#hero {
     position: relative;
     height: 36vw;
@@ -2896,19 +2901,20 @@ body {
     background-position: top right;
     background-size: cover; }
     body section#landing_hero:before {
-      content: '';
-      background: rgba(0, 0, 0, 0.4);
       position: absolute;
       top: 0;
       right: 0;
       bottom: 0;
       left: 0;
       width: 100%;
-      height: 100%; }
+      height: 100%;
+      content: '';
+      background: rgba(0, 0, 0, 0.4); }
     body section#landing_hero div.container div.row:last-of-type {
       text-align: left; }
       body section#landing_hero div.container div.row:last-of-type small {
         font-size: 14px;
+        display: none;
         color: white; }
     body section#landing_hero div.container div.row div.col-md-12 {
       float: none;
@@ -2926,9 +2932,9 @@ body {
             font-size: 48px; } }
       body section#landing_hero div.container div.row div.col-md-12 p#landing_copy {
         font-size: 24px;
-        color: white;
         font-weight: 600;
-        line-height: 1.25; }
+        line-height: 1.25;
+        color: white; }
         @media (max-width: 817px) {
           body section#landing_hero div.container div.row div.col-md-12 p#landing_copy {
             font-size: 18px; } }
@@ -2951,25 +2957,14 @@ body {
             margin: 0; }
             body section#landing_hero div.container div.row div.col-md-12 div.form-wrapper div.primary-container form div.inline-text {
               position: relative;
-              display: inline-block;
+              display: block;
+              float: left;
+              width: calc((100% / 3) - 12px);
+              margin-right: 18px;
+              margin-bottom: 10px;
               text-align: left; }
-              body section#landing_hero div.container div.row div.col-md-12 div.form-wrapper div.primary-container form div.inline-text:nth-of-type(2) {
-                width: 337px; }
-                @media (max-width: 817px) {
-                  body section#landing_hero div.container div.row div.col-md-12 div.form-wrapper div.primary-container form div.inline-text:nth-of-type(2) {
-                    width: 100%; } }
-              body section#landing_hero div.container div.row div.col-md-12 div.form-wrapper div.primary-container form div.inline-text:nth-of-type(3) {
-                width: calc(100% - 361px);
-                margin: 0 0 0 17px; }
-                @media (max-width: 817px) {
-                  body section#landing_hero div.container div.row div.col-md-12 div.form-wrapper div.primary-container form div.inline-text:nth-of-type(3) {
-                    width: 100%; } }
-              body section#landing_hero div.container div.row div.col-md-12 div.form-wrapper div.primary-container form div.inline-text:nth-of-type(4) {
-                width: calc((100% / 3) - (57px / 3));
-                margin-right: 16px; }
-                @media (max-width: 817px) {
-                  body section#landing_hero div.container div.row div.col-md-12 div.form-wrapper div.primary-container form div.inline-text:nth-of-type(4) {
-                    width: 100%; } }
+              body section#landing_hero div.container div.row div.col-md-12 div.form-wrapper div.primary-container form div.inline-text:nth-of-type(3n+4) {
+                margin-right: 0; }
               @media (max-width: 817px) {
                 body section#landing_hero div.container div.row div.col-md-12 div.form-wrapper div.primary-container form div.inline-text {
                   width: 100%;
@@ -3013,16 +3008,18 @@ body {
               display: block;
               width: 100%;
               max-width: 512px;
-              margin: 5px auto 0;
+              margin: 0 auto 20px;
               color: white; }
               @media (max-width: 817px) {
                 body section#landing_hero div.container div.row div.col-md-12 div.form-wrapper div.primary-container form small {
                   margin: 0 auto 20px; } }
             body section#landing_hero div.container div.row div.col-md-12 div.form-wrapper div.primary-container form div.select-wrapper {
-              width: calc((100% / 3) - (57px / 3));
-              margin: 16px 16px 0 0;
+              float: left;
+              margin-right: 18px;
+              width: calc((100% / 3) - 12px);
+              margin-bottom: 10px;
               text-align: left; }
-              body section#landing_hero div.container div.row div.col-md-12 div.form-wrapper div.primary-container form div.select-wrapper:last-of-type, body section#landing_hero div.container div.row div.col-md-12 div.form-wrapper div.primary-container form div.select-wrapper:nth-of-type(6) {
+              body section#landing_hero div.container div.row div.col-md-12 div.form-wrapper div.primary-container form div.select-wrapper:nth-of-type(3n+4) {
                 margin-right: 0; }
               @media (max-width: 817px) {
                 body section#landing_hero div.container div.row div.col-md-12 div.form-wrapper div.primary-container form div.select-wrapper {

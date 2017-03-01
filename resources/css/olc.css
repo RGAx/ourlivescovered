@@ -170,7 +170,8 @@ body {
         font-size: 13px;
         margin-left: 50px;
         text-align: left;
-        color: #fcecf3; }
+        color: #fff;
+        font-weight: 600; }
         @media (max-width: 640px) {
           body header div.container div.row div.col-md-12 div.header-call-small {
             margin-left: 0; } }

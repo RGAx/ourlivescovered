@@ -3124,6 +3124,239 @@ body {
                 font-size: 15px;
                 width: 188px;
                 padding: 15px; } }
+  body section#zombies_hero {
+    position: relative;
+    padding: 100px 25px 10px;
+    background-image: url("../images/zombies_small.jpg");
+    background-position: bottom right;
+    background-size: cover;
+    min-height: calc(100vh - 265px); }
+    @media (max-width: 870px) {
+      body section#zombies_hero {
+        min-height: calc(100vh - 404px); } }
+    body section#zombies_hero:before {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      content: '';
+      background: rgba(0, 0, 0, 0.4); }
+    body section#zombies_hero div.container div.row:last-of-type {
+      text-align: left; }
+      body section#zombies_hero div.container div.row:last-of-type small {
+        font-size: 14px;
+        display: none;
+        color: white; }
+    body section#zombies_hero div.container div.row div.col-md-12 {
+      float: none;
+      width: 100%;
+      max-width: 770px;
+      margin: 0; }
+      body section#zombies_hero div.container div.row div.col-md-12 h1 {
+        font-size: 57px;
+        font-weight: 700;
+        line-height: 1;
+        margin: 0 0 20px;
+        color: white; }
+        @media (max-width: 817px) {
+          body section#zombies_hero div.container div.row div.col-md-12 h1 {
+            font-size: 48px; } }
+      body section#zombies_hero div.container div.row div.col-md-12 p#zombies_copy {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 1.25;
+        color: white; }
+        @media (max-width: 817px) {
+          body section#zombies_hero div.container div.row div.col-md-12 p#zombies_copy {
+            font-size: 18px; } }
+      body section#zombies_hero div.container div.row div.col-md-12 div.form-wrapper {
+        max-width: 775px;
+        background: transparent;
+        box-shadow: none; }
+        body section#zombies_hero div.container div.row div.col-md-12 div.form-wrapper div.primary-container {
+          padding: 24px 40px 30px;
+          border: none;
+          border-radius: 10px 10px 0 0;
+          background: rgba(0, 0, 0, 0.18); }
+          @media (max-width: 768px) {
+            body section#zombies_hero div.container div.row div.col-md-12 div.form-wrapper div.primary-container {
+              padding: 23px 30px; } }
+          @media (max-width: 500px) {
+            body section#zombies_hero div.container div.row div.col-md-12 div.form-wrapper div.primary-container {
+              padding: 20px; } }
+          body section#zombies_hero div.container div.row div.col-md-12 div.form-wrapper div.primary-container form {
+            margin: 0; }
+            body section#zombies_hero div.container div.row div.col-md-12 div.form-wrapper div.primary-container form div.inline-text {
+              position: relative;
+              display: block;
+              float: left;
+              width: calc((100% / 3) - 12px);
+              margin-right: 18px;
+              margin-bottom: 10px;
+              text-align: left; }
+              body section#zombies_hero div.container div.row div.col-md-12 div.form-wrapper div.primary-container form div.inline-text:nth-of-type(3n+4) {
+                margin-right: 0; }
+              @media (max-width: 817px) {
+                body section#zombies_hero div.container div.row div.col-md-12 div.form-wrapper div.primary-container form div.inline-text {
+                  width: 100%;
+                  margin: 0 0 10px !important; } }
+              body section#zombies_hero div.container div.row div.col-md-12 div.form-wrapper div.primary-container form div.inline-text label {
+                font-size: 16px;
+                font-weight: 700;
+                display: block;
+                margin-bottom: 5px;
+                text-align: center;
+                color: white; }
+              body section#zombies_hero div.container div.row div.col-md-12 div.form-wrapper div.primary-container form div.inline-text input {
+                font-size: 22px;
+                font-weight: 600;
+                line-height: 1.2;
+                display: block;
+                width: 100%;
+                height: 41.5px;
+                margin: 0;
+                padding: 0 11px;
+                letter-spacing: .3px;
+                color: #2b2b2b;
+                border: none;
+                border-radius: 5px;
+                outline: none;
+                box-shadow: none;
+                -webkit-appearance: none;
+                   -moz-appearance: none;
+                        appearance: none; }
+                body section#zombies_hero div.container div.row div.col-md-12 div.form-wrapper div.primary-container form div.inline-text input::-ms-clear {
+                  display: none; }
+                @media (max-width: 817px) {
+                  body section#zombies_hero div.container div.row div.col-md-12 div.form-wrapper div.primary-container form div.inline-text input {
+                    font-size: 17px;
+                    width: 100%;
+                    max-width: 100% !important;
+                    height: 35px; } }
+            body section#zombies_hero div.container div.row div.col-md-12 div.form-wrapper div.primary-container form small {
+              font-size: 12px;
+              line-height: 1.2;
+              display: block;
+              width: 100%;
+              max-width: 512px;
+              margin: 0 auto 20px;
+              color: white; }
+              @media (max-width: 817px) {
+                body section#zombies_hero div.container div.row div.col-md-12 div.form-wrapper div.primary-container form small {
+                  margin: 0 auto 20px; } }
+            body section#zombies_hero div.container div.row div.col-md-12 div.form-wrapper div.primary-container form div.select-wrapper {
+              float: left;
+              margin-right: 18px;
+              width: calc((100% / 3) - 12px);
+              margin-bottom: 10px;
+              text-align: left; }
+              body section#zombies_hero div.container div.row div.col-md-12 div.form-wrapper div.primary-container form div.select-wrapper:nth-of-type(3n+4) {
+                margin-right: 0; }
+              @media (max-width: 817px) {
+                body section#zombies_hero div.container div.row div.col-md-12 div.form-wrapper div.primary-container form div.select-wrapper {
+                  width: 100%;
+                  margin: 0 0 10px !important; } }
+              body section#zombies_hero div.container div.row div.col-md-12 div.form-wrapper div.primary-container form div.select-wrapper:after {
+                font-size: 12px;
+                top: calc(50% + 15px);
+                right: 12px;
+                content: '\f04b';
+                -webkit-transform: translateY(-50%) rotate(90deg);
+                        transform: translateY(-50%) rotate(90deg);
+                color: #828282; }
+              body section#zombies_hero div.container div.row div.col-md-12 div.form-wrapper div.primary-container form div.select-wrapper label {
+                font-size: 16px;
+                font-weight: 700;
+                display: block;
+                margin-bottom: 5px;
+                text-align: center;
+                color: white; }
+              body section#zombies_hero div.container div.row div.col-md-12 div.form-wrapper div.primary-container form div.select-wrapper select {
+                font-size: 22px;
+                line-height: 1.2;
+                display: block;
+                width: 100%;
+                height: 41.5px;
+                margin: 0;
+                padding: 0 38px 0 11px;
+                color: #2b2b2b;
+                box-shadow: none;
+                -webkit-appearance: none;
+                   -moz-appearance: none;
+                        appearance: none; }
+                body section#zombies_hero div.container div.row div.col-md-12 div.form-wrapper div.primary-container form div.select-wrapper select::-ms-expand {
+                  display: none; }
+                @media (max-width: 817px) {
+                  body section#zombies_hero div.container div.row div.col-md-12 div.form-wrapper div.primary-container form div.select-wrapper select {
+                    font-size: 17px;
+                    width: 100%;
+                    height: 35px; } }
+        body section#zombies_hero div.container div.row div.col-md-12 div.form-wrapper div.secondary-container {
+          padding: 15px 40px;
+          border-radius: 0 0 10px 10px;
+          background: rgba(0, 0, 0, 0.38); }
+          body section#zombies_hero div.container div.row div.col-md-12 div.form-wrapper div.secondary-container p#initialQuote {
+            font-size: 18px;
+            line-height: 1.952380952380952;
+            margin: 0;
+            color: white; }
+            @media (max-width: 817px) {
+              body section#zombies_hero div.container div.row div.col-md-12 div.form-wrapper div.secondary-container p#initialQuote {
+                font-size: 14px; } }
+            body section#zombies_hero div.container div.row div.col-md-12 div.form-wrapper div.secondary-container p#initialQuote span.quoted-amount {
+              font-weight: 700;
+              line-height: 1;
+              display: inline-block;
+              padding: 5px 8px 7px;
+              color: white;
+              background: #f498c2; }
+              body section#zombies_hero div.container div.row div.col-md-12 div.form-wrapper div.secondary-container p#initialQuote span.quoted-amount#totalCoverage {
+                width: 120px; }
+                @media (max-width: 817px) {
+                  body section#zombies_hero div.container div.row div.col-md-12 div.form-wrapper div.secondary-container p#initialQuote span.quoted-amount#totalCoverage {
+                    width: 90px; } }
+              body section#zombies_hero div.container div.row div.col-md-12 div.form-wrapper div.secondary-container p#initialQuote span.quoted-amount#totalSavings {
+                width: 63px; }
+                @media (max-width: 817px) {
+                  body section#zombies_hero div.container div.row div.col-md-12 div.form-wrapper div.secondary-container p#initialQuote span.quoted-amount#totalSavings {
+                    width: 47px; } }
+            body section#zombies_hero div.container div.row div.col-md-12 div.form-wrapper div.secondary-container p#initialQuote sup {
+              font-size: 80%;
+              top: -.4em; }
+        body section#zombies_hero div.container div.row div.col-md-12 div.form-wrapper div.gobutton-container {
+          width: 100%;
+          margin: 30px auto 100px; }
+          @media (max-width: 817px) {
+            body section#zombies_hero div.container div.row div.col-md-12 div.form-wrapper div.gobutton-container {
+              margin: 23px auto 75px; } }
+          body section#zombies_hero div.container div.row div.col-md-12 div.form-wrapper div.gobutton-container input.btn {
+            font-size: 20px;
+            font-weight: normal;
+            font-weight: 700;
+            line-height: 1;
+            width: 250px;
+            padding: 20px;
+            -webkit-transition: all .3s ease;
+            transition: all .3s ease;
+            text-transform: uppercase;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            outline: none;
+            background: #71c97a;
+            -webkit-appearance: none;
+               -moz-appearance: none;
+                    appearance: none; }
+            body section#zombies_hero div.container div.row div.col-md-12 div.form-wrapper div.gobutton-container input.btn:hover {
+              background: #5bb262; }
+            @media (max-width: 817px) {
+              body section#zombies_hero div.container div.row div.col-md-12 div.form-wrapper div.gobutton-container input.btn {
+                font-size: 15px;
+                width: 188px;
+                padding: 15px; } }
   body footer {
     position: relative;
     background-color: #595959; }
